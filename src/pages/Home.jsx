@@ -1,7 +1,6 @@
 import "../styles/Home.scss";
 import bg01 from "../assets/Fresh Folk - Outdoor 1.svg";
 import bg02 from "../assets/Amigos - Tree.svg";
-import { useState } from "react";
 
 const Home = () => {
   return (
