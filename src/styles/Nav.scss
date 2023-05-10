@@ -1,0 +1,72 @@
+.Nav {
+  color: var(--primary-text);
+  width: 100%;
+  height: 100px;
+  padding: 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: sticky;
+  top: 0;
+  background: var(--secondary-bg);
+  z-index: 100;
+}
+
+.NavLogoContainer {
+  height: 100%;
+  font-weight: 800;
+  width: 25%;
+  text-align: right;
+  color: var(--primary-nav-text);
+
+  .NavLogo {
+    height: 100%;
+  }
+}
+
+.NavListContainer {
+  display: block;
+  width: 50%;
+
+  .NavList {
+    list-style-type: none;
+    display: flex;
+  }
+
+  .NavList li {
+    margin: 0 10px;
+    font-weight: 500;
+    transition: color 0.1s ease;
+  }
+
+  .NavList li:hover {
+    color: var(--primary-nav-text);
+  }
+
+  .NavLink {
+    color: inherit;
+    text-decoration: inherit;
+  }
+
+  .active {
+    color: var(--primary-nav-text);
+  }
+}
+
+.NavHamburgerContainer {
+  display: none;
+}
+
+@media screen and (max-width: 1000px) {
+  .NavListContainer {
+    display: none;
+  }
+
+  .NavLogo {
+    text-align: left;
+  }
+
+  .NavHamburgerContainer {
+    display: block;
+  }
+}
