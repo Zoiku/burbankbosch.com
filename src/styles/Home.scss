@@ -40,8 +40,7 @@
   padding: 100px 0;
   display: grid;
   place-content: center;
-  color: var(--secondary-text);
-  background: #006c679a;
+  color: var(--primary-text);
 
   .HomeSectionsCentered {
     .titleContainer {
@@ -54,7 +53,7 @@
       .title {
         font-size: xx-large;
         font-weight: 700;
-        color: var(--secondary-text);
+        color: var(--primary-text);
       }
     }
 
@@ -65,7 +64,7 @@
       grid-template-columns: repeat(3, 300px);
 
       .wwdCards {
-        background: var(--secondary-bg);
+        background: #efefef;
         border-radius: 5px;
         height: 400px;
       }

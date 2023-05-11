@@ -30,12 +30,12 @@ const Nav = () => {
             </NavLink>
           </li>
           <li>
-            <NavLink className="NavLink" to="/news">
+            <NavLink className="NavLink" to="/technology">
               our technology
             </NavLink>
           </li>
           <li>
-            <NavLink className="NavLink" to="/faq">
+            <NavLink className="NavLink" to="/sdg">
               sdg's
             </NavLink>
           </li>
@@ -75,12 +75,12 @@ const Nav = () => {
                       </NavLink>
                     </li>
                     <li>
-                      <NavLink className="NavLink" to="/news">
+                      <NavLink className="NavLink" to="/technology">
                         our technology
                       </NavLink>
                     </li>
                     <li>
-                      <NavLink className="NavLink" to="/faq">
+                      <NavLink className="NavLink" to="/sdg">
                         sdg's
                       </NavLink>
                     </li>

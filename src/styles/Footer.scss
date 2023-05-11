@@ -1,20 +1,30 @@
 .FooterContainer {
   height: 500px;
   background: var(--primary-bg);
-  padding: 30px;
+  display: none;
+}
+
+.copyRightContainer {
+  background: #000;
+  padding: 20px;
+  color: var(--secondary-text);
+
+  .copyRight {
+    text-align: center;
+    font-size: small;
+  }
 }
 
 .footer {
+  padding: 30px;
   position: relative;
   height: 100%;
-  outline: 1px solid red;
   padding: 5px;
 
   .logoContainer {
     height: 200px;
     width: 200px;
     padding: 5px;
-    outline: 1px solid white;
 
     .logo {
       height: 100%;

@@ -1,0 +1,47 @@
+.meetTheTeamContainer {
+  display: grid;
+  justify-content: center;
+  padding: 80px 0;
+
+  .meetTheTeam {
+    width: 1000px;
+    height: 100%;
+
+    .titleContainer {
+      width: 60%;
+
+      .title {
+        font-size: 40px;
+        font-weight: 800;
+
+        .key {
+          font-style: italic;
+          text-decoration: underline;
+          color: green;
+        }
+      }
+
+      .titleHelper {
+        margin: 10px 0 0 0;
+        color: gray;
+        font-size: small;
+      }
+    }
+
+    .membersGridContainer {
+      margin: 80px 0 0 0;
+      .membersGrid {
+        width: 100%;
+        display: grid;
+        gap: 10px;
+        grid-template-columns: repeat(3, 1fr);
+
+        & > div {
+          height: 400px;
+          background: #efefef;
+          border-radius: 10px;
+        }
+      }
+    }
+  }
+}

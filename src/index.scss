@@ -29,3 +29,70 @@ html {
 .css-7dv1rb-MuiButtonBase-root-MuiFab-root-MuiSpeedDial-fab {
   background-color: var(--primary-nav-text) !important;
 }
+
+.PageInformationContainer {
+  height: 500px;
+  background: url("./assets/crystal-jo-PKcTuA_CRAo-unsplash.jpg");
+  background-size: cover;
+  background-attachment: fixed;
+  position: relative;
+
+  .overlayContainer {
+    position: absolute;
+    bottom: 0;
+    top: 0;
+    left: 0;
+    right: 0;
+    display: grid;
+    align-content: center;
+    background: rgba(0, 0, 0, 0.8);
+
+    .overlay {
+      height: 100%;
+
+      .title {
+        font-size: 60px;
+        font-weight: 600;
+        color: var(--secondary-text);
+        padding: 0 0 0 100px;
+      }
+
+      .breadCrumb-container {
+        position: absolute;
+        padding: 10px;
+        bottom: 30px;
+        left: 0;
+        right: 0;
+        height: 50px;
+        display: grid;
+        align-items: center;
+
+        .breadCrumb {
+          display: flex;
+          justify-content: flex-end;
+          padding: 0 100px 0 0;
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 1024px) {
+  .PageInformationContainer {
+    .overlayContainer {
+      .overlay {
+        .title {
+          padding: 0 0 0 20px;
+        }
+
+        .breadCrumb-container {
+          bottom: 0;
+
+          .breadCrumb {
+            padding: 0 10px 0 0;
+          }
+        }
+      }
+    }
+  }
+}

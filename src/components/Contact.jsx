@@ -4,7 +4,7 @@ import EmailIcon from "@mui/icons-material/Email";
 import NearMeIcon from "@mui/icons-material/NearMe";
 import { Box, TextField } from "@mui/material";
 import { Button1 } from "../components/MUIButton";
-import leftFormContainerBgArt from "../assets/Hands - Phone.svg";
+import leftFormContainerBgArt from "../assets/Dayflow - Message.svg";
 import { useState } from "react";
 
 const initialState = {
@@ -108,8 +108,6 @@ const Contact = () => {
                   <div className="formContainer">
                     <div className="form">
                       <Box
-                        data-aos-duration="1000"
-                        data-aos="zoom-in"
                         component="form"
                         autoComplete="off"
                         onSubmit={onContactFormSubmit}
