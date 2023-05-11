@@ -1,7 +1,7 @@
 :root {
   --primary-text: black;
   --secondary-text: white;
-  --primary-nav-text: green;
+  --primary-nav-text: #209e2e;
   --secondary-nav-text: white;
   --primary-nav-bg: black;
   --secondary-nav-bg: white;
@@ -77,7 +77,27 @@ html {
   }
 }
 
+.MainPageSectionContentContainer {
+  display: grid;
+  justify-content: center;
+  padding: 80px 0;
+
+  .MainPageSectionContent {
+    width: 1000px;
+    height: 100%;
+  }
+}
+
 @media screen and (max-width: 1024px) {
+  .MainPageSectionContentContainer {
+    padding: 50px 0;
+
+    .MainPageSectionContent {
+      width: 100%;
+      padding: 10px;
+    }
+  }
+
   .PageInformationContainer {
     .overlayContainer {
       .overlay {

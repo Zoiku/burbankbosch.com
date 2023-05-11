@@ -148,7 +148,7 @@
 
       .wwdCardsContainer {
         width: 100%;
-        grid-template-columns: repeat(1, 350px);
+        grid-template-columns: minmax(320px, 380px);
       }
     }
   }

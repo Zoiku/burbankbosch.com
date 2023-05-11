@@ -1,5 +1,6 @@
 import "../styles/SDGs.scss";
 import MUIBreadCrumb from "../components/BreadCrumb";
+import MUIAccordion from "../components/MUIAccordion";
 
 const SDGs = () => {
   const links = [
@@ -23,6 +24,16 @@ const SDGs = () => {
               <div className="breadCrumb">
                 <MUIBreadCrumb links={links} />
               </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section className="MainPageSectionContentContainer">
+        <div className="MainPageSectionContent">
+          <div className="AccordionContainer">
+            <div className="Accordion">
+              <MUIAccordion />
             </div>
           </div>
         </div>

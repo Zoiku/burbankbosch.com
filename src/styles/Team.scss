@@ -1,46 +1,69 @@
-.meetTheTeamContainer {
-  display: grid;
-  justify-content: center;
-  padding: 80px 0;
+.Team {
+  .titleContainer {
+    width: 60%;
 
-  .meetTheTeam {
-    width: 1000px;
-    height: 100%;
+    .title {
+      font-size: 40px;
+      font-weight: 800;
 
-    .titleContainer {
-      width: 60%;
+      .key {
+        font-style: italic;
+        text-decoration: underline;
+        color: green;
+      }
+    }
 
-      .title {
-        font-size: 40px;
-        font-weight: 800;
+    .titleHelper {
+      margin: 10px 0 0 0;
+      color: gray;
+      font-size: small;
+    }
+  }
 
-        .key {
-          font-style: italic;
-          text-decoration: underline;
-          color: green;
+  .membersGridContainer {
+    margin: 80px 0 0 0;
+    .membersGrid {
+      width: 100%;
+      display: grid;
+      gap: 50px 10px;
+      grid-template-columns: repeat(3, 1fr);
+
+      .members {
+        .imageContainer {
+          height: 350px;
+          background: #efefef;
+        }
+
+        .nameTitleContainer {
+          margin: 10px 0 0 0;
+          .name {
+            font-weight: 600;
+          }
+          .title {
+            font-style: italic;
+          }
         }
       }
+    }
+  }
+}
 
-      .titleHelper {
-        margin: 10px 0 0 0;
-        color: gray;
-        font-size: small;
+@media screen and (max-width: 1024px) {
+  .Team {
+    .titleContainer {
+      width: 90%;
+
+      .title {
+        font-size: 25px;
       }
     }
 
     .membersGridContainer {
-      margin: 80px 0 0 0;
+      margin: 50px 0 0 0;
       .membersGrid {
         width: 100%;
-        display: grid;
-        gap: 10px;
-        grid-template-columns: repeat(3, 1fr);
-
-        & > div {
-          height: 400px;
-          background: #efefef;
-          border-radius: 10px;
-        }
+        gap: 20px;
+        grid-template-columns: minmax(350px, 400px);
       }
     }
   }

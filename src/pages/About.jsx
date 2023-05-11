@@ -1,3 +1,4 @@
+import "../styles/About.scss";
 import MUIBreadCrumb from "../components/BreadCrumb";
 
 const About = () => {
@@ -25,6 +26,10 @@ const About = () => {
             </div>
           </div>
         </div>
+      </section>
+
+      <section className="MainPageSectionContentContainer">
+        <div className="MainPageSectionContent"></div>
       </section>
     </div>
   );
