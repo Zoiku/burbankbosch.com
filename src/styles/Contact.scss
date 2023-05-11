@@ -7,7 +7,7 @@
   width: 100%;
   display: grid;
   place-content: center;
-  background: #1b263b;
+  background: #006c67cf;
 
   .ContactSectionsCentered {
     width: 100%;
@@ -35,7 +35,6 @@
       overflow: clip;
       display: grid;
       place-content: center;
-      outline: 2px solid #efefef4a;
 
       .contactForm {
         width: 1300px;
@@ -47,6 +46,7 @@
           width: 40%;
           padding: 30px;
           position: relative;
+          background: #006c67;
 
           .leftFormContainerBgArt {
             position: absolute;
@@ -124,27 +124,33 @@
   }
 }
 
-@media screen and (max-width: 1000px) {
+@media screen and (max-width: 1024px) {
   .ContactSectionsCenteredContainer {
-    padding: 100px 0 0 0;
+    padding: 0;
 
     .ContactSectionsCentered {
       width: 100vw;
 
+      .titleContainer {
+        display: none;
+      }
+
       .contactFormContainer {
+        margin: 0;
         width: 100%;
         height: auto;
+        border-radius: 0;
         outline: none;
 
         .contactForm {
           flex-direction: column;
-          text-align: center;
+          text-align: left;
           width: 100vw;
           height: 100%;
 
           .leftContainer {
             width: 100%;
-            height: 450px;
+            height: 500px;
             overflow: clip;
 
             .leftFormContainerBgArt {
@@ -154,10 +160,16 @@
             }
 
             .left {
+              .leftTitleContainer {
+                .title {
+                  font-size: xx-large;
+                }
+              }
+
               .formContainer {
                 .form {
                   .contact-info {
-                    justify-content: center;
+                    justify-content: flex-start;
                   }
                 }
               }

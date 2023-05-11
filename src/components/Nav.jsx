@@ -53,7 +53,48 @@ const Nav = () => {
           onOpen={toggleMenu(true)}
           onClose={toggleMenu(false)}
           isOpen={openMenu}
-        ></Menu>
+        >
+          <div className="openMenuContainer">
+            <div className="openMenu">
+              <div className="logoContainer">
+                <div className="logo">
+                  <img src={logo} alt="" />
+                </div>
+              </div>
+              <div className="contentContainer">
+                <div className="content">
+                  <ul>
+                    <li>
+                      <NavLink className="NavLink" to="/">
+                        home
+                      </NavLink>
+                    </li>
+                    <li>
+                      <NavLink className="NavLink" to="/about">
+                        about us
+                      </NavLink>
+                    </li>
+                    <li>
+                      <NavLink className="NavLink" to="/news">
+                        our technology
+                      </NavLink>
+                    </li>
+                    <li>
+                      <NavLink className="NavLink" to="/faq">
+                        sdg's
+                      </NavLink>
+                    </li>
+                    <li>
+                      <NavLink className="NavLink" to="/team">
+                        our team
+                      </NavLink>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+        </Menu>
       </div>
     </div>
   );

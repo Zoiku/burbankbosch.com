@@ -5,10 +5,51 @@ import NearMeIcon from "@mui/icons-material/NearMe";
 import { Box, TextField } from "@mui/material";
 import { Button1 } from "../components/MUIButton";
 import leftFormContainerBgArt from "../assets/Hands - Phone.svg";
+import { useState } from "react";
+
+const initialState = {
+  request: {
+    payload: null,
+  },
+  response: {
+    loading: false,
+    data: null,
+    error: null,
+    status: null,
+  },
+};
 
 const Contact = () => {
+  const [formState, setFormState] = useState(initialState);
+
   const onContactFormSubmit = (e) => {
     e.preventDefault();
+    setFormState({
+      ...formState,
+      response: { ...formState.response, loading: true },
+    });
+
+    setTimeout(() => {
+      setFormState({
+        request: { ...formState.request, payload: null },
+        response: { loading: false, data: [], error: null, status: 200 },
+      });
+
+      e.target.reset();
+    }, 8000);
+  };
+
+  const onInput = (e) => {
+    setFormState({
+      ...formState,
+      request: {
+        ...formState.request,
+        payload: {
+          ...formState.request.payload,
+          [`${e.target.name}`]: e.target.value,
+        },
+      },
+    });
   };
 
   return (
@@ -63,14 +104,12 @@ const Contact = () => {
                 </div>
               </div>
               <div className="rightContainer">
-                <div
-                  data-aos-duration="1000"
-                  data-aos="zoom-in"
-                  className="right"
-                >
+                <div className="right">
                   <div className="formContainer">
                     <div className="form">
                       <Box
+                        data-aos-duration="1000"
+                        data-aos="zoom-in"
                         component="form"
                         autoComplete="off"
                         onSubmit={onContactFormSubmit}
@@ -83,52 +122,75 @@ const Contact = () => {
                       >
                         <div className="form-input-duo">
                           <TextField
-                            variant="standard"
+                            onChange={onInput}
+                            variant="filled"
                             fullWidth
                             label="First Name"
                             name="firstName"
+                            type="text"
+                            required
                           />
                           <TextField
-                            variant="standard"
+                            onChange={onInput}
+                            variant="filled"
                             fullWidth
                             label="Last Name"
-                            name="firstName"
+                            name="lastName"
+                            type="text"
+                            required
                           />
                         </div>
                         <div className="form-input-duo">
                           <TextField
-                            variant="standard"
+                            onChange={onInput}
+                            variant="filled"
                             fullWidth
-                            label="Email Mail"
+                            label="Email"
                             name="email"
+                            type="email"
+                            required
                           />
                           <TextField
-                            variant="standard"
+                            onChange={onInput}
+                            variant="filled"
                             fullWidth
                             label="Phone"
                             name="phone"
+                            type="tel"
+                            required
                           />
                         </div>
                         <div className="form-input">
                           <TextField
-                            variant="standard"
+                            onChange={onInput}
+                            variant="filled"
                             fullWidth
                             label="Subject"
                             name="subject"
+                            type="text"
+                            required
                           />
                         </div>
                         <div className="form-input">
                           <TextField
-                            variant="standard"
+                            onChange={onInput}
+                            variant="filled"
                             fullWidth
                             multiline
                             rows={2}
                             label="Message"
                             name="message"
+                            type="text"
+                            required
                           />
                         </div>
                         <div className="form-input">
-                          <Button1 variant="contained" type="submit">
+                          <Button1
+                            loadingIndicator="Sending..."
+                            loading={formState.response.loading}
+                            variant="contained"
+                            type="submit"
+                          >
                             Send Message
                           </Button1>
                         </div>

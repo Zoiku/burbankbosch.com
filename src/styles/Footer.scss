@@ -1,4 +1,24 @@
-.Footer {
+.FooterContainer {
   height: 500px;
   background: var(--primary-bg);
+  padding: 30px;
+}
+
+.footer {
+  position: relative;
+  height: 100%;
+  outline: 1px solid red;
+  padding: 5px;
+
+  .logoContainer {
+    height: 200px;
+    width: 200px;
+    padding: 5px;
+    outline: 1px solid white;
+
+    .logo {
+      height: 100%;
+      width: 100%;
+    }
+  }
 }

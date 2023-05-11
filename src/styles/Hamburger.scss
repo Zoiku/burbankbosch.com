@@ -14,14 +14,14 @@
 /* Position and sizing of clickable cross button */
 .bm-cross-button {
   top: 35px !important;
-  right: 22px !important;
+  right: 20px !important;
   height: 24px;
   width: 24px;
 }
 
 /* Color/shape of close button cross */
 .bm-cross {
-  background: var(--primary-text);
+  background: var(--secondary-text);
 }
 
 .bm-menu-wrap {
@@ -40,8 +40,8 @@
 
 /* Morph shape necessary with bubble or elastic */
 .bm-morph-shape {
-  fill: rgba(255, 255, 255, 0.21);
-  background: rgba(255, 255, 255, 0.21);
+  fill: rgba(0, 0, 0, 0.1);
+  background: rgba(0, 0, 0, 0.1);
   box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
   backdrop-filter: blur(12.5px);
   -webkit-backdrop-filter: blur(12.5px);
@@ -56,4 +56,45 @@
 /* Styling of overlay */
 .bm-overlay {
   display: none;
+}
+
+.openMenuContainer {
+  padding: 10px;
+  color: var(--secondary-text);
+
+  .openMenu {
+    .logoContainer {
+      height: 60px;
+
+      .logo {
+        height: 100%;
+
+        & img {
+          height: 100%;
+        }
+      }
+    }
+
+    .contentContainer {
+      margin: 50px 0;
+      .content {
+        & ul {
+          list-style: none;
+
+          & li {
+            font-size: xx-large;
+            font-weight: 700;
+            text-decoration: none;
+            margin: 20px 0;
+            color: #efefef24;
+
+            .NavLink {
+              color: inherit;
+              text-decoration: inherit;
+            }
+          }
+        }
+      }
+    }
+  }
 }

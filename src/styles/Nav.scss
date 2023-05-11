@@ -47,14 +47,14 @@
     color: inherit;
     text-decoration: inherit;
   }
-
-  .active {
-    color: var(--primary-nav-text);
-  }
 }
 
 .NavHamburgerContainer {
   display: none;
+}
+
+.active {
+  color: var(--primary-nav-text) !important;
 }
 
 @media screen and (max-width: 1000px) {
@@ -68,5 +68,19 @@
 
   .NavHamburgerContainer {
     display: block;
+  }
+
+  .active {
+    position: relative;
+    display: flex;
+    align-items: center;
+
+    &::before {
+      content: "";
+      border-left: 5px solid var(--primary-nav-text);
+      border-radius: 10px;
+      height: 10px;
+      margin: 0 10px 0 0;
+    }
   }
 }
