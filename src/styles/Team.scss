@@ -32,7 +32,7 @@
 
       .members {
         .imageContainer {
-          height: 350px;
+          height: 380px;
           display: grid;
           place-items: center;
           background: #efefef;
@@ -73,7 +73,7 @@
       .membersGrid {
         width: 100%;
         gap: 20px;
-        grid-template-columns: minmax(300px, 350px);
+        grid-template-columns: minmax(320px, 380px);
       }
     }
   }
