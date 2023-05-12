@@ -1,7 +1,7 @@
 import "../styles/Contact.scss";
-import CallIcon from "@mui/icons-material/Call";
-import EmailIcon from "@mui/icons-material/Email";
-import NearMeIcon from "@mui/icons-material/NearMe";
+
+import { WhatsApp, Instagram, Call } from "@mui/icons-material/";
+
 import { Box, TextField } from "@mui/material";
 import { Button1 } from "../components/MUIButton";
 import leftFormContainerBgArt from "../assets/Dayflow - Message.svg";
@@ -19,8 +19,43 @@ const initialState = {
   },
 };
 
+const actionTypes = {
+  CALL: "CALL",
+  INSTAGRAM: "INSTAGRAM",
+  WHATSAPP: "WHATSAPP",
+};
+
 const Contact = () => {
   const [formState, setFormState] = useState(initialState);
+
+  const doAction = (type) => () => {
+    switch (type) {
+      case actionTypes.CALL:
+        break;
+      case actionTypes.INSTAGRAM:
+        break;
+      case actionTypes.WHATSAPP:
+        break;
+
+      default:
+        break;
+    }
+  };
+
+  const socialsIcons = [
+    {
+      icon: <WhatsApp sx={{ fontSize: "inherit" }} />,
+      action: doAction(actionTypes.WHATSAPP),
+    },
+    {
+      icon: <Instagram sx={{ fontSize: "inherit" }} />,
+      action: doAction(actionTypes.INSTAGRAM),
+    },
+    {
+      icon: <Call sx={{ fontSize: "inherit" }} />,
+      action: doAction(actionTypes.CALL),
+    },
+  ];
 
   const onContactFormSubmit = (e) => {
     e.preventDefault();
@@ -78,22 +113,25 @@ const Contact = () => {
                   <div className="formContainer">
                     <div className="form">
                       <div className="contact-info">
-                        <span>
-                          <CallIcon />
-                        </span>
+                        <span></span>
                         <span>Tel: 233-555-777</span>
                       </div>
                       <div className="contact-info">
-                        <span>
-                          <EmailIcon />
-                        </span>
+                        <span></span>
                         <span>Email: email@email.com</span>
                       </div>
                       <div className="contact-info">
-                        <span>
-                          <NearMeIcon />
-                        </span>
+                        <span></span>
                         <span>Location: Rangoon Lane St</span>
+                      </div>
+                    </div>
+                    <div className="socialsIconsContainer">
+                      <div className="socialsIcons">
+                        {socialsIcons.map((socialIcon, index) => (
+                          <span key={index} onClick={socialIcon.action}>
+                            {socialIcon.icon}
+                          </span>
+                        ))}
                       </div>
                     </div>
                   </div>
