@@ -8,12 +8,14 @@ import { Routes, Route } from "react-router-dom";
 import AOS from "aos";
 import "aos/dist/aos.css";
 import MUISpeedDial from "./components/MUISpeedDial";
+import ScrollToTop from "./components/ScrollToTop";
 
 AOS.init();
 
 const App = () => {
   return (
     <div className="App">
+      <ScrollToTop />
       <Routes>
         <Route element={<Layout />}>
           <Route path="/" element={<Home />} />

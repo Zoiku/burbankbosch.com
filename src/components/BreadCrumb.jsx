@@ -17,8 +17,8 @@ const MUIBreadCrumb = ({ links }) => {
           <Link
             key={index}
             color={pathname === link.url ? "gray" : "white"}
-            underline="hover"
-            href={link.url}
+            underline={pathname === link.url ? "none" : "hover"}
+            href={pathname === link.url ? null : link.url}
           >
             {link.name}
           </Link>
