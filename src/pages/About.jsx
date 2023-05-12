@@ -28,8 +28,8 @@ const About = () => {
         </div>
       </section>
 
-      <section className="MainPageSectionContentContainer">
-        <div className="MainPageSectionContent"></div>
+      <section className="MainPageSectionCenteredContentContainer">
+        <div className="MainPageSectionCenteredContent"></div>
       </section>
     </div>
   );

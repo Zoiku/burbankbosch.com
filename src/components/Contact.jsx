@@ -63,12 +63,12 @@ const Contact = () => {
 
           <div className="contactFormContainer">
             <div className="contactForm">
-              <div
-                data-aos-duration="1000"
-                data-aos="fade-right"
-                className="leftContainer"
-              >
-                <div className="left">
+              <div className="leftContainer">
+                <div
+                  data-aos-duration="1000"
+                  data-aos="fade-right"
+                  className="left"
+                >
                   <div className="leftTitleContainer">
                     <div className="title">Contact Information</div>
                     <div className="titleHelper">
@@ -175,7 +175,7 @@ const Contact = () => {
                             variant="filled"
                             fullWidth
                             multiline
-                            rows={2}
+                            rows={1}
                             label="Message"
                             name="message"
                             type="text"

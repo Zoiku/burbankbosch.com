@@ -27,13 +27,8 @@ const SDGs = () => {
           </div>
         </div>
       </section>
-
-      <section className="MainPageSectionContentContainer">
-        <div className="MainPageSectionContent">
-          <div className="AccordionContainer">
-            <div className="Accordion"></div>
-          </div>
-        </div>
+      <section className="MainPageSectionCenteredContentContainer">
+        <div className="MainPageSectionCenteredContent"></div>
       </section>
     </div>
   );

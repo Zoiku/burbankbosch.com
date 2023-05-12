@@ -1,10 +1,51 @@
 import MUIBreadCrumb from "../components/BreadCrumb";
+import profileImg from "../assets/user-svgrepo-com.svg";
 import "../styles/Team.scss";
+import svgArt from "../assets/scale-svgrepo-com.svg";
 
 const Team = () => {
   const links = [
     { name: "home", url: "/" },
     { name: "our team", url: "/team" },
+  ];
+
+  const members = [
+    {
+      name: "Mark Zoiku",
+      title: "Designer",
+      fadeUpTime: 500,
+      profilePicture: profileImg,
+    },
+    {
+      name: "Mark Zoiku",
+      title: "Designer",
+      fadeUpTime: 1000,
+      profilePicture: profileImg,
+    },
+    {
+      name: "Mark Zoiku",
+      title: "Designer",
+      fadeUpTime: 1500,
+      profilePicture: profileImg,
+    },
+    {
+      name: "Mark Zoiku",
+      title: "Designer",
+      fadeUpTime: 500,
+      profilePicture: profileImg,
+    },
+    {
+      name: "Mark Zoiku",
+      title: "Designer",
+      fadeUpTime: 1000,
+      profilePicture: profileImg,
+    },
+    {
+      name: "Mark Zoiku",
+      title: "Designer",
+      fadeUpTime: 1500,
+      profilePicture: profileImg,
+    },
   ];
 
   return (
@@ -30,11 +71,15 @@ const Team = () => {
 
       <section className="MainPageSectionContentContainer">
         <div className="MainPageSectionContent">
+          <div className="PageSvgArtContainer">
+            <img className="PageSvgArt" src={svgArt} alt="" />
+          </div>
+
           <div className="titleContainer">
             <div className="title">
-              Meet our team of <span className="key">creators</span>,{" "}
-              <span className="key">designers</span>, and world class{" "}
-              <span className="key">problem solvers</span>.
+              Meet our team of <span className="key">garderners</span>,{" "}
+              <span className="key">advocates</span>, and world class{" "}
+              <span className="key">ecologists</span>.
             </div>
             <div className="titleHelper">
               Lorem ipsum dolor sit amet consectetur adipisicing elit.
@@ -44,84 +89,22 @@ const Team = () => {
           </div>
           <div className="membersGridContainer">
             <div className="membersGrid">
-              <div
-                className="members"
-                data-aos-duration="1000"
-                data-aos="fade-up"
-              >
-                <div className="imageContainer">
-                  <div className="image"></div>
+              {members.map((member, index) => (
+                <div
+                  key={index}
+                  className="members"
+                  data-aos-duration={member.fadeUpTime}
+                  data-aos="fade-up"
+                >
+                  <div className="imageContainer">
+                    <img className="image" src={member.profilePicture} alt="" />
+                  </div>
+                  <div className="nameTitleContainer">
+                    <div className="name">{member.name}</div>
+                    <div className="title">{member.title}</div>
+                  </div>
                 </div>
-                <div className="nameTitleContainer">
-                  <div className="name">Mark Zoiku</div>
-                  <div className="title">Designer</div>
-                </div>
-              </div>
-              <div
-                className="members"
-                data-aos-duration="1500"
-                data-aos="fade-up"
-              >
-                <div className="imageContainer">
-                  <div className="image"></div>
-                </div>
-                <div className="nameTitleContainer">
-                  <div className="name">Mark Zoiku</div>
-                  <div className="title">Designer</div>
-                </div>
-              </div>
-              <div
-                className="members"
-                data-aos-duration="2000"
-                data-aos="fade-up"
-              >
-                <div className="imageContainer">
-                  <div className="image"></div>
-                </div>
-                <div className="nameTitleContainer">
-                  <div className="name">Mark Zoiku</div>
-                  <div className="title">Designer</div>
-                </div>
-              </div>
-              <div
-                className="members"
-                data-aos-duration="1000"
-                data-aos="fade-up"
-              >
-                <div className="imageContainer">
-                  <div className="image"></div>
-                </div>
-                <div className="nameTitleContainer">
-                  <div className="name">Mark Zoiku</div>
-                  <div className="title">Designer</div>
-                </div>
-              </div>
-              <div
-                className="members"
-                data-aos-duration="1500"
-                data-aos="fade-up"
-              >
-                <div className="imageContainer">
-                  <div className="image"></div>
-                </div>
-                <div className="nameTitleContainer">
-                  <div className="name">Mark Zoiku</div>
-                  <div className="title">Designer</div>
-                </div>
-              </div>
-              <div
-                className="members"
-                data-aos-duration="2000"
-                data-aos="fade-up"
-              >
-                <div className="imageContainer">
-                  <div className="image"></div>
-                </div>
-                <div className="nameTitleContainer">
-                  <div className="name">Mark Zoiku</div>
-                  <div className="title">Designer</div>
-                </div>
-              </div>
+              ))}
             </div>
           </div>
         </div>

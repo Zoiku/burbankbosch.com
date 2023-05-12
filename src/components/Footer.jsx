@@ -10,7 +10,7 @@ const Footer = () => {
         </div>
       </div>
       <div className="copyRightContainer">
-        <div className="copyRight">@ Copyright {new Date().getFullYear()}. All rights reserved.</div>
+        <div className="copyRight">@ Copyright {new Date().getFullYear()}. All rights reserved | Developed by Mark Zoiku</div>
       </div>
     </div>
   );

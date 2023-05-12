@@ -26,6 +26,9 @@ const Technology = () => {
           </div>
         </div>
       </section>
+      <section className="MainPageSectionCenteredContentContainer">
+        <div className="MainPageSectionCenteredContent"></div>
+      </section>
     </div>
   );
 };

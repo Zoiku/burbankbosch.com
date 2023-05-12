@@ -1,7 +1,6 @@
 .FooterContainer {
   height: 500px;
   background: var(--primary-bg);
-  display: none;
 }
 
 .copyRightContainer {
@@ -29,6 +28,14 @@
     .logo {
       height: 100%;
       width: 100%;
+    }
+  }
+}
+
+@media screen and (max-width: 1024px) {
+  .copyRightContainer {
+    .copyRight {
+      text-align: left;
     }
   }
 }

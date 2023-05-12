@@ -1,6 +1,5 @@
 .Contact {
   overflow: clip;
-  display: none;
 }
 
 .ContactSectionsCenteredContainer {
@@ -8,11 +7,11 @@
   width: 100%;
   display: grid;
   place-content: center;
-  background: #324a5f;
+  background: #efefef;
+  color: var(--primary-text);
 
   .ContactSectionsCentered {
     width: 100%;
-    color: var(--secondary-text);
 
     .titleContainer {
       text-align: center;
@@ -24,7 +23,6 @@
       .title {
         font-size: xx-large;
         font-weight: 700;
-        color: var(--secondary-text);
       }
     }
 
@@ -32,11 +30,10 @@
       margin: 30px 0 0 0;
       width: 1300px;
       height: 600px;
-      border-radius: 10px;
+      border-radius: 5px;
       overflow: clip;
       display: grid;
       place-content: center;
-      outline: 2px dotted #efefef55;
 
       .contactForm {
         width: 1300px;
@@ -46,33 +43,21 @@
 
         .leftContainer {
           width: 40%;
-          padding: 30px;
+          padding: 20px;
           position: relative;
-
-          .leftFormContainerBgArt {
-            position: absolute;
-            bottom: -100px;
-            left: -30px;
-            height: 320px;
-            opacity: 0.7;
-
-            & img {
-              width: 100%;
-              height: 100%;
-            }
-          }
+          background: #209e2fcd;
+          color: var(--secondary-text);
 
           .left {
             .leftTitleContainer {
               .title {
                 font-size: x-large;
                 font-weight: 600;
-                color: var(--secondary-text);
               }
 
               .titleHelper {
-                color: #efefef;
                 font-size: small;
+                font-weight: 500;
               }
             }
 
@@ -81,7 +66,6 @@
 
               .form {
                 .contact-info {
-                  color: var(--secondary-text);
                   margin: 10px 0;
                   display: flex;
                   align-items: center;
@@ -89,7 +73,6 @@
                   & span {
                     display: flex;
                     align-items: center;
-                    font-weight: 500;
 
                     &:nth-child(1) {
                       display: none;
@@ -98,6 +81,19 @@
                   }
                 }
               }
+            }
+          }
+
+          .leftFormContainerBgArt {
+            position: absolute;
+            bottom: -130px;
+            left: -50px;
+            height: 320px;
+            opacity: 1;
+
+            & img {
+              width: 100%;
+              height: 100%;
             }
           }
         }
@@ -156,8 +152,8 @@
             padding: 20px;
 
             .leftFormContainerBgArt {
-              height: 250px;
-              bottom: -80px;
+              height: 300px;
+              bottom: -120px;
             }
 
             .left {
@@ -179,7 +175,7 @@
 
           .rightContainer {
             width: 100%;
-            padding: 20px;
+            padding: 10px;
             text-align: left;
           }
         }
