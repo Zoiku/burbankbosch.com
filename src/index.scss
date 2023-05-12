@@ -108,6 +108,11 @@ html {
 }
 
 @media screen and (max-width: 1024px) {
+  .PageInformationContainer {
+    background-size: cover;
+    background-attachment: scroll;
+  }
+
   .MainPageSectionContentContainer {
     padding: 50px 0;
 

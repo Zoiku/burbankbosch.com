@@ -1,6 +1,7 @@
 import "../styles/Contact.scss";
-
-import { WhatsApp, Instagram, Call } from "@mui/icons-material/";
+import Instagram from "../assets/instagram.png";
+import WhatsApp from "../assets/whatsapp.png";
+import LinkedIn from "../assets/linkedin.png";
 
 import { Box, TextField } from "@mui/material";
 import { Button1 } from "../components/MUIButton";
@@ -20,9 +21,9 @@ const initialState = {
 };
 
 const actionTypes = {
-  CALL: "CALL",
-  INSTAGRAM: "INSTAGRAM",
   WHATSAPP: "WHATSAPP",
+  INSTAGRAM: "INSTAGRAM",
+  LINKEDIN: "LINKEDIN",
 };
 
 const Contact = () => {
@@ -30,7 +31,7 @@ const Contact = () => {
 
   const doAction = (type) => () => {
     switch (type) {
-      case actionTypes.CALL:
+      case actionTypes.LINKEDIN:
         break;
       case actionTypes.INSTAGRAM:
         break;
@@ -44,16 +45,16 @@ const Contact = () => {
 
   const socialsIcons = [
     {
-      icon: <WhatsApp sx={{ fontSize: "inherit" }} />,
+      src: WhatsApp,
       action: doAction(actionTypes.WHATSAPP),
     },
     {
-      icon: <Instagram sx={{ fontSize: "inherit" }} />,
+      src: Instagram,
       action: doAction(actionTypes.INSTAGRAM),
     },
     {
-      icon: <Call sx={{ fontSize: "inherit" }} />,
-      action: doAction(actionTypes.CALL),
+      src: LinkedIn,
+      action: doAction(actionTypes.LINKEDIN),
     },
   ];
 
@@ -126,13 +127,15 @@ const Contact = () => {
                       </div>
                     </div>
                     <div className="socialsIconsContainer">
-                      <div className="socialsIcons">
-                        {socialsIcons.map((socialIcon, index) => (
-                          <span key={index} onClick={socialIcon.action}>
-                            {socialIcon.icon}
-                          </span>
-                        ))}
-                      </div>
+                      {socialsIcons.map((socialIcon, index) => (
+                        <div
+                          className="socialsIcons"
+                          key={index}
+                          onClick={socialIcon.action}
+                        >
+                          <img src={socialIcon.src} alt="" />
+                        </div>
+                      ))}
                     </div>
                   </div>
                 </div>
