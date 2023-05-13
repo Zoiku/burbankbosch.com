@@ -9,7 +9,7 @@
       .key {
         font-style: italic;
         text-decoration: underline;
-        color: green;
+        color: var(--primary-nav-text);
       }
     }
 
@@ -31,7 +31,26 @@
       grid-template-columns: repeat(3, 1fr);
 
       .members {
+        cursor: pointer;
+
+        .memberCardOverlayContainer {
+          transition: all 0.4s ease;
+          position: absolute;
+          height: 0%;
+          bottom: 0;
+          left: 0;
+          right: 0;
+          z-index: 1;
+          pointer-events: none;
+        }
+
+        &:hover .memberCardOverlayContainer {
+          background: var(--primary-nav-text);
+          height: 100%;
+        }
+
         .imageContainer {
+          position: relative;
           height: 380px;
           display: grid;
           place-items: center;

@@ -1,7 +1,7 @@
 import MUIBreadCrumb from "../components/BreadCrumb";
 import profileImg from "../assets/user-svgrepo-com.svg";
 import "../styles/Team.scss";
-import svgArt from "../assets/scale-svgrepo-com.svg";
+import svgArt from "../assets/shape16-svgrepo-com.svg";
 
 const Team = () => {
   const links = [
@@ -71,11 +71,19 @@ const Team = () => {
 
       <section className="MainPageSectionContentContainer">
         <div className="MainPageSectionContent">
-          <div className="PageSvgArtContainer">
+          <div
+            data-aos-duration={1000}
+            data-aos="fade-up"
+            className="PageSvgArtContainer"
+          >
             <img className="PageSvgArt" src={svgArt} alt="" />
           </div>
 
-          <div className="titleContainer">
+          <div
+            data-aos-duration={1000}
+            data-aos="fade-down"
+            className="titleContainer"
+          >
             <div className="title">
               Meet our team of <span className="key">garderners</span>,{" "}
               <span className="key">advocates</span>, and world class{" "}
@@ -97,6 +105,9 @@ const Team = () => {
                   data-aos="fade-up"
                 >
                   <div className="imageContainer">
+                    <div className="memberCardOverlayContainer">
+                      <div className="memberCardOverlay"></div>
+                    </div>
                     <img className="image" src={member.profilePicture} alt="" />
                   </div>
                   <div className="nameTitleContainer">

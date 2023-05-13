@@ -53,7 +53,7 @@ const Home = () => {
       </section>
 
       <section
-        data-aos-duration="2000"
+        data-aos-duration="1000"
         data-aos="zoom-in"
         className="HomeSections"
       >
@@ -76,14 +76,14 @@ const Home = () => {
 
       <section className="HomeSections">
         <div
-          data-aos-duration="2000"
+          data-aos-duration="1000"
           data-aos="fade-right"
           className="sectionBackgroundContainer"
         >
           <img className="sectionBackground" src={bg02} alt="" />
         </div>
         <div
-          data-aos-duration="2000"
+          data-aos-duration="1000"
           data-aos="fade-left"
           className="sectionContentContainer"
         >

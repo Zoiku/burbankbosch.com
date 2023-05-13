@@ -1,2 +1,266 @@
-.About {
+.aboutUsPageContentContainer {
+  height: 100%;
+  overflow: clip;
+
+  .aboutUsPageContent {
+    .pageHeaderSectionContainer {
+      display: flex;
+      padding: 100px 0;
+
+      & > div {
+        width: 50%;
+      }
+
+      .leftContainer {
+        .left {
+          display: grid;
+          place-content: center;
+          width: 100%;
+          height: 100%;
+
+          .imageContainer {
+            height: 500px;
+
+            .image {
+              height: 100%;
+              width: 100%;
+              filter: invert(56%) sepia(69%) saturate(511%) hue-rotate(76deg)
+                brightness(97%) contrast(81%);
+              -webkit-filter: invert(56%) sepia(69%) saturate(511%)
+                hue-rotate(76deg) brightness(97%) contrast(81%);
+            }
+          }
+        }
+      }
+
+      .rightContainer {
+        .right {
+          display: grid;
+          place-content: center;
+          width: 100%;
+          height: 100%;
+
+          .contentContainer {
+            display: grid;
+            place-content: center;
+            width: 500px;
+
+            .content {
+              height: 100%;
+              width: 100%;
+
+              .titleContainer {
+                .titleHelper {
+                  font-size: small;
+                  font-weight: 500;
+                }
+
+                .title {
+                  margin: 10px 0 0 0;
+                  font-size: xx-large;
+                  font-weight: 700;
+                }
+              }
+
+              .contentTextContainer {
+                margin: 20px 0 0 0;
+              }
+
+              .contentAuthorContainer {
+                margin: 50px 0 0 0;
+
+                .contentAuthor {
+                  display: flex;
+                  justify-content: space-between;
+                  align-items: center;
+
+                  .profilePictureContainer {
+                    width: auto;
+                    margin: 0 20px 0 0;
+                    display: grid;
+                    justify-content: flex;
+
+                    .profilePicture {
+                      height: 100px;
+                    }
+                  }
+
+                  .recommendationContainer {
+                    width: 100%;
+                    .recommendationExtra {
+                      font-style: italic;
+                    }
+                    .recommendationTitle {
+                      font-weight: 700;
+                      margin: 10px 0 0 0;
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+
+    .aboutPageFullWidthSectionsCenteredContainer {
+      padding: 100px 0;
+      display: flex;
+      justify-content: center;
+
+      &:nth-child(2) {
+        background: #efefef;
+      }
+
+      &:nth-child(3) {
+        background: url("../assets/zoe-schaeffer-hmoDcZnB7uw-unsplash.jpg");
+        background-size: cover;
+        position: relative;
+        height: 900px;
+      }
+
+      .aboutPageFullWidthSectionsCentered {
+        .aboutPageFullWidthOverlayContainer {
+          position: absolute;
+          top: 0;
+          bottom: 0;
+          left: 0;
+          right: 0;
+          background: #045a0ee5;
+          z-index: 10;
+          display: grid;
+          place-content: center;
+          color: white;
+
+          .aboutPageFullWidthOverlay {
+            .aboutPageOverlayTitleContainer {
+              display: flex;
+              justify-content: center;
+              text-align: center;
+
+              .aboutPageOverlayTitle {
+                font-size: 50px;
+                font-weight: 700;
+                width: 650px;
+                display: none;
+              }
+            }
+
+            .MarqueeContainer {
+              margin: 50px 0;
+              width: 100vw;
+            }
+          }
+        }
+
+        .fullWidthTitleContainer {
+          text-align: center;
+
+          .fullWidthTitleHelper {
+            font-weight: 500;
+          }
+
+          .fullWidthTitle {
+            font-size: xx-large;
+            font-weight: 700;
+          }
+        }
+
+        .reasonsToChooseContainer {
+          margin: 100px 0 0 0;
+          width: 1000px;
+          gap: 10px;
+          display: grid;
+          grid-template-columns: repeat(4, 1fr);
+          justify-content: center;
+
+          .reasonToChooseCards {
+            background: white;
+            padding: 20px;
+            display: grid;
+            place-content: center;
+            text-align: center;
+
+            .reasonToChoose {
+              .reasonToChooseIcon {
+                font-size: 70px;
+                color: var(--primary-nav-text);
+              }
+
+              .reasonToChooseTitle {
+                font-size: larger;
+                font-weight: 700;
+                margin: 20px 0 0 0;
+              }
+
+              .reasonToChooseContent {
+                margin: 20px 0;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 1024px) {
+  .aboutUsPageContentContainer {
+    .aboutUsPageContent {
+      .pageHeaderSectionContainer {
+        flex-direction: column;
+
+        & > div {
+          width: 100%;
+        }
+
+        .leftContainer {
+          .left {
+            .imageContainer {
+              height: 200px;
+            }
+          }
+        }
+
+        .rightContainer {
+          padding: 15px;
+          margin: 30px 0 0 0;
+
+          .right {
+            .contentContainer {
+              width: 100%;
+
+              .content {
+                .titleContainer {
+                  .title {
+                    margin: 0;
+                    font-weight: 700;
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+
+      .aboutPageFullWidthSectionsCenteredContainer {
+        padding: 100px 0;
+
+        .aboutPageFullWidthSectionsCentered {
+          .fullWidthTitleContainer {
+            text-align: center;
+
+            .fullWidthTitle {
+              font-size: x-large;
+            }
+          }
+
+          .reasonsToChooseContainer {
+            margin: 50px 0 0 0;
+            grid-template-columns: minmax(320px, 380px);
+          }
+        }
+      }
+    }
+  }
 }

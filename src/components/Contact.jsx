@@ -216,7 +216,7 @@ const Contact = () => {
                             variant="filled"
                             fullWidth
                             multiline
-                            rows={1}
+                            rows={5}
                             label="Message"
                             name="message"
                             type="text"
