@@ -197,6 +197,7 @@ const About = () => {
                         >
                           {partners.map((partner, index) => (
                             <img
+                              key={index}
                               className="marqueeImage"
                               src={partner.logoSrc}
                               alt=""
