@@ -14,7 +14,7 @@ const Home = () => {
       readContent:
         "Lorem ipsum dolor sit amet consectetur adipisicing elit. At ex necessitatibus maxime ut dolor exercitationem corrupti non culpa blanditiis repudiandae!",
       title: "Maintenance",
-      readMoreUrl: null,
+      readMoreUrl: "/readmore",
       fadeUpTime: 500,
       icon: <Agriculture />,
     },
@@ -23,7 +23,7 @@ const Home = () => {
       readContent:
         "Lorem ipsum dolor sit amet consectetur adipisicing elit. At ex necessitatibus maxime ut dolor exercitationem corrupti non culpa blanditiis repudiandae!",
       title: "Landscape",
-      readMoreUrl: null,
+      readMoreUrl: "/readmore",
       fadeUpTime: 1000,
       icon: <Forest />,
     },
@@ -32,7 +32,7 @@ const Home = () => {
       readContent:
         "Lorem ipsum dolor sit amet consectetur adipisicing elit. At ex necessitatibus maxime ut dolor exercitationem corrupti non culpa blanditiis repudiandae!",
       title: "Gardening",
-      readMoreUrl: null,
+      readMoreUrl: "/readmore",
       fadeUpTime: 1500,
       icon: <LocalFlorist />,
     },

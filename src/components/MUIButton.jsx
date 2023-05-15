@@ -6,7 +6,6 @@ export const Button1 = styled(LoadingButton)({
   textTransform: "none",
   background: "var(--primary-nav-text)",
   transition: "all 0.2s ease",
-  padding: "10px",
   color: "#fff",
   fontFamily: [
     "-apple-system",
