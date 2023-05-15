@@ -1,6 +1,7 @@
 import "../styles/Home.scss";
 import { NavLink } from "react-router-dom";
 import { LocalFlorist, Forest, Agriculture } from "@mui/icons-material/";
+import ProgressiveImage from "react-progressive-graceful-image";
 import bg01 from "../assets/Fresh Folk - Outdoor 1.svg";
 import bg02 from "../assets/Amigos - Tree.svg";
 import imgSource1 from "../assets/crystal-jo-PKcTuA_CRAo-unsplash.jpg";
@@ -58,7 +59,9 @@ const Home = () => {
         className="HomeSections"
       >
         <div className="sectionBackgroundContainer">
-          <img className="sectionBackground" src={bg01} alt="" />
+          <ProgressiveImage src={bg01}>
+            {(src) => <img className="sectionBackground" src={src} alt="" />}
+          </ProgressiveImage>
         </div>
         <div className="sectionContentContainer">
           <div className="sectionContent">
@@ -116,7 +119,9 @@ const Home = () => {
               >
                 <div className="imageContainer">
                   <div className="iconContainer">{service?.icon}</div>
-                  <img src={service.imgSrc} alt="" className="image" />
+                  <ProgressiveImage src={service.imgSrc}>
+                    {(src) => <img src={src} alt="" className="image" />}
+                  </ProgressiveImage>
                 </div>
                 <div className="contentContainer">
                   <div className="contentTitleContainer">

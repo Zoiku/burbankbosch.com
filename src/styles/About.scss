@@ -112,14 +112,26 @@
         background: #efefef;
       }
 
-      &:nth-child(3) {
+      &:nth-child(4) {
         background: url("../assets/zoe-schaeffer-hmoDcZnB7uw-unsplash.jpg");
         background-size: cover;
         position: relative;
-        height: 900px;
+        height: 500px;
       }
 
       .aboutPageFullWidthSectionsCentered {
+        .wwsfContainer {
+          margin: 30px 0 0 0;
+          width: 500px;
+
+          .toggledContentContainer {
+            margin: 50px 0;
+            text-align: center;
+            font-size: large;
+            font-weight: 400;
+          }
+        }
+
         .aboutPageFullWidthOverlayContainer {
           position: absolute;
           top: 0;
@@ -130,7 +142,7 @@
           z-index: 10;
           display: grid;
           place-content: center;
-          color: white;
+          color: #efefef;
 
           .aboutPageFullWidthOverlay {
             .aboutPageOverlayTitleContainer {
@@ -139,15 +151,13 @@
               text-align: center;
 
               .aboutPageOverlayTitle {
-                font-size: 50px;
+                font-size: xx-large;
                 font-weight: 700;
-                width: 650px;
-                display: none;
               }
             }
 
             .MarqueeContainer {
-              margin: 50px 0;
+              margin: 50px 0 0 0;
               width: 100vw;
             }
           }
@@ -174,6 +184,10 @@
           grid-template-columns: repeat(4, 1fr);
           justify-content: center;
 
+          &:hover .reasonToChooseCards:not(:hover) {
+            opacity: 0.2;
+          }
+
           .reasonToChooseCards {
             background: white;
             padding: 20px;
@@ -183,11 +197,14 @@
 
             .reasonToChoose {
               .reasonToChooseIcon {
-                margin: 30px 0 0 0;
+                margin: 30px 0;
                 color: var(--primary-nav-text);
 
-                & span {
+                & .material-symbols-rounded {
+                  border: 3px solid var(--primary-nav-text);
                   font-size: 50px;
+                  border-radius: 50%;
+                  padding: 20px;
                 }
               }
 
@@ -198,7 +215,7 @@
               }
 
               .reasonToChooseContent {
-                margin: 20px 0;
+                margin: 30px 0;
               }
             }
           }
@@ -221,8 +238,8 @@
         .leftContainer {
           .left {
             .imageContainer {
+              width: 250px;
               height: 250px;
-              width: 100%;
             }
           }
         }
@@ -252,6 +269,18 @@
         padding: 100px 0;
 
         .aboutPageFullWidthSectionsCentered {
+          .wwsfContainer {
+            width: 100%;
+            padding: 0 30px;
+
+            .toggledContentContainer {
+              margin: 50px 0;
+              text-align: center;
+              font-size: large;
+              font-weight: 400;
+            }
+          }
+
           .fullWidthTitleContainer {
             text-align: center;
 
@@ -262,7 +291,7 @@
 
           .reasonsToChooseContainer {
             margin: 50px 0 0 0;
-            grid-template-columns: minmax(320px, 380px);
+            grid-template-columns: minmax(300px, 350px);
           }
         }
       }

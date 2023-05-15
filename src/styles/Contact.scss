@@ -86,17 +86,16 @@
                 margin: 50px 0 0 0;
                 display: flex;
 
+                &:hover .socialsIcons:not(:hover) {
+                  opacity: 0.5;
+                }
+
                 .socialsIcons {
                   cursor: pointer;
-                  transition: all 0.2s ease;
-                  opacity: 0.8;
-                  width: 25px;
-                  height: 25px;
+                  transition: all 0.3s ease;
+                  width: 20px;
+                  height: 20px;
                   margin: 0 10px 0 0;
-
-                  &:hover {
-                    opacity: 1;
-                  }
 
                   & img {
                     width: 100%;

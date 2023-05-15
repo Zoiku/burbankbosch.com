@@ -47,7 +47,7 @@
         }
 
         .memberCardOverlayContainer {
-          transition: all 0.2s ease;
+          transition: all 0.4s ease;
           position: absolute;
           height: 0%;
           bottom: 0;
@@ -98,18 +98,17 @@
                 justify-content: center;
                 margin: 40px 0 0 0;
 
+                &:hover .innerProfileSocials:not(:hover) {
+                  opacity: 0.5;
+                }
+
                 .innerProfileSocials {
-                  transition: all 0.2s ease;
-                  width: 25px;
-                  height: 25px;
+                  transition: all 0.3s ease;
+                  width: 20px;
+                  height: 20px;
                   margin: 0 10px 0 0;
                   object-fit: cover;
-                  opacity: 0.8;
                   cursor: pointer;
-
-                  &:hover {
-                    opacity: 1;
-                  }
                 }
               }
             }
@@ -117,7 +116,7 @@
         }
 
         &:hover .memberCardOverlayContainer {
-          background: #000000d1;
+          background: #000000ec;
           height: 100%;
         }
 

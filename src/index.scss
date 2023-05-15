@@ -34,6 +34,11 @@ html {
   color: var(--primary-nav-text) !important;
 }
 
+.css-1rjj2wg-MuiButtonBase-root-MuiToggleButton-root.Mui-selected {
+  color: #209e2e !important;
+  background-color: rgba(46, 125, 50, 0.08) !important;
+}
+
 .PageInformationContainer {
   height: 500px;
   background: url("./assets/crystal-jo-PKcTuA_CRAo-unsplash.jpg");
