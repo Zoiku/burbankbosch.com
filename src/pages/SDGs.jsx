@@ -27,6 +27,10 @@ const SDGs = () => {
           </div>
         </div>
       </section>
+
+      <section className="sdgPageMainCenteredSectionContainer">
+        <div className="sdgPageMainCenteredSection"></div>
+      </section>
     </div>
   );
 };

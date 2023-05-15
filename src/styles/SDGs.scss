@@ -1,0 +1,8 @@
+.sdgPageMainCenteredSectionContainer {
+  display: grid;
+  place-content: center;
+
+  .sdgPageMainCenteredSection {
+    height: 500px;
+  }
+}

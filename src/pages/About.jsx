@@ -1,6 +1,6 @@
 import "../styles/About.scss";
 import MUIBreadCrumb from "../components/BreadCrumb";
-import imageSrc from "../assets/earth-with-spiral-arrow-around-svgrepo-com.svg";
+import imageSrc from "../assets/Fresh Folk - Outdoor 1.svg";
 import profilePictureSrc from "../assets/user-svgrepo-com.svg";
 import {
   Grass,

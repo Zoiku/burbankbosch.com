@@ -24,10 +24,6 @@
             .image {
               height: 100%;
               width: 100%;
-              filter: invert(56%) sepia(69%) saturate(511%) hue-rotate(76deg)
-                brightness(97%) contrast(81%);
-              -webkit-filter: invert(56%) sepia(69%) saturate(511%)
-                hue-rotate(76deg) brightness(97%) contrast(81%);
             }
           }
         }
@@ -78,10 +74,13 @@
                     width: auto;
                     margin: 0 20px 0 0;
                     display: grid;
-                    justify-content: flex;
+                    place-items: center;
+                    height: 100px;
+                    width: 100px;
 
                     .profilePicture {
-                      height: 100px;
+                      height: 100%;
+                      width: 100%;
                     }
                   }
 
