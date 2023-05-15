@@ -1,12 +1,11 @@
 import "../styles/Contact.scss";
-import Instagram from "../assets/instagram.png";
-import WhatsApp from "../assets/whatsapp.png";
-import LinkedIn from "../assets/linkedin.png";
-
 import { Box, TextField } from "@mui/material";
 import { Button1 } from "../components/MUIButton";
 import leftFormContainerBgArt from "../assets/Dayflow - Message.svg";
 import { useState } from "react";
+// import linkedin from "";
+// import whatsapp from "";
+// import instagram from "";
 
 const initialState = {
   request: {
@@ -45,15 +44,15 @@ const Contact = () => {
 
   const socialsIcons = [
     {
-      src: WhatsApp,
+      src: null,
       action: doAction(actionTypes.WHATSAPP),
     },
     {
-      src: Instagram,
+      src: null,
       action: doAction(actionTypes.INSTAGRAM),
     },
     {
-      src: LinkedIn,
+      src: null,
       action: doAction(actionTypes.LINKEDIN),
     },
   ];
@@ -129,8 +128,8 @@ const Contact = () => {
                     <div className="socialsIconsContainer">
                       {socialsIcons.map((socialIcon, index) => (
                         <div
-                          className="socialsIcons"
                           key={index}
+                          className="socialsIcons"
                           onClick={socialIcon.action}
                         >
                           <img src={socialIcon.src} alt="" />

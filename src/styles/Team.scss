@@ -32,9 +32,23 @@
 
       .members {
         cursor: pointer;
+        width: 100%;
+
+        .imageContainer {
+          position: relative;
+          display: grid;
+          place-items: center;
+          background: #efefef;
+          height: 400px;
+
+          .image {
+            height: 50%;
+            object-fit: cover;
+          }
+        }
 
         .memberCardOverlayContainer {
-          transition: all 0.4s ease;
+          transition: all 0.2s ease;
           position: absolute;
           height: 0%;
           bottom: 0;
@@ -42,25 +56,24 @@
           right: 0;
           z-index: 1;
           pointer-events: none;
+
+          .memberCardOverlayContentContainer {
+            width: 100%;
+            height: 100%;
+            display: grid;
+            place-items: center;
+            color: var(--secondary-text);
+
+            .memberCardOverlayContent {
+              text-align: center;
+              width: 50%;
+            }
+          }
         }
 
         &:hover .memberCardOverlayContainer {
-          background: var(--primary-nav-text);
+          background: #209e2ff3;
           height: 100%;
-        }
-
-        .imageContainer {
-          position: relative;
-          height: 380px;
-          display: grid;
-          place-items: center;
-          background: #efefef;
-
-          .image {
-            width: 100%;
-            height: 30%;
-            opacity: 0.1;
-          }
         }
 
         .nameTitleContainer {

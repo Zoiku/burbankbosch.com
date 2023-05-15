@@ -1,7 +1,7 @@
 import "../styles/About.scss";
 import MUIBreadCrumb from "../components/BreadCrumb";
-import imageSrc from "../assets/Fresh Folk - Outdoor 1.svg";
-import profilePictureSrc from "../assets/user-svgrepo-com.svg";
+import imageSrc from "../assets/Dayflow - Message.svg";
+import profilePictureSrc from "../assets/msg358981222-121868-removebg-preview.png";
 import {
   Grass,
   PriceChange,

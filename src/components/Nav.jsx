@@ -39,7 +39,7 @@ const Nav = () => {
               about us
             </NavLink>
           </li>
-          <li>
+          {/* <li>
             <NavLink className="NavLink" to="/technology">
               our technology
             </NavLink>
@@ -48,7 +48,7 @@ const Nav = () => {
             <NavLink className="NavLink" to="/sdg">
               sdg's
             </NavLink>
-          </li>
+          </li> */}
           <li>
             <NavLink className="NavLink" to="/team">
               our team
@@ -92,7 +92,7 @@ const Nav = () => {
                         about us
                       </NavLink>
                     </li>
-                    <li>
+                    {/* <li>
                       <NavLink
                         onClick={toggleMenu(false)}
                         className="NavLink"
@@ -109,7 +109,7 @@ const Nav = () => {
                       >
                         sdg's
                       </NavLink>
-                    </li>
+                    </li> */}
                     <li>
                       <NavLink
                         onClick={toggleMenu(false)}

@@ -1,5 +1,5 @@
 import MUIBreadCrumb from "../components/BreadCrumb";
-import profileImg from "../assets/user-svgrepo-com.svg";
+import profileImg1 from "../assets/msg358981222-121867-removebg-preview.png";
 import "../styles/Team.scss";
 import svgArt from "../assets/shape16-svgrepo-com.svg";
 
@@ -14,37 +14,37 @@ const Team = () => {
       name: "Mark Zoiku",
       title: "Designer",
       fadeUpTime: 500,
-      profilePicture: profileImg,
+      profilePicture: profileImg1,
     },
     {
       name: "Mark Zoiku",
       title: "Designer",
       fadeUpTime: 1000,
-      profilePicture: profileImg,
+      profilePicture: profileImg1,
     },
     {
       name: "Mark Zoiku",
       title: "Designer",
       fadeUpTime: 1500,
-      profilePicture: profileImg,
+      profilePicture: profileImg1,
     },
     {
       name: "Mark Zoiku",
       title: "Designer",
       fadeUpTime: 500,
-      profilePicture: profileImg,
+      profilePicture: profileImg1,
     },
     {
       name: "Mark Zoiku",
       title: "Designer",
       fadeUpTime: 1000,
-      profilePicture: profileImg,
+      profilePicture: profileImg1,
     },
     {
       name: "Mark Zoiku",
       title: "Designer",
       fadeUpTime: 1500,
-      profilePicture: profileImg,
+      profilePicture: profileImg1,
     },
   ];
 
@@ -106,7 +106,9 @@ const Team = () => {
                 >
                   <div className="imageContainer">
                     <div className="memberCardOverlayContainer">
-                      <div className="memberCardOverlay"></div>
+                      <div className="memberCardOverlayContentContainer">
+                        <div className="memberCardOverlayContent">Coming Soon</div>
+                      </div>
                     </div>
                     <img className="image" src={member.profilePicture} alt="" />
                   </div>
