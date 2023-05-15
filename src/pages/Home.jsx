@@ -24,7 +24,7 @@ const Home = () => {
         "Lorem ipsum dolor sit amet consectetur adipisicing elit. At ex necessitatibus maxime ut dolor exercitationem corrupti non culpa blanditiis repudiandae!",
       title: "Landscape",
       readMoreUrl: "/readmore",
-      fadeUpTime: 1000,
+      fadeUpTime: 600,
       icon: <Forest />,
     },
     {
@@ -33,7 +33,7 @@ const Home = () => {
         "Lorem ipsum dolor sit amet consectetur adipisicing elit. At ex necessitatibus maxime ut dolor exercitationem corrupti non culpa blanditiis repudiandae!",
       title: "Gardening",
       readMoreUrl: "/readmore",
-      fadeUpTime: 1500,
+      fadeUpTime: 700,
       icon: <LocalFlorist />,
     },
   ];

@@ -3,29 +3,29 @@ import { Box, TextField } from "@mui/material";
 import { Button1 } from "../components/MUIButton";
 import leftFormContainerBgArt from "../assets/Dayflow - Message.svg";
 import { useState } from "react";
-// import linkedin from "";
-// import whatsapp from "";
-// import instagram from "";
-
-const initialState = {
-  request: {
-    payload: null,
-  },
-  response: {
-    loading: false,
-    data: null,
-    error: null,
-    status: null,
-  },
-};
-
-const actionTypes = {
-  WHATSAPP: "WHATSAPP",
-  INSTAGRAM: "INSTAGRAM",
-  LINKEDIN: "LINKEDIN",
-};
+import whatsAppIcon from "../assets/icons8-whatsapp.svg";
+import instagramAppIcon from "../assets/icons8-instagram.svg";
+import linkedInIcon from "../assets/icons8-linkedin.svg";
 
 const Contact = () => {
+  const initialState = {
+    request: {
+      payload: null,
+    },
+    response: {
+      loading: false,
+      data: null,
+      error: null,
+      status: null,
+    },
+  };
+
+  const actionTypes = {
+    WHATSAPP: "WHATSAPP",
+    INSTAGRAM: "INSTAGRAM",
+    LINKEDIN: "LINKEDIN",
+  };
+
   const [formState, setFormState] = useState(initialState);
 
   const doAction = (type) => () => {
@@ -44,15 +44,15 @@ const Contact = () => {
 
   const socialsIcons = [
     {
-      src: null,
+      src: whatsAppIcon,
       action: doAction(actionTypes.WHATSAPP),
     },
     {
-      src: null,
+      src: instagramAppIcon,
       action: doAction(actionTypes.INSTAGRAM),
     },
     {
-      src: null,
+      src: linkedInIcon,
       action: doAction(actionTypes.LINKEDIN),
     },
   ];

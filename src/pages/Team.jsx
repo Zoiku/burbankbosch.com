@@ -1,7 +1,10 @@
 import MUIBreadCrumb from "../components/BreadCrumb";
-import profileImg1 from "../assets/msg358981222-121867-removebg-preview.png";
+import profileImg1 from "../assets/msg358981222-121868-removebg-preview.png";
 import "../styles/Team.scss";
-import svgArt from "../assets/shape16-svgrepo-com.svg";
+import svgArt from "../assets/flower5-svgrepo-com.svg";
+import whatsAppIcon from "../assets/icons8-whatsapp.svg";
+import instagramIcon from "../assets/icons8-instagram.svg";
+import linkedInIcon from "../assets/icons8-linkedin.svg";
 
 const Team = () => {
   const links = [
@@ -9,42 +12,149 @@ const Team = () => {
     { name: "our team", url: "/team" },
   ];
 
+  const socialMediaTypes = {
+    INSTAGRAM: "INSTAGRAM",
+    WHATSAPP: "WHATSAPP",
+    LINKEDIN: "LINKEDIN",
+  };
+
+  const openSocial = (socialMediaType, attachment) => () => {
+    switch (socialMediaType) {
+      case socialMediaTypes.INSTAGRAM:
+        window.open("https://www.instagram.com/explore/", "_blank");
+        break;
+      case socialMediaTypes.WHATSAPP:
+        window.open(`https://wa.me/${attachment}?text=Hello there!`, "_blank");
+        break;
+      case socialMediaTypes.LINKEDIN:
+        window.open("https://www.linkedin.com/", "_blank");
+        break;
+
+      default:
+        break;
+    }
+  };
+
   const members = [
     {
       name: "Mark Zoiku",
       title: "Designer",
       fadeUpTime: 500,
       profilePicture: profileImg1,
+      socials: [
+        {
+          src: whatsAppIcon,
+          handleClick: openSocial(socialMediaTypes.WHATSAPP, ""),
+        },
+        {
+          src: instagramIcon,
+          handleClick: openSocial(socialMediaTypes.INSTAGRAM, ""),
+        },
+        {
+          src: linkedInIcon,
+          handleClick: openSocial(socialMediaTypes.LINKEDIN, ""),
+        },
+      ],
+    },
+    {
+      name: "Mark Zoiku",
+      title: "Designer",
+      fadeUpTime: 600,
+      profilePicture: profileImg1,
+      socials: [
+        {
+          src: whatsAppIcon,
+          handleClick: openSocial(socialMediaTypes.WHATSAPP, ""),
+        },
+        {
+          src: instagramIcon,
+          handleClick: openSocial(socialMediaTypes.INSTAGRAM, ""),
+        },
+        {
+          src: linkedInIcon,
+          handleClick: openSocial(socialMediaTypes.LINKEDIN, ""),
+        },
+      ],
+    },
+    {
+      name: "Mark Zoiku",
+      title: "Designer",
+      fadeUpTime: 700,
+      profilePicture: profileImg1,
+      socials: [
+        {
+          src: whatsAppIcon,
+          handleClick: openSocial(socialMediaTypes.WHATSAPP, ""),
+        },
+        {
+          src: instagramIcon,
+          handleClick: openSocial(socialMediaTypes.INSTAGRAM, ""),
+        },
+        {
+          src: linkedInIcon,
+          handleClick: openSocial(socialMediaTypes.LINKEDIN, ""),
+        },
+      ],
+    },
+    {
+      name: "Mark Zoiku",
+      title: "Designer",
+      fadeUpTime: 800,
+      profilePicture: profileImg1,
+      socials: [
+        {
+          src: whatsAppIcon,
+          handleClick: openSocial(socialMediaTypes.WHATSAPP, ""),
+        },
+        {
+          src: instagramIcon,
+          handleClick: openSocial(socialMediaTypes.INSTAGRAM, ""),
+        },
+        {
+          src: linkedInIcon,
+          handleClick: openSocial(socialMediaTypes.LINKEDIN, ""),
+        },
+      ],
     },
     {
       name: "Mark Zoiku",
       title: "Designer",
       fadeUpTime: 1000,
       profilePicture: profileImg1,
+      socials: [
+        {
+          src: whatsAppIcon,
+          handleClick: openSocial(socialMediaTypes.WHATSAPP, ""),
+        },
+        {
+          src: instagramIcon,
+          handleClick: openSocial(socialMediaTypes.INSTAGRAM, ""),
+        },
+        {
+          src: linkedInIcon,
+          handleClick: openSocial(socialMediaTypes.LINKEDIN, ""),
+        },
+      ],
     },
     {
       name: "Mark Zoiku",
       title: "Designer",
-      fadeUpTime: 1500,
+      fadeUpTime: 1100,
       profilePicture: profileImg1,
-    },
-    {
-      name: "Mark Zoiku",
-      title: "Designer",
-      fadeUpTime: 500,
-      profilePicture: profileImg1,
-    },
-    {
-      name: "Mark Zoiku",
-      title: "Designer",
-      fadeUpTime: 1000,
-      profilePicture: profileImg1,
-    },
-    {
-      name: "Mark Zoiku",
-      title: "Designer",
-      fadeUpTime: 1500,
-      profilePicture: profileImg1,
+      socials: [
+        {
+          src: whatsAppIcon,
+          handleClick: openSocial(socialMediaTypes.WHATSAPP, ""),
+        },
+        {
+          src: instagramIcon,
+          handleClick: openSocial(socialMediaTypes.INSTAGRAM, ""),
+        },
+        {
+          src: linkedInIcon,
+          handleClick: openSocial(socialMediaTypes.LINKEDIN, ""),
+        },
+      ],
     },
   ];
 
@@ -71,19 +181,11 @@ const Team = () => {
 
       <section className="MainPageSectionContentContainer">
         <div className="MainPageSectionContent">
-          <div
-            data-aos-duration={1000}
-            data-aos="fade-up"
-            className="PageSvgArtContainer"
-          >
+          <div className="PageSvgArtContainer">
             <img className="PageSvgArt" src={svgArt} alt="" />
           </div>
 
-          <div
-            data-aos-duration={1000}
-            data-aos="fade-down"
-            className="titleContainer"
-          >
+          <div className="titleContainer">
             <div className="title">
               Meet our team of <span className="key">garderners</span>,{" "}
               <span className="key">advocates</span>, and world class{" "}
@@ -107,7 +209,32 @@ const Team = () => {
                   <div className="imageContainer">
                     <div className="memberCardOverlayContainer">
                       <div className="memberCardOverlayContentContainer">
-                        <div className="memberCardOverlayContent">Coming Soon</div>
+                        <div className="memberCardOverlayContent">
+                          <div className="innerProfileImgContainer">
+                            <img
+                              className="innerProfileImg"
+                              src={member.profilePicture}
+                              alt=""
+                            />
+                          </div>
+                          <div className="innerProfileTitleContainer">
+                            {member.title}
+                          </div>
+                          <div className="innerProfileNameContainer">
+                            {member.name}
+                          </div>
+                          <div className="innerProfileSocialsContainer">
+                            {member.socials.map((social, index) => (
+                              <img
+                                key={index}
+                                className="innerProfileSocials"
+                                src={social.src}
+                                onClick={social.handleClick}
+                                alt=""
+                              />
+                            ))}
+                          </div>
+                        </div>
                       </div>
                     </div>
                     <img className="image" src={member.profilePicture} alt="" />

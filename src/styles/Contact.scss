@@ -34,7 +34,7 @@
       place-content: center;
 
       .contactForm {
-        width: 1000px;
+        width: 1100px;
         height: 600px;
         display: flex;
         justify-content: space-between;
@@ -83,18 +83,19 @@
               }
 
               .socialsIconsContainer {
-                margin: 30px 0 0 0;
+                margin: 50px 0 0 0;
                 display: flex;
 
                 .socialsIcons {
                   cursor: pointer;
-                  width: 30px;
-                  height: 30px;
+                  transition: all 0.2s ease;
+                  opacity: 0.8;
+                  width: 25px;
+                  height: 25px;
                   margin: 0 10px 0 0;
-                  background: white;
 
                   &:hover {
-                    transform: scale(1.1);
+                    opacity: 1;
                   }
 
                   & img {

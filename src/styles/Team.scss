@@ -31,7 +31,6 @@
       grid-template-columns: repeat(3, 1fr);
 
       .members {
-        cursor: pointer;
         width: 100%;
 
         .imageContainer {
@@ -55,7 +54,7 @@
           left: 0;
           right: 0;
           z-index: 1;
-          pointer-events: none;
+          overflow: clip;
 
           .memberCardOverlayContentContainer {
             width: 100%;
@@ -66,13 +65,59 @@
 
             .memberCardOverlayContent {
               text-align: center;
-              width: 50%;
+              width: 100%;
+
+              & > div {
+                margin: 0 0 10px 0;
+              }
+
+              .innerProfileImgContainer {
+                display: grid;
+                place-content: center;
+
+                .innerProfileImg {
+                  border: 3px solid;
+                  width: 120px;
+                  height: 120px;
+                  object-fit: contain;
+                  border-radius: 50%;
+                }
+              }
+
+              .innerProfileTitleContainer {
+                font-weight: 700;
+              }
+
+              .innerProfileNameContainer {
+                font-size: small;
+                color: #efefef;
+              }
+
+              .innerProfileSocialsContainer {
+                display: flex;
+                justify-content: center;
+                margin: 40px 0 0 0;
+
+                .innerProfileSocials {
+                  transition: all 0.2s ease;
+                  width: 25px;
+                  height: 25px;
+                  margin: 0 10px 0 0;
+                  object-fit: cover;
+                  opacity: 0.8;
+                  cursor: pointer;
+
+                  &:hover {
+                    opacity: 1;
+                  }
+                }
+              }
             }
           }
         }
 
         &:hover .memberCardOverlayContainer {
-          background: #209e2ff3;
+          background: #000000d1;
           height: 100%;
         }
 

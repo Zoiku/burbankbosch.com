@@ -1,15 +1,8 @@
 import "../styles/About.scss";
 import MUIBreadCrumb from "../components/BreadCrumb";
 import imageSrc from "../assets/Dayflow - Message.svg";
-import profilePictureSrc from "../assets/msg358981222-121868-removebg-preview.png";
-import {
-  Grass,
-  PriceChange,
-  LocalConvenienceStore,
-  FolderOff,
-} from "@mui/icons-material/";
+import profilePictureSrc from "../assets/msg358981222-121867-removebg-preview.png";
 import Marquee from "react-fast-marquee";
-
 import logoSrc1 from "../assets/client-logo-hme-1-1 (2).png";
 import logoSrc2 from "../assets/client-logo-hme-1-2 (1).png";
 import logoSrc3 from "../assets/client-logo-hme-1-3 (1).png";
@@ -37,31 +30,29 @@ const About = () => {
       title: "Fully Insured",
       content:
         "Sequi enim libero, ad reiciendis rerum alias consequuntur dolore? Fuga nulla recusandae facere eaque.",
-      icon: (
-        <LocalConvenienceStore sx={{ color: "inherit", fontSize: "inherit" }} />
-      ),
+      icon: "location_automation",
       fadeUpTime: 500,
     },
     {
       title: "Superior Products",
       content:
         "Sequi enim libero, ad reiciendis rerum alias consequuntur dolore? Fuga nulla recusandae facere eaque.",
-      icon: <Grass sx={{ color: "inherit", fontSize: "inherit" }} />,
-      fadeUpTime: 1000,
+      icon: "potted_plant",
+      fadeUpTime: 600,
     },
     {
       title: "No Contracts",
       content:
         "Sequi enim libero, ad reiciendis rerum alias consequuntur dolore? Fuga nulla recusandae facere eaque.",
-      icon: <FolderOff sx={{ color: "inherit", fontSize: "inherit" }} />,
-      fadeUpTime: 1500,
+      icon: "receipt_long",
+      fadeUpTime: 700,
     },
     {
       title: "Competitive Pricing",
       content:
         "Sequi enim libero, ad reiciendis rerum alias consequuntur dolore? Fuga nulla recusandae facere eaque.",
-      icon: <PriceChange sx={{ color: "inherit", fontSize: "inherit" }} />,
-      fadeUpTime: 2000,
+      icon: "insights",
+      fadeUpTime: 800,
     },
   ];
 
@@ -106,7 +97,7 @@ const About = () => {
                   <div className="right">
                     <div
                       data-aos-duration="1000"
-                      data-aos="fade-down"
+                      data-aos="fade-up"
                       className="contentContainer"
                     >
                       <div className="content">
@@ -166,7 +157,11 @@ const About = () => {
                         className="reasonToChooseCards"
                       >
                         <div className="reasonToChoose">
-                          <div className="reasonToChooseIcon"></div>
+                          <div className="reasonToChooseIcon">
+                            <span className="material-symbols-rounded">
+                              {reason.icon}
+                            </span>
+                          </div>
                           <div className="reasonToChooseTitle">
                             {reason.title}
                           </div>
