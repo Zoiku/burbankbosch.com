@@ -1,7 +1,7 @@
 import "../styles/About.scss";
-import { useState } from "react";
-import ToggleButton from "@mui/material/ToggleButton";
-import ToggleButtonGroup from "@mui/material/ToggleButtonGroup";
+// import { useState } from "react";
+// import { ToggleButton } from "@mui/material";
+// import ToggleButtonGroup from "@mui/material/ToggleButtonGroup";
 import MUIBreadCrumb from "../components/BreadCrumb";
 import imageSrc from "../assets/Dayflow - Message.svg";
 import profilePictureSrc from "../assets/msg358981222-121867-removebg-preview.png";
@@ -12,28 +12,28 @@ import logoSrc3 from "../assets/client-logo-hme-1-3 (1).png";
 import logoSrc4 from "../assets/client-logo-hme-1-4 (1).png";
 
 const About = () => {
-  const [alignment, setAlignment] = useState("mission");
-  const handleChangeAlignment = (event, newAlignment) => {
-    if (newAlignment !== null) {
-      setAlignment(newAlignment);
-    }
-  };
+  // const [alignment, setAlignment] = useState("mission");
+  // const handleChangeAlignment = (event, newAlignment) => {
+  //   if (newAlignment !== null) {
+  //     setAlignment(newAlignment);
+  //   }
+  // };
 
-  const ColorToggleButton = () => {
-    return (
-      <ToggleButtonGroup
-        color="success"
-        value={alignment}
-        exclusive
-        onChange={handleChangeAlignment}
-        aria-label="Platform"
-      >
-        <ToggleButton value="mission">Mission</ToggleButton>
-        <ToggleButton value="vision">Vision</ToggleButton>
-        <ToggleButton value="values">Values</ToggleButton>
-      </ToggleButtonGroup>
-    );
-  };
+  // const ColorToggleButton = () => {
+  //   return (
+  //     <ToggleButtonGroup
+  //       color="success"
+  //       value={alignment}
+  //       exclusive
+  //       onChange={handleChangeAlignment}
+  //       aria-label="Platform"
+  //     >
+  //       <ToggleButton value="mission">Mission</ToggleButton>
+  //       <ToggleButton value="vision">Vision</ToggleButton>
+  //       <ToggleButton value="values">Values</ToggleButton>
+  //     </ToggleButtonGroup>
+  //   );
+  // };
 
   const links = [
     { name: "home", url: "/" },
@@ -202,7 +202,7 @@ const About = () => {
                 </div>
               </section>
 
-              <section className="aboutPageFullWidthSectionsCenteredContainer">
+              {/* <section className="aboutPageFullWidthSectionsCenteredContainer">
                 <div className="aboutPageFullWidthSectionsCentered">
                   <div className="fullWidthTitleContainer">
                     <div className="fullWidthTitle">What We Stand For</div>
@@ -239,16 +239,16 @@ const About = () => {
                     </div>
                   </div>
                 </div>
-              </section>
+              </section> */}
 
               <section className="aboutPageFullWidthSectionsCenteredContainer marqueeContainerContainer">
                 <div className="aboutPageFullWidthSectionsCentered">
                   <div className="aboutPageFullWidthOverlayContainer">
                     <div className="aboutPageFullWidthOverlay">
                       <div className="aboutPageOverlayTitleContainer">
-                        <div className="aboutPageOverlayTitle">
+                        {/* <div className="aboutPageOverlayTitle">
                           Our Partners
-                        </div>
+                        </div> */}
                       </div>
                       <div className="MarqueeContainer">
                         <Marquee
