@@ -2,6 +2,7 @@ import "../styles/About.scss";
 // import { useState } from "react";
 // import { ToggleButton } from "@mui/material";
 // import ToggleButtonGroup from "@mui/material/ToggleButtonGroup";
+import svgArt from "../assets/Apollonius_problem_typical_solution.svg.png";
 import MUIBreadCrumb from "../components/BreadCrumb";
 import imageSrc from "../assets/Dayflow - Message.svg";
 import profilePictureSrc from "../assets/msg358981222-121867-removebg-preview.png";
@@ -170,6 +171,10 @@ const About = () => {
               </section>
 
               <section className="aboutPageFullWidthSectionsCenteredContainer">
+                <div className="backgroundSvgArtContainer">
+                  <img src={svgArt} alt="" className="backgroundSvgArt" />
+                </div>
+
                 <div className="aboutPageFullWidthSectionsCentered">
                   <div className="fullWidthTitleContainer">
                     <div className="fullWidthTitleHelper">Why You Should</div>

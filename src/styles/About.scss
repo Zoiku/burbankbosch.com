@@ -104,9 +104,20 @@
     }
 
     .aboutPageFullWidthSectionsCenteredContainer {
+      position: relative;
       padding: 100px 0;
       display: flex;
       justify-content: center;
+
+      .backgroundSvgArtContainer {
+        position: absolute;
+        right: 0;
+        top: 10px;
+
+        .backgroundSvgArt {
+          opacity: 0.05;
+        }
+      }
 
       &:nth-child(2) {
         background: #efefef;
@@ -185,7 +196,7 @@
           justify-content: center;
 
           &:hover .reasonToChooseCards:not(:hover) {
-            opacity: 0.2;
+            opacity: 0.5;
           }
 
           .reasonToChooseCards {

@@ -1,7 +1,9 @@
 import MUIBreadCrumb from "../components/BreadCrumb";
 import profileImg1 from "../assets/msg358981222-121868-removebg-preview.png";
 import "../styles/Team.scss";
-import svgArt from "../assets/flower5-svgrepo-com.svg";
+// import svgArt from "../assets/Apollonius_problem_typical_solution.svg.png";
+// import svgArt from "../assets/concentric-circles.svg.hi.png";
+import svgArt from "../assets/20537.png";
 import whatsAppIcon from "../assets/icons8-whatsapp.svg";
 import instagramIcon from "../assets/icons8-instagram.svg";
 import linkedInIcon from "../assets/icons8-linkedin.svg";

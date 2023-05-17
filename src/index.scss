@@ -106,7 +106,11 @@ html {
       .PageSvgArt {
         width: 100%;
         height: 100%;
-        opacity: 0.02;
+        opacity: 0.1;
+        filter: invert(42%) sepia(100%) saturate(386%) hue-rotate(76deg)
+          brightness(94%) contrast(96%);
+        -webkit-filter: invert(42%) sepia(100%) saturate(386%) hue-rotate(76deg)
+          brightness(94%) contrast(96%);
       }
     }
   }
@@ -133,6 +137,10 @@ html {
 
       .PageSvgArtContainer {
         width: 200px;
+
+        .PageSvgArt {
+          opacity: 0.05;
+        }
       }
     }
   }
