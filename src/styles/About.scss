@@ -111,8 +111,9 @@
 
       .backgroundSvgArtContainer {
         position: absolute;
+        top: 50%;
         right: 0;
-        top: 10px;
+        transform: translate(0%, -50%);
 
         .backgroundSvgArt {
           opacity: 0.05;

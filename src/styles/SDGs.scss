@@ -1,8 +1,50 @@
-.sdgPageMainCenteredSectionContainer {
-  display: grid;
-  place-content: center;
+.sdgPageFullWidthSectionsCenteredContainer {
+  overflow: clip;
+  width: 100%;
+  position: relative;
+  padding: 50px 0;
+  display: flex;
+  justify-content: center;
 
-  .sdgPageMainCenteredSection {
-    height: 500px;
+  .svgArtContainer {
+    position: absolute;
+    top: 50%;
+    left: 0;
+    transform: translate(0%, -50%);
+
+    .svgArt {
+      opacity: 0.05;
+    }
+  }
+
+  .sdgPageFullWidthSectionsCentered {
+    .fullWidthTitleContainer {
+      text-align: center;
+
+      .fullWidthTitleHelper {
+        font-weight: 500;
+      }
+
+      .fullWidthTitle {
+        font-size: xx-large;
+        font-weight: 700;
+      }
+    }
+
+    .sdgContentContainer {
+      margin: 30px 0 0 0;
+      width: 800px;
+    }
+  }
+}
+
+@media screen and (max-width: 1024px) {
+  .sdgPageFullWidthSectionsCenteredContainer {
+    .sdgPageFullWidthSectionsCentered {
+      padding: 10px;
+      .sdgContentContainer {
+        width: 100%;
+      }
+    }
   }
 }

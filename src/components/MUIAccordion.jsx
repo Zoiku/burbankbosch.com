@@ -1,4 +1,5 @@
 import { useState } from "react";
+import "../styles/MUIAccordion.scss";
 import { styled } from "@mui/material/styles";
 import ArrowForwardIosSharpIcon from "@mui/icons-material/ArrowForwardIosSharp";
 import MuiAccordion from "@mui/material/Accordion";
@@ -11,7 +12,7 @@ const Accordion = styled((props) => (
 ))(({ theme }) => ({
   border: `1px solid ${theme.palette.divider}`,
   "&:not(:last-child)": {
-    borderBottom: 0,
+    // borderBottom: 0,
   },
   "&:before": {
     display: "none",
@@ -40,12 +41,12 @@ const AccordionSummary = styled((props) => (
 const AccordionDetails = styled(MuiAccordionDetails)(({ theme }) => ({
   padding: theme.spacing(2),
   borderTop: "1px solid rgba(0, 0, 0, .125)",
+  // borderBottom: "1px solid rgba(0, 0, 0, .125)",
 }));
 
 const MUIAccordion = () => {
   const [expanded, setExpanded] = useState("panel1");
   const handleChange = (panel) => (event, newExpanded) => {
-    // setExpanded(newExpanded ? panel : false);
     setExpanded(panel);
   };
 
@@ -54,6 +55,11 @@ const MUIAccordion = () => {
       <Accordion
         expanded={expanded === "panel1"}
         onChange={handleChange("panel1")}
+        className={
+          expanded === "panel1"
+            ? "AccordionRow ActiveAccordionRow"
+            : "AccordionRow"
+        }
       >
         <AccordionSummary
           sx={
@@ -79,6 +85,11 @@ const MUIAccordion = () => {
       <Accordion
         expanded={expanded === "panel2"}
         onChange={handleChange("panel2")}
+        className={
+          expanded === "panel2"
+            ? "AccordionRow ActiveAccordionRow"
+            : "AccordionRow"
+        }
       >
         <AccordionSummary
           sx={
@@ -102,6 +113,11 @@ const MUIAccordion = () => {
       <Accordion
         expanded={expanded === "panel3"}
         onChange={handleChange("panel3")}
+        className={
+          expanded === "panel3"
+            ? "AccordionRow ActiveAccordionRow"
+            : "AccordionRow"
+        }
       >
         <AccordionSummary
           sx={
@@ -125,6 +141,11 @@ const MUIAccordion = () => {
       <Accordion
         expanded={expanded === "panel4"}
         onChange={handleChange("panel4")}
+        className={
+          expanded === "panel4"
+            ? "AccordionRow ActiveAccordionRow"
+            : "AccordionRow"
+        }
       >
         <AccordionSummary
           sx={
@@ -148,6 +169,11 @@ const MUIAccordion = () => {
       <Accordion
         expanded={expanded === "panel5"}
         onChange={handleChange("panel5")}
+        className={
+          expanded === "panel5"
+            ? "AccordionRow ActiveAccordionRow"
+            : "AccordionRow"
+        }
       >
         <AccordionSummary
           sx={
@@ -171,6 +197,11 @@ const MUIAccordion = () => {
       <Accordion
         expanded={expanded === "panel6"}
         onChange={handleChange("panel6")}
+        className={
+          expanded === "panel6"
+            ? "AccordionRow ActiveAccordionRow"
+            : "AccordionRow"
+        }
       >
         <AccordionSummary
           sx={
@@ -194,6 +225,11 @@ const MUIAccordion = () => {
       <Accordion
         expanded={expanded === "panel7"}
         onChange={handleChange("panel7")}
+        className={
+          expanded === "panel7"
+            ? "AccordionRow ActiveAccordionRow"
+            : "AccordionRow"
+        }
       >
         <AccordionSummary
           sx={
