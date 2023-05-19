@@ -3,9 +3,9 @@ import { Box, TextField } from "@mui/material";
 import { Button1 } from "../components/MUIButton";
 import leftFormContainerBgArt from "../assets/Dayflow - Message.svg";
 import { useState } from "react";
-import whatsAppIcon from "../assets/icons8-whatsapp.svg";
-import instagramAppIcon from "../assets/icons8-instagram.svg";
-import linkedInIcon from "../assets/icons8-linkedin.svg";
+// import whatsAppIcon from "../assets/icons8-whatsapp.svg";
+// import instagramAppIcon from "../assets/icons8-instagram.svg";
+// import linkedInIcon from "../assets/icons8-linkedin.svg";
 
 const Contact = () => {
   const initialState = {
@@ -20,42 +20,42 @@ const Contact = () => {
     },
   };
 
-  const actionTypes = {
-    WHATSAPP: "WHATSAPP",
-    INSTAGRAM: "INSTAGRAM",
-    LINKEDIN: "LINKEDIN",
-  };
+  // const actionTypes = {
+  //   WHATSAPP: "WHATSAPP",
+  //   INSTAGRAM: "INSTAGRAM",
+  //   LINKEDIN: "LINKEDIN",
+  // };
 
   const [formState, setFormState] = useState(initialState);
 
-  const doAction = (type) => () => {
-    switch (type) {
-      case actionTypes.LINKEDIN:
-        break;
-      case actionTypes.INSTAGRAM:
-        break;
-      case actionTypes.WHATSAPP:
-        break;
+  // const doAction = (type) => () => {
+  //   switch (type) {
+  //     case actionTypes.LINKEDIN:
+  //       break;
+  //     case actionTypes.INSTAGRAM:
+  //       break;
+  //     case actionTypes.WHATSAPP:
+  //       break;
 
-      default:
-        break;
-    }
-  };
+  //     default:
+  //       break;
+  //   }
+  // };
 
-  const socialsIcons = [
-    {
-      src: whatsAppIcon,
-      action: doAction(actionTypes.WHATSAPP),
-    },
-    {
-      src: instagramAppIcon,
-      action: doAction(actionTypes.INSTAGRAM),
-    },
-    {
-      src: linkedInIcon,
-      action: doAction(actionTypes.LINKEDIN),
-    },
-  ];
+  // const socialsIcons = [
+  //   {
+  //     src: whatsAppIcon,
+  //     action: doAction(actionTypes.WHATSAPP),
+  //   },
+  //   {
+  //     src: instagramAppIcon,
+  //     action: doAction(actionTypes.INSTAGRAM),
+  //   },
+  //   {
+  //     src: linkedInIcon,
+  //     action: doAction(actionTypes.LINKEDIN),
+  //   },
+  // ];
 
   const onContactFormSubmit = (e) => {
     e.preventDefault();
@@ -104,7 +104,7 @@ const Contact = () => {
                   data-aos="fade-right"
                   className="left"
                 >
-                  <div className="leftTitleContainer">
+                  {/* <div className="leftTitleContainer">
                     <div className="title">Contact Information</div>
                     <div className="titleHelper">
                       Our Team will get to your in less than 24 hours
@@ -136,7 +136,7 @@ const Contact = () => {
                         </div>
                       ))}
                     </div>
-                  </div>
+                  </div> */}
                 </div>
 
                 <div className="leftFormContainerBgArt">
@@ -161,7 +161,7 @@ const Contact = () => {
                         <div className="form-input-duo">
                           <TextField
                             onChange={onInput}
-                            variant="filled"
+                            variant="outlined"
                             fullWidth
                             label="First Name"
                             name="firstName"
@@ -170,7 +170,7 @@ const Contact = () => {
                           />
                           <TextField
                             onChange={onInput}
-                            variant="filled"
+                            variant="outlined"
                             fullWidth
                             label="Last Name"
                             name="lastName"
@@ -181,7 +181,7 @@ const Contact = () => {
                         <div className="form-input-duo">
                           <TextField
                             onChange={onInput}
-                            variant="filled"
+                            variant="outlined"
                             fullWidth
                             label="Email"
                             name="email"
@@ -190,7 +190,7 @@ const Contact = () => {
                           />
                           <TextField
                             onChange={onInput}
-                            variant="filled"
+                            variant="outlined"
                             fullWidth
                             label="Phone"
                             name="phone"
@@ -201,7 +201,7 @@ const Contact = () => {
                         <div className="form-input">
                           <TextField
                             onChange={onInput}
-                            variant="filled"
+                            variant="outlined"
                             fullWidth
                             label="Subject"
                             name="subject"
@@ -212,7 +212,7 @@ const Contact = () => {
                         <div className="form-input">
                           <TextField
                             onChange={onInput}
-                            variant="filled"
+                            variant="outlined"
                             fullWidth
                             multiline
                             rows={5}
