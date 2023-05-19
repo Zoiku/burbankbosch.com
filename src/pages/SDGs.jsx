@@ -38,43 +38,49 @@ const SDGs = () => {
       fadeUpDuration: 500,
       imageHeader: ourSDG1,
       content:
-        "Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed, quis?",
+        "Lorem ipsum dolor sit amet consectetur adipisicing elit. Officiis quod, recusandae qui facere corporis placeat fugiat dolor cum nesciunt deserunt fuga amet tenetur veniam accusamus. Minima iure delectus aut architecto?",
       icon: sdg1,
+      title: "SDG 1",
     },
     {
       fadeUpDuration: 600,
       imageHeader: ourSDG2,
       content:
-        "Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed, quis?",
+        "Lorem ipsum dolor sit amet consectetur adipisicing elit. Officiis quod, recusandae qui facere corporis placeat fugiat dolor cum nesciunt deserunt fuga amet tenetur veniam accusamus. Minima iure delectus aut architecto?",
       icon: sdg2,
+      title: "SDG 2",
     },
     {
       fadeUpDuration: 700,
       imageHeader: ourSDG3,
       content:
-        "Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed, quis?",
+        "Lorem ipsum dolor sit amet consectetur adipisicing elit. Officiis quod, recusandae qui facere corporis placeat fugiat dolor cum nesciunt deserunt fuga amet tenetur veniam accusamus. Minima iure delectus aut architecto?",
       icon: sdg3,
+      title: "SDG 3",
     },
     {
       fadeUpDuration: 500,
       imageHeader: ourSDG4,
       content:
-        "Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed, quis?",
+        "Lorem ipsum dolor sit amet consectetur adipisicing elit. Officiis quod, recusandae qui facere corporis placeat fugiat dolor cum nesciunt deserunt fuga amet tenetur veniam accusamus. Minima iure delectus aut architecto?",
       icon: sdg4,
+      title: "SDG 4",
     },
     {
       fadeUpDuration: 600,
       imageHeader: ourSDG5,
       content:
-        "Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed, quis?",
+        "Lorem ipsum dolor sit amet consectetur adipisicing elit. Officiis quod, recusandae qui facere corporis placeat fugiat dolor cum nesciunt deserunt fuga amet tenetur veniam accusamus. Minima iure delectus aut architecto?",
       icon: sdg5,
+      title: "SDG 5",
     },
     {
       fadeUpDuration: 700,
       imageHeader: ourSDG6,
       content:
-        "Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed, quis?",
+        "Lorem ipsum dolor sit amet consectetur adipisicing elit. Officiis quod, recusandae qui facere corporis placeat fugiat dolor cum nesciunt deserunt fuga amet tenetur veniam accusamus. Minima iure delectus aut architecto?",
       icon: sdg6,
+      title: "SDG 6",
     },
   ];
 
@@ -194,6 +200,9 @@ const SDGs = () => {
                   </div>
                   <div className="ourSDGItemContentContainer">
                     <div className="ourSDGItemContent">
+                      <div className="ourSDGItemContentTitle">
+                        {ourSDG.title}
+                      </div>
                       <div className="ourSDGItemContentBody">
                         {ourSDG.content}
                       </div>

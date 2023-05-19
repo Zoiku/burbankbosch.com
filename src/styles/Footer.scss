@@ -39,16 +39,17 @@
         list-style-type: none;
         color: var(--secondary-text);
 
-        &:hover li:not(:hover) {
-          opacity: 0.5;
-        }
-
         & li {
           cursor: pointer;
           transition: all 0.1s ease;
           margin: 10px 0;
           font-size: small;
           font-weight: 500;
+          opacity: 0.5;
+
+          &:hover {
+            opacity: 1;
+          }
         }
       }
 
@@ -65,7 +66,7 @@
       .logoTitleContainer {
         font-weight: 600;
         font-size: small;
-        margin: 5px 0 0 0;
+        margin: 10px 0 0 0;
       }
 
       .logoDescriptionContainer {
@@ -78,16 +79,17 @@
         .socialMediaIcons {
           display: flex;
 
-          &:hover .socialMediaIconsImg:not(:hover) {
-            opacity: 0.5;
-          }
-
           .socialMediaIconsImg {
-            transition: all 0.3s ease;
+            transition: all 0.1s ease;
             cursor: pointer;
             width: 20px;
             height: 20px;
             margin: 0 10px 0 0;
+            opacity: 0.5;
+
+            &:hover {
+              opacity: 1;
+            }
           }
         }
       }
@@ -126,7 +128,7 @@
     .copyRightContainer {
       position: relative;
       bottom: 0px;
-      margin: 20px 0 0 0;
+      margin: 50px 0 0 0;
     }
   }
 }

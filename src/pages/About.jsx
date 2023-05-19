@@ -1,7 +1,4 @@
 import "../styles/About.scss";
-// import { useState } from "react";
-// import { ToggleButton } from "@mui/material";
-// import ToggleButtonGroup from "@mui/material/ToggleButtonGroup";
 import svgArt from "../assets/Apollonius_problem_typical_solution.svg.png";
 import MUIBreadCrumb from "../components/BreadCrumb";
 import imageSrc from "../assets/Dayflow - Message.svg";
@@ -13,29 +10,6 @@ import logoSrc3 from "../assets/client-logo-hme-1-3 (1).png";
 import logoSrc4 from "../assets/client-logo-hme-1-4 (1).png";
 
 const About = () => {
-  // const [alignment, setAlignment] = useState("mission");
-  // const handleChangeAlignment = (event, newAlignment) => {
-  //   if (newAlignment !== null) {
-  //     setAlignment(newAlignment);
-  //   }
-  // };
-
-  // const ColorToggleButton = () => {
-  //   return (
-  //     <ToggleButtonGroup
-  //       color="success"
-  //       value={alignment}
-  //       exclusive
-  //       onChange={handleChangeAlignment}
-  //       aria-label="Platform"
-  //     >
-  //       <ToggleButton value="mission">Mission</ToggleButton>
-  //       <ToggleButton value="vision">Vision</ToggleButton>
-  //       <ToggleButton value="values">Values</ToggleButton>
-  //     </ToggleButtonGroup>
-  //   );
-  // };
-
   const links = [
     { name: "home", url: "/" },
     { name: "about us", url: "/about" },
@@ -206,45 +180,6 @@ const About = () => {
                   </div>
                 </div>
               </section>
-
-              {/* <section className="aboutPageFullWidthSectionsCenteredContainer">
-                <div className="aboutPageFullWidthSectionsCentered">
-                  <div className="fullWidthTitleContainer">
-                    <div className="fullWidthTitle">What We Stand For</div>
-                    <div className="wwsfContainer">
-                      <div className="toggleButtonsContainer">
-                        <ColorToggleButton />
-                      </div>
-                      <div className="toggledContentContainer">
-                        {alignment === "mission" && (
-                          <div>
-                            Obligations of business will frequently occur sed
-                            that pleasures have repudiateds our annoyances
-                            matters to this principle to take a undertakes
-                            laborious physical exercise.
-                          </div>
-                        )}
-                        {alignment === "vision" && (
-                          <div>
-                            Obligations of business will frequently occur sed
-                            that pleasures have repudiateds our annoyances
-                            matters to this principle to take a undertakes
-                            laborious physical exercise.
-                          </div>
-                        )}
-                        {alignment === "values" && (
-                          <div>
-                            Obligations of business will frequently occur sed
-                            that pleasures have repudiateds our annoyances
-                            matters to this principle to take a undertakes
-                            laborious physical exercise.
-                          </div>
-                        )}
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </section> */}
 
               <section className="aboutPageFullWidthSectionsCenteredContainer marqueeContainerContainer">
                 <div className="aboutPageFullWidthSectionsCentered">

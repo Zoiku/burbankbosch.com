@@ -30,7 +30,7 @@
           & span {
             font-weight: bold;
             display: block;
-            text-align: center;
+            padding: 0 0 0 200px;
           }
         }
       }
@@ -49,7 +49,7 @@
 
           &::before {
             content: "";
-            background: rgba(0, 0, 0, 0.1);
+            background: rgba(0, 0, 0, 0.05);
             position: absolute;
             top: 0;
             left: 0;
@@ -74,6 +74,7 @@
         .ourSDGItemContainer {
           outline: 1px solid #c5c5c5;
           background: white;
+          overflow: clip;
 
           .ourSDGItemImageContainer {
             position: relative;
@@ -84,10 +85,10 @@
               content: "";
               background: rgba(0, 0, 0, 0.5);
               position: absolute;
-              top: 0;
               left: 0;
               right: 0;
               bottom: 0;
+              top: 0;
             }
 
             .ourSDGItemImage {
@@ -98,21 +99,18 @@
 
             .ourSDGItemImageContainerIconContainer {
               position: absolute;
-              left: 50%;
-              bottom: -40px;
-              transform: translate(-50%, 0);
+              left: 10px;
+              bottom: -25px;
               z-index: 2;
               background: white;
-              width: 80px;
-              height: 80px;
+              width: 50px;
+              height: 50px;
               display: grid;
               place-content: center;
 
               .ourSDGItemImageContainerIcon {
-                font-weight: 600;
                 width: 100%;
                 height: 100%;
-                object-fit: cover;
               }
             }
           }
@@ -120,16 +118,14 @@
           .ourSDGItemContentContainer {
             margin: 40px 0 20px 0;
             padding: 10px;
-            text-align: center;
-            display: flex;
-            justify-content: center;
 
             .ourSDGItemContent {
-              width: 70%;
+              .ourSDGItemContentTitle {
+                font-weight: 700;
+              }
 
               .ourSDGItemContentBody {
                 margin: 10px 0;
-                font-weight: 500;
               }
             }
           }
@@ -166,32 +162,19 @@
 
 @media screen and (max-width: 1024px) {
   .sdgPageFullWidthSectionsCenteredContainer {
-    padding: 50px 0;
-
-    .svgArtContainer {
-      position: absolute;
-      top: 50%;
-      left: 0;
-      transform: translate(0%, -50%);
-
-      .svgArt {
-        opacity: 0.1;
-      }
-    }
+    padding: 100px 0;
 
     .sdgPageFullWidthSectionsCentered {
       .sdgContentContainer {
-        position: relative;
         width: 100%;
         padding: 10px;
 
         .sdgHeadingContainer {
           .sdgHeading {
-            font-weight: 600;
-            font-size: x-large;
+            font-size: 30px;
 
             & span {
-              color: var(--primary-nav-text);
+              padding: 0 0 0 50px;
             }
           }
         }
@@ -200,7 +183,11 @@
           grid-template-columns: repeat(6, 1fr);
 
           .sdgGridItemContainer {
-            height: auto;
+            height: 60px;
+
+            .sdgGridItem {
+              object-fit: cover;
+            }
           }
         }
 
@@ -210,19 +197,6 @@
 
         .sdgArtContainer {
           opacity: 0.1;
-          position: absolute;
-          right: -200px;
-          top: -80px;
-          height: 400px;
-          width: 400px;
-          animation: rotating 200s infinite linear;
-
-          .sdgArt {
-            object-fit: cover;
-            height: 100%;
-            width: 100%;
-            border-radius: 150px;
-          }
         }
       }
     }
