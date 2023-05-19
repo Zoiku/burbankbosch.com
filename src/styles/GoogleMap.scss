@@ -1,18 +1,19 @@
-.googleMapContainer {
-  height: 600px;
-  position: relative;
+.GoogleMap {
+  .googleMapContainer {
+    height: 700px;
+    position: relative;
 
-  .overlayContainer {
-    position: absolute;
-    top: 0;
-    bottom: 0;
-    left: 0;
-    right: 0;
-  }
+    .overlayContainer {
+      position: absolute;
+      top: 0;
+      bottom: 0;
+      left: 0;
+      right: 0;
+    }
 
-  .googleMap {
-    height: 100%;
-    width: 100%;
-    object-fit: cover;
+    .googleMapBody {
+      height: 100%;
+      width: 100%;
+    }
   }
 }

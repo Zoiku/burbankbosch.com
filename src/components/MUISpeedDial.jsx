@@ -1,17 +1,12 @@
 import SpeedDial from "@mui/material/SpeedDial";
 import SpeedDialIcon from "@mui/material/SpeedDialIcon";
 import SpeedDialAction from "@mui/material/SpeedDialAction";
-import { WhatsApp, Call, Instagram } from "@mui/icons-material";
+import { WhatsApp, Instagram } from "@mui/icons-material";
 
 const MUISpeedDial = () => {
   const speedDialActionTypes = {
-    CALL: "CALL",
     WHATSAPP: "WHATSAPP",
     INSTAGRAM: "INSTAGRAM",
-  };
-
-  const doCallAction = () => {
-    console.log("Place Call");
   };
 
   const doWhatsAppAction = () => {
@@ -24,10 +19,6 @@ const MUISpeedDial = () => {
 
   const doAction = (type) => () => {
     switch (type) {
-      case speedDialActionTypes.CALL:
-        doCallAction();
-        break;
-
       case speedDialActionTypes.WHATSAPP:
         doWhatsAppAction();
         break;
@@ -51,11 +42,6 @@ const MUISpeedDial = () => {
       icon: <WhatsApp />,
       name: "Connect Via Whatsapp",
       function: doAction(speedDialActionTypes.WHATSAPP),
-    },
-    {
-      icon: <Call />,
-      name: "Call Us",
-      function: doAction(speedDialActionTypes.CALL),
     },
   ];
 

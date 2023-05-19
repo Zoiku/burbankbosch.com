@@ -186,9 +186,9 @@ const About = () => {
                   <div className="aboutPageFullWidthOverlayContainer">
                     <div className="aboutPageFullWidthOverlay">
                       <div className="aboutPageOverlayTitleContainer">
-                        {/* <div className="aboutPageOverlayTitle">
+                        <div className="aboutPageOverlayTitle">
                           Our Partners
-                        </div> */}
+                        </div>
                       </div>
                       <div className="MarqueeContainer">
                         <Marquee

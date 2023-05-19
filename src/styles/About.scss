@@ -128,8 +128,7 @@
         background: url("../assets/zoe-schaeffer-hmoDcZnB7uw-unsplash.jpg");
         background-size: cover;
         position: relative;
-        height: 500px;
-        display: none;
+        height: 800px;
       }
 
       .aboutPageFullWidthSectionsCentered {
@@ -164,13 +163,14 @@
               text-align: center;
 
               .aboutPageOverlayTitle {
-                font-size: xx-large;
-                font-weight: 700;
+                font-size: 40px;
+                font-weight: 600;
+                display: none;
               }
             }
 
             .MarqueeContainer {
-              margin: 50px 0 0 0;
+              margin: 30px 0 0 0;
               width: 100vw;
             }
           }
@@ -191,7 +191,7 @@
 
         .reasonsToChooseContainer {
           margin: 30px 0 0 0;
-          width: 1000px;
+          width: 1100px;
           gap: 10px;
           display: grid;
           grid-template-columns: repeat(4, 1fr);

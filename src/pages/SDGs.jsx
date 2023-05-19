@@ -121,58 +121,148 @@ const SDGs = () => {
             </div>
             <div className="sdgGridHeadingsContainer">
               <div className="sdgGridItemContainer">
-                <img src={sdg1} alt="" className="sdgGridItem" />
+                <img
+                  decoding="async"
+                  src={sdg1}
+                  alt=""
+                  className="sdgGridItem"
+                />
               </div>
               <div className="sdgGridItemContainer">
-                <img src={sdg2} alt="" className="sdgGridItem" />
+                <img
+                  decoding="async"
+                  src={sdg2}
+                  alt=""
+                  className="sdgGridItem"
+                />
               </div>
               <div className="sdgGridItemContainer">
-                <img src={sdg3} alt="" className="sdgGridItem" />
+                <img
+                  decoding="async"
+                  src={sdg3}
+                  alt=""
+                  className="sdgGridItem"
+                />
               </div>
               <div className="sdgGridItemContainer">
-                <img src={sdg4} alt="" className="sdgGridItem" />
+                <img
+                  decoding="async"
+                  src={sdg4}
+                  alt=""
+                  className="sdgGridItem"
+                />
               </div>
               <div className="sdgGridItemContainer">
-                <img src={sdg5} alt="" className="sdgGridItem" />
+                <img
+                  decoding="async"
+                  src={sdg5}
+                  alt=""
+                  className="sdgGridItem"
+                />
               </div>
               <div className="sdgGridItemContainer">
-                <img src={sdg6} alt="" className="sdgGridItem" />
+                <img
+                  decoding="async"
+                  src={sdg6}
+                  alt=""
+                  className="sdgGridItem"
+                />
               </div>
               <div className="sdgGridItemContainer">
-                <img src={sdg7} alt="" className="sdgGridItem" />
+                <img
+                  decoding="async"
+                  src={sdg7}
+                  alt=""
+                  className="sdgGridItem"
+                />
               </div>
               <div className="sdgGridItemContainer">
-                <img src={sdg8} alt="" className="sdgGridItem" />
+                <img
+                  decoding="async"
+                  src={sdg8}
+                  alt=""
+                  className="sdgGridItem"
+                />
               </div>
               <div className="sdgGridItemContainer">
-                <img src={sdg9} alt="" className="sdgGridItem" />
+                <img
+                  decoding="async"
+                  src={sdg9}
+                  alt=""
+                  className="sdgGridItem"
+                />
               </div>
               <div className="sdgGridItemContainer">
-                <img src={sdg10} alt="" className="sdgGridItem" />
+                <img
+                  decoding="async"
+                  src={sdg10}
+                  alt=""
+                  className="sdgGridItem"
+                />
               </div>
               <div className="sdgGridItemContainer">
-                <img src={sdg11} alt="" className="sdgGridItem" />
+                <img
+                  decoding="async"
+                  src={sdg11}
+                  alt=""
+                  className="sdgGridItem"
+                />
               </div>
               <div className="sdgGridItemContainer">
-                <img src={sdg12} alt="" className="sdgGridItem" />
+                <img
+                  decoding="async"
+                  src={sdg12}
+                  alt=""
+                  className="sdgGridItem"
+                />
               </div>
               <div className="sdgGridItemContainer">
-                <img src={sdg13} alt="" className="sdgGridItem" />
+                <img
+                  decoding="async"
+                  src={sdg13}
+                  alt=""
+                  className="sdgGridItem"
+                />
               </div>
               <div className="sdgGridItemContainer">
-                <img src={sdg14} alt="" className="sdgGridItem" />
+                <img
+                  decoding="async"
+                  src={sdg14}
+                  alt=""
+                  className="sdgGridItem"
+                />
               </div>
               <div className="sdgGridItemContainer">
-                <img src={sdg15} alt="" className="sdgGridItem" />
+                <img
+                  decoding="async"
+                  src={sdg15}
+                  alt=""
+                  className="sdgGridItem"
+                />
               </div>
               <div className="sdgGridItemContainer">
-                <img src={sdg16} alt="" className="sdgGridItem" />
+                <img
+                  decoding="async"
+                  src={sdg16}
+                  alt=""
+                  className="sdgGridItem"
+                />
               </div>
               <div className="sdgGridItemContainer">
-                <img src={sdg17} alt="" className="sdgGridItem" />
+                <img
+                  decoding="async"
+                  src={sdg17}
+                  alt=""
+                  className="sdgGridItem"
+                />
               </div>
               <div className="sdgGridItemContainer">
-                <img src={sdg18} alt="" className="sdgGridItem" />
+                <img
+                  decoding="async"
+                  src={sdg18}
+                  alt=""
+                  className="sdgGridItem"
+                />
               </div>
             </div>
 
@@ -187,12 +277,14 @@ const SDGs = () => {
                   <div className="ourSDGItemImageContainer">
                     <div className="ourSDGItemImageContainerIconContainer">
                       <img
+                        decoding="async"
                         src={ourSDG.icon}
                         alt=""
                         className="ourSDGItemImageContainerIcon"
                       />
                     </div>
                     <img
+                      decoding="async"
                       src={ourSDG.imageHeader}
                       alt=""
                       className="ourSDGItemImage"

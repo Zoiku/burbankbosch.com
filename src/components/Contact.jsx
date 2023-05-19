@@ -1,11 +1,9 @@
 import "../styles/Contact.scss";
+import { useState } from "react";
 import { Box, TextField } from "@mui/material";
 import { Button1 } from "../components/MUIButton";
-import leftFormContainerBgArt from "../assets/Dayflow - Message.svg";
-import { useState } from "react";
-// import whatsAppIcon from "../assets/icons8-whatsapp.svg";
-// import instagramAppIcon from "../assets/icons8-instagram.svg";
-// import linkedInIcon from "../assets/icons8-linkedin.svg";
+import GoogleMap from "./GoogleMap";
+import svgArt from "../assets/pngtree-grass-silhouette-png-image_2952514-removebg-preview.png";
 
 const Contact = () => {
   const initialState = {
@@ -20,42 +18,7 @@ const Contact = () => {
     },
   };
 
-  // const actionTypes = {
-  //   WHATSAPP: "WHATSAPP",
-  //   INSTAGRAM: "INSTAGRAM",
-  //   LINKEDIN: "LINKEDIN",
-  // };
-
   const [formState, setFormState] = useState(initialState);
-
-  // const doAction = (type) => () => {
-  //   switch (type) {
-  //     case actionTypes.LINKEDIN:
-  //       break;
-  //     case actionTypes.INSTAGRAM:
-  //       break;
-  //     case actionTypes.WHATSAPP:
-  //       break;
-
-  //     default:
-  //       break;
-  //   }
-  // };
-
-  // const socialsIcons = [
-  //   {
-  //     src: whatsAppIcon,
-  //     action: doAction(actionTypes.WHATSAPP),
-  //   },
-  //   {
-  //     src: instagramAppIcon,
-  //     action: doAction(actionTypes.INSTAGRAM),
-  //   },
-  //   {
-  //     src: linkedInIcon,
-  //     action: doAction(actionTypes.LINKEDIN),
-  //   },
-  // ];
 
   const onContactFormSubmit = (e) => {
     e.preventDefault();
@@ -88,160 +51,116 @@ const Contact = () => {
   };
 
   return (
-    <div className="Contact">
-      <section className="ContactSectionsCenteredContainer">
-        <div className="ContactSectionsCentered">
-          <div className="titleContainer">
-            <div className="titleHeading">Reach Us</div>
-            <div className="title">Contact</div>
-          </div>
-
+    <section className="Contact">
+      <div className="contactSectionContainer">
+        <div className="contactSection">
           <div className="contactFormContainer">
-            <div className="contactForm">
-              <div className="leftContainer">
-                <div
-                  data-aos-duration="1000"
-                  data-aos="fade-right"
-                  className="left"
-                >
-                  {/* <div className="leftTitleContainer">
-                    <div className="title">Contact Information</div>
-                    <div className="titleHelper">
-                      Our Team will get to your in less than 24 hours
-                    </div>
-                  </div>
-                  <div className="formContainer">
-                    <div className="form">
-                      <div className="contact-info">
-                        <span></span>
-                        <span>Tel: 233-555-777</span>
-                      </div>
-                      <div className="contact-info">
-                        <span></span>
-                        <span>Email: email@email.com</span>
-                      </div>
-                      <div className="contact-info">
-                        <span></span>
-                        <span>Location: Rangoon Lane St</span>
-                      </div>
-                    </div>
-                    <div className="socialsIconsContainer">
-                      {socialsIcons.map((socialIcon, index) => (
-                        <div
-                          key={index}
-                          className="socialsIcons"
-                          onClick={socialIcon.action}
-                        >
-                          <img src={socialIcon.src} alt="" />
-                        </div>
-                      ))}
-                    </div>
-                  </div> */}
-                </div>
+            <div className="contactFormBackgroundArtContainer">
+              <img src={svgArt} alt="" className="contactFormBackgroundArt" />
+            </div>
 
-                <div className="leftFormContainerBgArt">
-                  <img src={leftFormContainerBgArt} alt="" />
+            <div className="contactForm">
+              <div className="contactFormTitleContainer">
+                <div className="title">Contact Us</div>
+                <div className="titleHelper">
+                  Our friendly team will love to hear from you
                 </div>
               </div>
-              <div className="rightContainer">
-                <div className="right">
-                  <div className="formContainer">
-                    <div className="form">
-                      <Box
-                        component="form"
-                        autoComplete="off"
-                        onSubmit={onContactFormSubmit}
-                        sx={{
-                          "& > :not(style)": {
-                            width: "100%",
-                            margin: "0 0 15px 0",
-                          },
-                        }}
-                      >
-                        <div className="form-input-duo">
-                          <TextField
-                            onChange={onInput}
-                            variant="outlined"
-                            fullWidth
-                            label="First Name"
-                            name="firstName"
-                            type="text"
-                            required
-                          />
-                          <TextField
-                            onChange={onInput}
-                            variant="outlined"
-                            fullWidth
-                            label="Last Name"
-                            name="lastName"
-                            type="text"
-                            required
-                          />
-                        </div>
-                        <div className="form-input-duo">
-                          <TextField
-                            onChange={onInput}
-                            variant="outlined"
-                            fullWidth
-                            label="Email"
-                            name="email"
-                            type="email"
-                            required
-                          />
-                          <TextField
-                            onChange={onInput}
-                            variant="outlined"
-                            fullWidth
-                            label="Phone"
-                            name="phone"
-                            type="tel"
-                            required
-                          />
-                        </div>
-                        <div className="form-input">
-                          <TextField
-                            onChange={onInput}
-                            variant="outlined"
-                            fullWidth
-                            label="Subject"
-                            name="subject"
-                            type="text"
-                            required
-                          />
-                        </div>
-                        <div className="form-input">
-                          <TextField
-                            onChange={onInput}
-                            variant="outlined"
-                            fullWidth
-                            multiline
-                            rows={5}
-                            label="Message"
-                            name="message"
-                            type="text"
-                            required
-                          />
-                        </div>
-                        <div className="form-input">
-                          <Button1
-                            loadingIndicator="Sending..."
-                            loading={formState.response.loading}
-                            variant="contained"
-                            type="submit"
-                          >
-                            Send Message
-                          </Button1>
-                        </div>
-                      </Box>
-                    </div>
+              <div className="contentFormBody">
+                <Box
+                  component="form"
+                  autoComplete="off"
+                  onSubmit={onContactFormSubmit}
+                  sx={{
+                    "& > :not(style)": {
+                      width: "100%",
+                      margin: "0 0 15px 0",
+                    },
+                  }}
+                >
+                  <div className="form-input-duo">
+                    <TextField
+                      onChange={onInput}
+                      variant="outlined"
+                      fullWidth
+                      label="First Name"
+                      name="firstName"
+                      type="text"
+                      required
+                    />
+                    <TextField
+                      onChange={onInput}
+                      variant="outlined"
+                      fullWidth
+                      label="Last Name"
+                      name="lastName"
+                      type="text"
+                      required
+                    />
                   </div>
-                </div>
+                  <div className="form-input-duo">
+                    <TextField
+                      onChange={onInput}
+                      variant="outlined"
+                      fullWidth
+                      label="Email"
+                      name="email"
+                      type="email"
+                      required
+                    />
+                    <TextField
+                      onChange={onInput}
+                      variant="outlined"
+                      fullWidth
+                      label="Phone"
+                      name="phone"
+                      type="tel"
+                    />
+                  </div>
+                  <div className="form-input">
+                    <TextField
+                      onChange={onInput}
+                      variant="outlined"
+                      fullWidth
+                      label="Subject"
+                      name="subject"
+                      type="text"
+                      required
+                    />
+                  </div>
+                  <div className="form-input">
+                    <TextField
+                      onChange={onInput}
+                      variant="outlined"
+                      fullWidth
+                      multiline
+                      rows={5}
+                      label="Message"
+                      name="message"
+                      type="text"
+                      required
+                    />
+                  </div>
+                  <div className="form-input">
+                    <Button1
+                      loadingIndicator="Sending..."
+                      loading={formState.response.loading}
+                      variant="contained"
+                      type="submit"
+                    >
+                      Send Message
+                    </Button1>
+                  </div>
+                </Box>
               </div>
             </div>
           </div>
+          <div className="mapContainer">
+            <GoogleMap />
+          </div>
         </div>
-      </section>
-    </div>
+      </div>
+    </section>
   );
 };
 

@@ -1,206 +1,89 @@
 .Contact {
-  overflow: clip;
-  display: none;
-}
+  .contactSectionContainer {
+    display: grid;
+    place-items: center;
+    background: #efefef;
+    overflow: clip;
 
-.ContactSectionsCenteredContainer {
-  padding: 100px 0;
-  width: 100%;
-  display: grid;
-  place-content: center;
-  background: #efefef;
-  color: var(--primary-text);
+    .contactSection {
+      padding: 100px 0;
+      width: 1200px;
+      display: flex;
+      justify-content: space-between;
 
-  .ContactSectionsCentered {
-    width: 100%;
+      .contactFormContainer {
+        position: relative;
+        padding: 20px;
+        background: white;
+        width: 40%;
+        overflow: clip;
 
-    .titleContainer {
-      text-align: center;
+        .contactForm {
+          .contactFormTitleContainer {
+            margin: 0 0 30px 0;
 
-      .titleHeading {
-        font-weight: 500;
-      }
+            .title {
+              font-size: xx-large;
+              font-weight: 500;
+            }
 
-      .title {
-        font-size: xx-large;
-        font-weight: 700;
-      }
-    }
-
-    .contactFormContainer {
-      outline: 1px solid #c5c5c5;
-      margin: 30px 0 0 0;
-      border-radius: 5px;
-      overflow: clip;
-      display: grid;
-      place-content: center;
-
-      .contactForm {
-        width: 1200px;
-        height: 500px;
-        display: flex;
-        justify-content: space-between;
-
-        & > div {
-          padding: 20px;
-        }
-
-        .leftContainer {
-          width: 70%;
-          background-repeat: no-repeat;
-          background-size: cover;
-
-          .left {
-            display: none;
-            // .leftTitleContainer {
-            //   .title {
-            //     font-size: x-large;
-            //     font-weight: 600;
-            //   }
-
-            //   .titleHelper {
-            //     font-size: small;
-            //   }
-            // }
-
-            // .formContainer {
-            //   // margin: 30px 0 0 0;
-
-            //   // .form {
-            //   //   .contact-info {
-            //   //     margin: 10px 0;
-            //   //     display: flex;
-            //   //     align-items: center;
-
-            //   //     & span {
-            //   //       display: flex;
-            //   //       align-items: center;
-
-            //   //       &:nth-child(1) {
-            //   //         display: none;
-            //   //         margin: 0 10px 0 0;
-            //   //       }
-            //   //     }
-            //   //   }
-            //   // }
-
-            //   // .socialsIconsContainer {
-            //   //   margin: 50px 0 0 0;
-            //   //   display: flex;
-
-            //   //   &:hover .socialsIcons:not(:hover) {
-            //   //     opacity: 0.5;
-            //   //   }
-
-            //   //   .socialsIcons {
-            //   //     cursor: pointer;
-            //   //     transition: all 0.3s ease;
-            //   //     width: 20px;
-            //   //     height: 20px;
-            //   //     margin: 0 10px 0 0;
-
-            //   //     & img {
-            //   //       width: 100%;
-            //   //       height: 100%;
-            //   //     }
-            //   //   }
-            //   // }
-            // }
-          }
-
-          .leftFormContainerBgArt {
-            position: absolute;
-            bottom: -100px;
-            left: -50px;
-            height: 280px;
-            opacity: 1;
-            display: none;
-
-            & img {
-              width: 100%;
-              height: 100%;
+            .titleHelper {
+              color: #777;
             }
           }
-        }
 
-        .rightContainer {
-          width: 30%;
-          background: var(--secondary-bg);
+          .contentFormBody {
+            .form-input-duo {
+              display: flex;
+              justify-content: space-between;
 
-          .formContainer {
-            .form {
-              .form-input-duo {
-                display: flex;
-                justify-content: space-between;
-
-                & > div {
-                  width: 49.5%;
-                }
+              & > div {
+                width: 48%;
               }
             }
           }
         }
+
+        .contactFormBackgroundArtContainer {
+          position: absolute;
+          bottom: 0;
+          left: 0;
+          right: 0;
+          height: 100px;
+
+          .contactFormBackgroundArt {
+            height: 100%;
+            width: 100%;
+            object-fit: cover;
+            opacity: 0.05;
+          }
+        }
+      }
+
+      .mapContainer {
+        width: 60%;
       }
     }
   }
 }
 
 @media screen and (max-width: 1024px) {
-  .ContactSectionsCenteredContainer {
-    padding: 0;
-
-    .ContactSectionsCentered {
-      width: 100vw;
-
-      .titleContainer {
-        display: none;
-      }
-
-      .contactFormContainer {
-        margin: 0;
+  .Contact {
+    .contactSectionContainer {
+      .contactSection {
+        padding: 0;
         width: 100%;
-        height: auto;
-        border-radius: 0;
-        outline: none;
+        flex-direction: column;
 
-        .contactForm {
-          flex-direction: column;
-          text-align: left;
-          width: 100vw;
-          height: 100%;
+        .contactFormContainer {
+          order: 2;
+          width: 100%;
+          padding-bottom: 150px;
+        }
 
-          .leftContainer {
-            width: 100%;
-            height: 500px;
-            overflow: clip;
-
-            .leftFormContainerBgArt {
-              height: 300px;
-              width: 300px;
-              bottom: -120px;
-            }
-
-            .left {
-              .leftTitleContainer {
-                .title {
-                  font-size: x-large;
-                }
-              }
-
-              .formContainer {
-                .form {
-                  .contact-info {
-                    justify-content: flex-start;
-                  }
-                }
-              }
-            }
-          }
-
-          .rightContainer {
-            width: 100%;
-            text-align: left;
-          }
+        .mapContainer {
+          order: 1;
+          width: 100%;
         }
       }
     }
