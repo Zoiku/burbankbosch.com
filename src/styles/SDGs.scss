@@ -45,6 +45,17 @@
           height: 100px;
           z-index: 2;
           background: white;
+          position: relative;
+
+          &::before {
+            content: "";
+            background: rgba(0, 0, 0, 0.1);
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+          }
 
           .sdgGridItem {
             width: 100%;
@@ -176,8 +187,12 @@
 
         .sdgHeadingContainer {
           .sdgHeading {
-            font-weight: 400;
+            font-weight: 600;
             font-size: x-large;
+
+            & span {
+              color: var(--primary-nav-text);
+            }
           }
         }
 
