@@ -2,7 +2,7 @@
   overflow: clip;
   width: 100%;
   position: relative;
-  padding: 50px 0;
+  padding: 100px 0;
   display: flex;
   justify-content: center;
 
@@ -13,37 +13,201 @@
     transform: translate(0%, -50%);
 
     .svgArt {
-      opacity: 0.05;
+      opacity: 0.1;
     }
   }
 
   .sdgPageFullWidthSectionsCentered {
-    .fullWidthTitleContainer {
-      text-align: center;
-
-      .fullWidthTitleHelper {
-        font-weight: 500;
-      }
-
-      .fullWidthTitle {
-        font-size: xx-large;
-        font-weight: 700;
-      }
-    }
-
     .sdgContentContainer {
-      margin: 30px 0 0 0;
-      width: 800px;
+      position: relative;
+      width: 1000px;
+
+      .sdgHeadingContainer {
+        .sdgHeading {
+          font-size: 40px;
+          font-weight: 100;
+
+          & span {
+            font-weight: bold;
+            display: block;
+            text-align: center;
+          }
+        }
+      }
+
+      .sdgGridHeadingsContainer {
+        margin: 20px 0 0 0;
+        display: grid;
+        gap: 5px;
+        grid-template-columns: repeat(9, 1fr);
+
+        .sdgGridItemContainer {
+          height: 100px;
+          z-index: 2;
+          background: white;
+
+          .sdgGridItem {
+            width: 100%;
+            height: 100%;
+          }
+        }
+      }
+
+      .ourSDGsGridContainer {
+        margin: 80px 0 0 0;
+        display: grid;
+        gap: 10px;
+        grid-template-columns: repeat(3, 1fr);
+
+        .ourSDGItemContainer {
+          outline: 1px solid #c5c5c5;
+          background: white;
+
+          .ourSDGItemImageContainer {
+            position: relative;
+            height: 200px;
+            width: 100%;
+
+            &::before {
+              content: "";
+              background: rgba(0, 0, 0, 0.5);
+              position: absolute;
+              top: 0;
+              left: 0;
+              right: 0;
+              bottom: 0;
+            }
+
+            .ourSDGItemImage {
+              height: 100%;
+              width: 100%;
+              object-fit: cover;
+            }
+
+            .ourSDGItemImageContainerIconContainer {
+              position: absolute;
+              left: 50%;
+              bottom: -40px;
+              transform: translate(-50%, 0);
+              z-index: 2;
+              background: white;
+              width: 80px;
+              height: 80px;
+              display: grid;
+              place-content: center;
+
+              .ourSDGItemImageContainerIcon {
+                font-weight: 600;
+                width: 100%;
+                height: 100%;
+                object-fit: cover;
+              }
+            }
+          }
+
+          .ourSDGItemContentContainer {
+            margin: 40px 0 20px 0;
+            padding: 10px;
+            text-align: center;
+            display: flex;
+            justify-content: center;
+
+            .ourSDGItemContent {
+              width: 70%;
+
+              .ourSDGItemContentBody {
+                margin: 10px 0;
+                font-weight: 500;
+              }
+            }
+          }
+        }
+      }
+
+      .sdgArtContainer {
+        position: absolute;
+        right: -200px;
+        top: -80px;
+        height: 400px;
+        width: 400px;
+        animation: rotating 200s infinite linear;
+
+        .sdgArt {
+          object-fit: cover;
+          height: 100%;
+          width: 100%;
+          border-radius: 150px;
+        }
+      }
     }
+  }
+}
+
+@keyframes rotating {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(359deg);
   }
 }
 
 @media screen and (max-width: 1024px) {
   .sdgPageFullWidthSectionsCenteredContainer {
+    padding: 50px 0;
+
+    .svgArtContainer {
+      position: absolute;
+      top: 50%;
+      left: 0;
+      transform: translate(0%, -50%);
+
+      .svgArt {
+        opacity: 0.1;
+      }
+    }
+
     .sdgPageFullWidthSectionsCentered {
-      padding: 10px;
       .sdgContentContainer {
+        position: relative;
         width: 100%;
+        padding: 10px;
+
+        .sdgHeadingContainer {
+          .sdgHeading {
+            font-weight: 400;
+            font-size: x-large;
+          }
+        }
+
+        .sdgGridHeadingsContainer {
+          grid-template-columns: repeat(6, 1fr);
+
+          .sdgGridItemContainer {
+            height: auto;
+          }
+        }
+
+        .ourSDGsGridContainer {
+          grid-template-columns: minmax(300px, 380px);
+        }
+
+        .sdgArtContainer {
+          opacity: 0.1;
+          position: absolute;
+          right: -200px;
+          top: -80px;
+          height: 400px;
+          width: 400px;
+          animation: rotating 200s infinite linear;
+
+          .sdgArt {
+            object-fit: cover;
+            height: 100%;
+            width: 100%;
+            border-radius: 150px;
+          }
+        }
       }
     }
   }
