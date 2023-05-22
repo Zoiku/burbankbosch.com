@@ -1,3 +1,4 @@
+import "../styles/Technology.scss";
 import MUIBreadCrumb from "../components/BreadCrumb";
 
 const Technology = () => {
@@ -26,9 +27,8 @@ const Technology = () => {
           </div>
         </div>
       </section>
-      <section className="MainPageSectionCenteredContentContainer">
-        <div className="MainPageSectionCenteredContent"></div>
-      </section>
+
+      <section className=""></section>
     </div>
   );
 };

@@ -10,7 +10,7 @@ const GoogleMap = () => {
   const markerPosition = { lat: 5.573825, lng: -0.181943 };
 
   const { isLoaded } = useLoadScript({
-    googleMapsApiKey: process.env.GOOGLE_MAP_API_KEY,
+    googleMapsApiKey: process.env.REACT_APP_GOOGLE_MAP_API_KEY,
   });
 
   return (

@@ -1,12 +1,27 @@
 .Contact {
+  display: none;
+
   .contactSectionContainer {
     display: grid;
+    position: relative;
     place-items: center;
-    background: #efefef;
+    background-image: url("../assets/contact/volodymyr-hryshchenko-V5vqWC9gyEU-unsplash.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
     overflow: clip;
 
+    &::before {
+      content: "";
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      background: rgba(0, 0, 0, 0.8);
+    }
+
     .contactSection {
-      padding: 100px 0;
+      margin: 100px 0;
       width: 1200px;
       display: flex;
       justify-content: space-between;

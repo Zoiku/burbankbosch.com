@@ -71,17 +71,17 @@
                   align-items: center;
 
                   .profilePictureContainer {
-                    width: auto;
                     margin: 0 20px 0 0;
                     display: grid;
                     place-items: center;
-                    height: 100px;
                     width: 100px;
+                    border-radius: 50%;
+                    border: 2px dotted var(--primary-nav-text);
 
                     .profilePicture {
                       height: 100%;
                       width: 100%;
-                      object-fit: cover;
+                      object-fit: contain;
                     }
                   }
 
@@ -129,6 +129,7 @@
         background-size: cover;
         position: relative;
         height: 800px;
+        display: none;
       }
 
       .aboutPageFullWidthSectionsCentered {
@@ -208,13 +209,20 @@
             place-content: center;
             text-align: center;
 
+            &:hover
+              .reasonToChoose
+              .reasonToChooseIcon
+              .material-symbols-rounded {
+              border-style: solid;
+            }
+
             .reasonToChoose {
               .reasonToChooseIcon {
                 margin: 30px 0;
                 color: var(--primary-nav-text);
 
-                & .material-symbols-rounded {
-                  border: 3px solid var(--primary-nav-text);
+                .material-symbols-rounded {
+                  border: 3px dotted var(--primary-nav-text);
                   font-size: 50px;
                   border-radius: 50%;
                   padding: 20px;

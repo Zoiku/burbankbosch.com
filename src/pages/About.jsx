@@ -2,7 +2,7 @@ import "../styles/About.scss";
 import svgArt from "../assets/Apollonius_problem_typical_solution.svg.png";
 import MUIBreadCrumb from "../components/BreadCrumb";
 import imageSrc from "../assets/Dayflow - Message.svg";
-import profilePictureSrc from "../assets/msg358981222-121867-removebg-preview.png";
+import profilePictureSrc from "../assets/msg358981222-121868-removebg-preview.png";
 import Marquee from "react-fast-marquee";
 import logoSrc1 from "../assets/client-logo-hme-1-1 (2).png";
 import logoSrc2 from "../assets/client-logo-hme-1-2 (1).png";
@@ -78,8 +78,8 @@ const About = () => {
         </div>
       </section>
 
-      <div className="MainPageSectionCenteredContentContainer">
-        <div className="MainPageSectionCenteredContent">
+      <div className="MainPageSectionContentContainer">
+        <div className="MainPageSectionContent">
           <div className="aboutUsPageContentContainer">
             <div className="aboutUsPageContent">
               <section className="pageHeaderSectionContainer">

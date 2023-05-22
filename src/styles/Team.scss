@@ -1,133 +1,135 @@
-.Team {
-  .titleContainer {
-    width: 70%;
+.TeamContentContainer {
+  .TeamContent {
+    .titleContainer {
+      width: 70%;
 
-    .title {
-      font-size: 40px;
-      font-weight: 800;
+      .title {
+        font-size: 40px;
+        font-weight: 800;
 
-      .key {
-        font-style: italic;
-        text-decoration: underline;
-        color: var(--primary-nav-text);
+        .key {
+          font-style: italic;
+          text-decoration: underline;
+          color: var(--primary-nav-text);
+        }
+      }
+
+      .titleHelper {
+        margin: 10px 0 0 0;
+        color: gray;
+        font-size: small;
       }
     }
 
-    .titleHelper {
-      margin: 10px 0 0 0;
-      color: gray;
-      font-size: small;
-    }
-  }
+    .membersGridContainer {
+      margin: 80px 0 0 0;
 
-  .membersGridContainer {
-    margin: 80px 0 0 0;
-
-    .membersGrid {
-      width: 100%;
-      display: grid;
-      justify-content: center;
-      gap: 40px 10px;
-      grid-template-columns: repeat(3, 1fr);
-
-      .members {
+      .membersGrid {
         width: 100%;
+        display: grid;
+        justify-content: center;
+        gap: 40px 10px;
+        grid-template-columns: repeat(3, 1fr);
 
-        .imageContainer {
-          position: relative;
-          display: grid;
-          place-items: center;
-          background: #efefef;
-          height: 400px;
+        .members {
+          width: 100%;
 
-          .image {
-            height: 50%;
-            object-fit: cover;
-          }
-        }
-
-        .memberCardOverlayContainer {
-          transition: all 0.3s ease;
-          position: absolute;
-          height: 0%;
-          bottom: 0;
-          left: 0;
-          right: 0;
-          z-index: 1;
-          overflow: clip;
-
-          .memberCardOverlayContentContainer {
-            width: 100%;
-            height: 100%;
+          .imageContainer {
+            position: relative;
             display: grid;
             place-items: center;
-            color: var(--secondary-text);
+            background: #efefef;
+            height: 400px;
 
-            .memberCardOverlayContent {
-              text-align: center;
+            .image {
+              height: 50%;
+              object-fit: cover;
+            }
+          }
+
+          .memberCardOverlayContainer {
+            transition: all 0.3s ease;
+            position: absolute;
+            height: 0%;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            z-index: 1;
+            overflow: clip;
+
+            .memberCardOverlayContentContainer {
               width: 100%;
+              height: 100%;
+              display: grid;
+              place-items: center;
+              color: var(--secondary-text);
 
-              & > div {
-                margin: 0 0 10px 0;
-              }
+              .memberCardOverlayContent {
+                text-align: center;
+                width: 100%;
 
-              .innerProfileImgContainer {
-                display: grid;
-                place-content: center;
-
-                .innerProfileImg {
-                  border: 3px solid;
-                  width: 120px;
-                  height: 120px;
-                  object-fit: contain;
-                  border-radius: 50%;
+                & > div {
+                  margin: 0 0 10px 0;
                 }
-              }
 
-              .innerProfileTitleContainer {
-                font-weight: 700;
-              }
+                .innerProfileImgContainer {
+                  display: grid;
+                  place-content: center;
 
-              .innerProfileNameContainer {
-                font-size: small;
-                color: #efefef;
-              }
+                  .innerProfileImg {
+                    border: 3px solid;
+                    width: 120px;
+                    height: 120px;
+                    object-fit: contain;
+                    border-radius: 50%;
+                  }
+                }
 
-              .innerProfileSocialsContainer {
-                display: flex;
-                justify-content: center;
-                margin: 40px 0 0 0;
+                .innerProfileTitleContainer {
+                  font-weight: 700;
+                }
 
-                .innerProfileSocials {
-                  transition: all 0.1s ease;
-                  width: 20px;
-                  height: 20px;
-                  margin: 0 10px 0 0;
-                  object-fit: cover;
-                  opacity: 0.5;
-                  cursor: pointer;
+                .innerProfileNameContainer {
+                  font-size: small;
+                  color: #efefef;
+                }
 
-                  &:hover {
-                    opacity: 1;
+                .innerProfileSocialsContainer {
+                  display: flex;
+                  justify-content: center;
+                  margin: 40px 0 0 0;
+
+                  .innerProfileSocials {
+                    transition: all 0.1s ease;
+                    width: 20px;
+                    height: 20px;
+                    margin: 0 10px 0 0;
+                    object-fit: cover;
+                    opacity: 0.5;
+                    cursor: pointer;
+
+                    &:hover {
+                      opacity: 1;
+                    }
                   }
                 }
               }
             }
           }
-        }
 
-        &:hover .memberCardOverlayContainer {
-          background: #24252a;
-          height: 100%;
-        }
-
-        .nameTitleContainer {
-          margin: 10px 0 0 0;
-          .name {
-            font-weight: 700;
+          &:hover .memberCardOverlayContainer {
+            background: #24252a;
+            height: 100%;
           }
-          .title {
-            font-style: italic;
+
+          .nameTitleContainer {
+            margin: 10px 0 0 0;
+            .name {
+              font-weight: 700;
+            }
+            .title {
+              font-style: italic;
+            }
           }
         }
       }
@@ -136,21 +138,23 @@
 }
 
 @media screen and (max-width: 1024px) {
-  .Team {
-    .titleContainer {
-      width: 100%;
-
-      .title {
-        font-size: 25px;
-      }
-    }
-
-    .membersGridContainer {
-      margin: 50px 0 0 0;
-      .membersGrid {
+  .TeamContentContainer {
+    .TeamContent {
+      .titleContainer {
         width: 100%;
-        gap: 20px;
-        grid-template-columns: minmax(320px, 380px);
+
+        .title {
+          font-size: 25px;
+        }
+      }
+
+      .membersGridContainer {
+        margin: 50px 0 0 0;
+        .membersGrid {
+          width: 100%;
+          gap: 20px;
+          grid-template-columns: minmax(320px, 380px);
+        }
       }
     }
   }

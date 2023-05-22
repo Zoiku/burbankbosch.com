@@ -1,151 +1,128 @@
-.sdgPageFullWidthSectionsCenteredContainer {
-  overflow: clip;
-  width: 100%;
-  position: relative;
-  padding: 100px 0;
-  display: flex;
-  justify-content: center;
+.sdgContentContainer {
+  .sdgContent {
+    .sdgHeadingContainer {
+      .sdgHeading {
+        font-size: 40px;
+        font-weight: 100;
 
-  .svgArtContainer {
-    position: absolute;
-    top: 50%;
-    left: 0;
-    transform: translate(0%, -50%);
-
-    .svgArt {
-      opacity: 0.1;
-    }
-  }
-
-  .sdgPageFullWidthSectionsCentered {
-    .sdgContentContainer {
-      position: relative;
-      width: 1000px;
-
-      .sdgHeadingContainer {
-        .sdgHeading {
-          font-size: 40px;
-          font-weight: 100;
-
-          & span {
-            font-weight: bold;
-            display: block;
-            padding: 0 0 0 200px;
-          }
+        & span {
+          font-weight: 800;
+          display: block;
+          padding: 0 0 0 200px;
         }
       }
+    }
 
-      .sdgGridHeadingsContainer {
-        margin: 20px 0 0 0;
-        display: grid;
-        gap: 5px;
-        grid-template-columns: repeat(9, 1fr);
+    .sdgGridHeadingsContainer {
+      margin: 20px 0 0 0;
+      display: grid;
+      gap: 5px;
+      grid-template-columns: repeat(9, 1fr);
 
-        .sdgGridItemContainer {
-          height: 100px;
-          z-index: 2;
-          background: white;
+      .sdgGridItemContainer {
+        height: 100px;
+        z-index: 2;
+        background: white;
+        position: relative;
+
+        &::before {
+          content: "";
+          background: rgba(0, 0, 0, 0.05);
+          position: absolute;
+          top: 0;
+          left: 0;
+          right: 0;
+          bottom: 0;
+        }
+
+        .sdgGridItem {
+          width: 100%;
+          height: 100%;
+        }
+      }
+    }
+
+    .ourSDGsGridContainer {
+      margin: 80px 0 0 0;
+      display: grid;
+      justify-content: center;
+      gap: 10px;
+      grid-template-columns: repeat(3, 1fr);
+
+      .ourSDGItemContainer {
+        outline: 1px solid #c5c5c5;
+        background: white;
+        overflow: clip;
+
+        .ourSDGItemImageContainer {
           position: relative;
+          height: 200px;
+          width: 100%;
 
           &::before {
             content: "";
-            background: rgba(0, 0, 0, 0.05);
+            background: rgba(0, 0, 0, 0.5);
             position: absolute;
-            top: 0;
             left: 0;
             right: 0;
             bottom: 0;
+            top: 0;
           }
 
-          .sdgGridItem {
-            width: 100%;
+          .ourSDGItemImage {
             height: 100%;
-          }
-        }
-      }
-
-      .ourSDGsGridContainer {
-        margin: 80px 0 0 0;
-        display: grid;
-        justify-content: center;
-        gap: 10px;
-        grid-template-columns: repeat(3, 1fr);
-
-        .ourSDGItemContainer {
-          outline: 1px solid #c5c5c5;
-          background: white;
-          overflow: clip;
-
-          .ourSDGItemImageContainer {
-            position: relative;
-            height: 200px;
             width: 100%;
-
-            &::before {
-              content: "";
-              background: rgba(0, 0, 0, 0.5);
-              position: absolute;
-              left: 0;
-              right: 0;
-              bottom: 0;
-              top: 0;
-            }
-
-            .ourSDGItemImage {
-              height: 100%;
-              width: 100%;
-              object-fit: cover;
-            }
-
-            .ourSDGItemImageContainerIconContainer {
-              position: absolute;
-              left: 10px;
-              bottom: -25px;
-              z-index: 2;
-              background: white;
-              width: 50px;
-              height: 50px;
-              display: grid;
-              place-content: center;
-
-              .ourSDGItemImageContainerIcon {
-                width: 100%;
-                height: 100%;
-              }
-            }
+            object-fit: cover;
           }
 
-          .ourSDGItemContentContainer {
-            margin: 40px 0 20px 0;
-            padding: 10px;
+          .ourSDGItemImageContainerIconContainer {
+            position: absolute;
+            left: 10px;
+            bottom: -25px;
+            z-index: 2;
+            background: white;
+            width: 50px;
+            height: 50px;
+            display: grid;
+            place-content: center;
 
-            .ourSDGItemContent {
-              .ourSDGItemContentTitle {
-                font-weight: 700;
-              }
+            .ourSDGItemImageContainerIcon {
+              width: 100%;
+              height: 100%;
+            }
+          }
+        }
 
-              .ourSDGItemContentBody {
-                margin: 10px 0;
-              }
+        .ourSDGItemContentContainer {
+          margin: 40px 0 20px 0;
+          padding: 10px;
+
+          .ourSDGItemContent {
+            .ourSDGItemContentTitle {
+              font-weight: 700;
+            }
+
+            .ourSDGItemContentBody {
+              margin: 10px 0;
             }
           }
         }
       }
+    }
 
-      .sdgArtContainer {
-        position: absolute;
-        right: -200px;
-        top: -80px;
-        height: 400px;
-        width: 400px;
-        animation: rotating 150s infinite linear;
+    .sdgArtContainer {
+      position: absolute;
+      right: -200px;
+      top: -80px;
+      height: 400px;
+      width: 400px;
+      animation: rotating 150s infinite linear;
 
-        .sdgArt {
-          object-fit: cover;
-          height: 100%;
-          width: 100%;
-          border-radius: 150px;
-        }
+      .sdgArt {
+        object-fit: cover;
+        height: 100%;
+        width: 100%;
+        border-radius: 150px;
       }
     }
   }
@@ -161,43 +138,36 @@
 }
 
 @media screen and (max-width: 1024px) {
-  .sdgPageFullWidthSectionsCenteredContainer {
-    padding: 100px 0;
+  .sdgContentContainer {
+    .sdgContent {
+      .sdgHeadingContainer {
+        .sdgHeading {
+          font-size: 30px;
 
-    .sdgPageFullWidthSectionsCentered {
-      .sdgContentContainer {
-        width: 100%;
-        padding: 10px;
-
-        .sdgHeadingContainer {
-          .sdgHeading {
-            font-size: 30px;
-
-            & span {
-              padding: 0 0 0 50px;
-            }
+          & span {
+            padding: 0 0 0 50px;
           }
         }
+      }
 
-        .sdgGridHeadingsContainer {
-          grid-template-columns: repeat(6, 1fr);
+      .sdgGridHeadingsContainer {
+        grid-template-columns: repeat(6, 1fr);
 
-          .sdgGridItemContainer {
-            height: 60px;
+        .sdgGridItemContainer {
+          height: 60px;
 
-            .sdgGridItem {
-              object-fit: cover;
-            }
+          .sdgGridItem {
+            object-fit: cover;
           }
         }
+      }
 
-        .ourSDGsGridContainer {
-          grid-template-columns: minmax(300px, 380px);
-        }
+      .ourSDGsGridContainer {
+        grid-template-columns: minmax(300px, 380px);
+      }
 
-        .sdgArtContainer {
-          opacity: 0.1;
-        }
+      .sdgArtContainer {
+        opacity: 0.1;
       }
     }
   }

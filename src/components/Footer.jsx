@@ -1,8 +1,9 @@
 import "../styles/Footer.scss";
 import logo from "../assets/logo-big.png";
-import whatsAppIcon from "../assets/icons8-whatsapp.svg";
-import instagramAppIcon from "../assets/icons8-instagram.svg";
-import linkedInIcon from "../assets/icons8-linkedin.svg";
+import whatsAppIcon from "../assets/icons8-whatsapp-100.png";
+import instagramIcon from "../assets/icons8-instagram-100.png";
+import linkedInIcon from "../assets/icons8-linkedin-100.png";
+import mailIcon from "../assets/icons8-mail-100.png";
 
 const Footer = () => {
   return (
@@ -25,11 +26,8 @@ const Footer = () => {
           <div className="socialMediaIconsContainer">
             <div className="socialMediaIcons">
               <img src={whatsAppIcon} alt="" className="socialMediaIconsImg" />
-              <img
-                src={instagramAppIcon}
-                alt=""
-                className="socialMediaIconsImg"
-              />
+              <img src={mailIcon} alt="" className="socialMediaIconsImg" />
+              <img src={instagramIcon} alt="" className="socialMediaIconsImg" />
               <img src={linkedInIcon} alt="" className="socialMediaIconsImg" />
             </div>
           </div>
