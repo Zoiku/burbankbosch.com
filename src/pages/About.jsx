@@ -87,7 +87,7 @@ const About = () => {
                   <div className="left">
                     <div
                       data-aos-duration="1000"
-                      data-aos="fade-up"
+                      data-aos="fade-right"
                       className="imageContainer"
                     >
                       <img className="image" src={imageSrc} alt="" />
@@ -98,7 +98,7 @@ const About = () => {
                   <div className="right">
                     <div
                       data-aos-duration="1000"
-                      data-aos="fade-up"
+                      data-aos="fade-left"
                       className="contentContainer"
                     >
                       <div className="content">
