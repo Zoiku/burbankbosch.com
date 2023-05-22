@@ -1,19 +1,18 @@
 import "../styles/Nav.scss";
 import "../styles/Hamburger.scss";
 import { useState } from "react";
+import logo from "../assets/logo.png";
 import { bubble as Menu } from "react-burger-menu";
 import { NavLink, useNavigate } from "react-router-dom";
-import logo from "../assets/logo.png";
 
 const Nav = () => {
   const navigate = useNavigate();
   const [openMenu, setOpenMenu] = useState(false);
-  const toggleMenu = (open) => (event) => {
+  const toggleMenu = (open) => () => {
     setOpenMenu(open);
   };
-
-  const handleRedirect = (path) => () => {
-    navigate(path);
+  const handleRedirect = (redirect) => () => {
+    navigate(redirect, { replace: true });
   };
 
   return (
@@ -46,7 +45,7 @@ const Nav = () => {
           </li>
           <li>
             <NavLink className="NavLink" to="/sdg">
-              sdg's
+              sdgs
             </NavLink>
           </li>
           <li>
@@ -107,7 +106,7 @@ const Nav = () => {
                         className="NavLink"
                         to="/sdg"
                       >
-                        sdg's
+                        sdgs
                       </NavLink>
                     </li>
                     <li>

@@ -1,7 +1,7 @@
 import "../styles/About.scss";
 import svgArt from "../assets/Apollonius_problem_typical_solution.svg.png";
 import MUIBreadCrumb from "../components/BreadCrumb";
-import imageSrc from "../assets/Dayflow - Message.svg";
+import imageSrc from "../assets/About us page-cuate.svg";
 import profilePictureSrc from "../assets/msg358981222-121868-removebg-preview.png";
 import Marquee from "react-fast-marquee";
 import logoSrc1 from "../assets/client-logo-hme-1-1 (2).png";

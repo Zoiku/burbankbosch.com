@@ -29,3 +29,34 @@ export const Button1 = styled(LoadingButton)({
   },
   "&:focus": {},
 });
+
+export const Button2 = styled(LoadingButton)({
+  boxShadow: "none",
+  textTransform: "none",
+  transition: "all 0.2s ease",
+  color: "var(--primary-nav-text)",
+  borderColor: "var(--primary-nav-text)",
+  fontFamily: [
+    "-apple-system",
+    "BlinkMacSystemFont",
+    '"Segoe UI"',
+    "Roboto",
+    '"Helvetica Neue"',
+    "Arial",
+    "sans-serif",
+    '"Apple Color Emoji"',
+    '"Segoe UI Emoji"',
+    '"Segoe UI Symbol"',
+  ].join(","),
+  "&:hover": {
+    boxShadow: "none",
+    color: "var(--primary-nav-text)",
+    borderColor: "var(--primary-nav-text)",
+  },
+  "&:active": {
+    boxShadow: "none",
+    color: "var(--primary-nav-text)",
+    borderColor: "var(--primary-nav-text)",
+  },
+  "&:focus": {},
+});

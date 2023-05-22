@@ -1,0 +1,41 @@
+.NotFoundContentContainer {
+  display: grid;
+  place-items: center;
+  text-align: center;
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 100vh;
+  z-index: 100;
+  background: white;
+
+  .NotFoundContent {
+    width: 1000px;
+
+    .svgArtContainer {
+      height: 80vh;
+      width: 100%;
+
+      .svgArt {
+        height: 100%;
+        width: 100%;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 1024px) {
+  .NotFoundContentContainer {
+    height: 100%;
+
+    .NotFoundContent {
+      width: 100%;
+
+      .svgArtContainer {
+        height: 50vh;
+      }
+    }
+  }
+}

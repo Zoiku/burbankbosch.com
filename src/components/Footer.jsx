@@ -40,7 +40,7 @@ const Footer = () => {
             <li className="footerColumnLinks">Home</li>
             <li className="footerColumnLinks">About us</li>
             <li className="footerColumnLinks">Our Technologies</li>
-            <li className="footerColumnLinks">Our SDG's</li>
+            <li className="footerColumnLinks">SDGs</li>
             <li className="footerColumnLinks">Our Team</li>
           </ul>
         </div>

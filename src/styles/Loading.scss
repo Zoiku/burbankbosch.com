@@ -1,0 +1,40 @@
+.LoadingAnimationContainer {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 100;
+  background: white;
+  height: 100vh;
+  display: grid;
+  place-items: center;
+  text-align: center;
+  color: #777;
+
+  .LoadingAnimation {
+    width: 1000px;
+
+    .svgArtContainer {
+      height: 70vh;
+      width: 100%;
+
+      .svgArt {
+        height: 100%;
+        width: 100%;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 1024px) {
+  .LoadingAnimationContainer {
+    .LoadingAnimation {
+      width: 100%;
+
+      .svgArtContainer {
+        height: 50vh;
+      }
+    }
+  }
+}

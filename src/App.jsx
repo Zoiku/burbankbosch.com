@@ -8,6 +8,7 @@ import { Routes, Route } from "react-router-dom";
 import AOS from "aos";
 import "aos/dist/aos.css";
 import MUISpeedDial from "./components/MUISpeedDial";
+import NotFound from "./components/NotFound";
 
 AOS.init();
 
@@ -21,6 +22,7 @@ const App = () => {
           <Route path="/technology" element={<Technology />} />
           <Route path="/sdg" element={<SDGs />} />
           <Route path="/team" element={<Team />} />
+          <Route path="*" element={<NotFound />} />
         </Route>
       </Routes>
       <MUISpeedDial />
