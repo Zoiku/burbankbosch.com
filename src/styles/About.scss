@@ -4,96 +4,74 @@
 
   .aboutUsPageContent {
     .pageHeaderSectionContainer {
-      display: flex;
-      padding: 80px 0;
+      padding: 0 0 50px 0;
 
-      & > div {
-        width: 50%;
-      }
+      .imageContainer {
+        display: flex;
+        justify-content: center;
+        height: 550px;
 
-      .leftContainer {
-        .left {
-          display: grid;
-          place-content: center;
+        .image {
           width: 100%;
           height: 100%;
-
-          .imageContainer {
-            height: 500px;
-
-            .image {
-              height: 100%;
-              width: 100%;
-            }
-          }
         }
       }
 
-      .rightContainer {
-        .right {
-          display: grid;
-          place-content: center;
-          width: 100%;
-          height: 100%;
+      .pageHeaderContentContainer {
+        display: flex;
+        justify-content: center;
 
-          .contentContainer {
-            display: grid;
-            place-content: center;
-            width: 500px;
+        .pageHeaderContent {
+          width: 600px;
+          text-align: center;
 
-            .content {
-              height: 100%;
-              width: 100%;
+          .pageHeaderTitleContainer {
+            margin: 0 0 20px 0;
 
-              .titleContainer {
-                .titleHelper {
-                  font-size: small;
-                  font-weight: 500;
+            .title {
+              font-size: x-large;
+              font-weight: 700;
+            }
+
+            .titleHelper {
+              font-size: small;
+            }
+          }
+
+          .pageHeaderBody {
+            text-align: center;
+          }
+
+          .recommendationContentContainer {
+            margin: 20px 0 0 0;
+
+            .recommendationContent {
+              .profilePictureContainer {
+                display: flex;
+                justify-content: center;
+                display: none;
+
+                .profilePicture {
+                  width: 70px;
+                  height: 70px;
+                  border-radius: 50%;
+                  border: 2px dotted var(--primary-nav-text);
                 }
+              }
 
-                .title {
+              .recommendationBodyContainer {
+                display: flex;
+                justify-content: center;
+
+                .recommendationBody {
                   margin: 10px 0 0 0;
-                  font-size: xx-large;
-                  font-weight: 700;
-                }
-              }
 
-              .contentTextContainer {
-                margin: 20px 0 0 0;
-              }
-
-              .contentAuthorContainer {
-                margin: 50px 0 0 0;
-
-                .contentAuthor {
-                  display: flex;
-                  justify-content: space-between;
-                  align-items: center;
-
-                  .profilePictureContainer {
-                    margin: 0 20px 0 0;
-                    display: grid;
-                    place-items: center;
-                    width: 100px;
-                    border-radius: 50%;
-                    border: 2px dotted green;
-
-                    .profilePicture {
-                      height: 100%;
-                      width: 100%;
-                      object-fit: contain;
-                    }
+                  .quote {
+                    font-style: italic;
                   }
 
-                  .recommendationContainer {
-                    width: 100%;
-                    .recommendationExtra {
-                      font-style: italic;
-                    }
-                    .recommendationTitle {
-                      font-weight: 700;
-                      margin: 10px 0 0 0;
-                    }
+                  .quoted {
+                    font-weight: 600;
                   }
                 }
               }
@@ -112,8 +90,7 @@
       .backgroundSvgArtContainer {
         position: absolute;
         top: 50%;
-        right: 0;
-        transform: translate(0%, -50%);
+        transform: translateY(-50%);
 
         .backgroundSvgArt {
           opacity: 0.1;
@@ -178,6 +155,7 @@
 
           .fullWidthTitleHelper {
             font-weight: 500;
+            font-size: small;
           }
 
           .fullWidthTitle {
@@ -196,11 +174,11 @@
 
           .reasonToChooseCards {
             position: relative;
-            background: rgba(255, 255, 255, 0.397);
-            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+            background: rgba(255, 255, 255, 0.5);
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
             backdrop-filter: blur(10.2px);
             -webkit-backdrop-filter: blur(10.2px);
-            border: 1px solid rgba(255, 255, 255, 0.13);
+            border: 1px solid rgba(204, 204, 204, 0.336);
             padding: 20px;
             display: grid;
             place-content: center;
@@ -211,23 +189,15 @@
 
             .waterDropsArtContainer {
               position: absolute;
-              top: 10px;
-              left: 10px;
-              opacity: 0.2;
-              height: 80px;
-              width: 80px;
+              top: 30px;
+              left: 30px;
+              height: 100px;
+              width: 100px;
 
               .waterDropsArt {
                 height: 100%;
                 width: 100%;
-              }
-            }
-
-            &:hover {
-              background: #efefef;
-
-              .waterDropsArtContainer {
-                opacity: 1;
+                opacity: 0.8;
               }
             }
 
@@ -266,38 +236,26 @@
 
 @media screen and (max-width: 1024px) {
   .aboutUsPageContentContainer {
+    padding: 10px;
+
     .aboutUsPageContent {
       .pageHeaderSectionContainer {
-        flex-direction: column;
+        padding: 0;
 
-        & > div {
-          width: 100%;
+        .imageContainer {
+          height: 100%;
         }
 
-        .leftContainer {
-          .left {
-            .imageContainer {
-              width: 100%;
-              height: 100%;
-            }
-          }
-        }
+        .pageHeaderContentContainer {
+          .pageHeaderContent {
+            width: 100%;
 
-        .rightContainer {
-          padding: 15px;
-          margin: 30px 0 0 0;
+            .pageHeaderTitleContainer {
+              margin: 20px 0;
 
-          .right {
-            .contentContainer {
-              width: 100%;
-
-              .content {
-                .titleContainer {
-                  .title {
-                    margin: 0;
-                    font-weight: 700;
-                  }
-                }
+              .title {
+                font-size: x-large;
+                font-weight: 700;
               }
             }
           }

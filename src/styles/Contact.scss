@@ -1,27 +1,14 @@
 .Contact {
-  display: none;
+  background: #efefef;
+  padding: 100px 0;
 
   .contactSectionContainer {
     display: grid;
     position: relative;
     place-items: center;
-    background-image: url("../assets/contact/volodymyr-hryshchenko-V5vqWC9gyEU-unsplash.jpg");
-    background-size: cover;
-    background-repeat: no-repeat;
     overflow: clip;
 
-    &::before {
-      content: "";
-      position: absolute;
-      top: 0;
-      left: 0;
-      right: 0;
-      bottom: 0;
-      background: rgba(0, 0, 0, 0.8);
-    }
-
     .contactSection {
-      margin: 100px 0;
       width: 1200px;
       display: flex;
       justify-content: space-between;
@@ -38,12 +25,13 @@
             margin: 0 0 30px 0;
 
             .title {
-              font-size: xx-large;
-              font-weight: 500;
+              font-size: x-large;
+              font-weight: 700;
             }
 
             .titleHelper {
               color: #777;
+              font-size: small;
             }
           }
 
@@ -53,7 +41,7 @@
               justify-content: space-between;
 
               & > div {
-                width: 48%;
+                width: 49%;
               }
             }
           }
@@ -64,13 +52,11 @@
           bottom: 0;
           left: 0;
           right: 0;
-          height: 100px;
+          height: 300px;
 
           .contactFormBackgroundArt {
             height: 100%;
             width: 100%;
-            object-fit: cover;
-            opacity: 0.05;
           }
         }
       }
@@ -84,16 +70,17 @@
 
 @media screen and (max-width: 1024px) {
   .Contact {
+    padding: 0;
+
     .contactSectionContainer {
       .contactSection {
-        padding: 0;
         width: 100%;
         flex-direction: column;
 
         .contactFormContainer {
           order: 2;
           width: 100%;
-          padding-bottom: 150px;
+          padding-bottom: 300px;
         }
 
         .mapContainer {

@@ -3,7 +3,7 @@ import { useState } from "react";
 import { Box, TextField } from "@mui/material";
 import { Button1 } from "../components/MUIButton";
 import GoogleMap from "./GoogleMap";
-import svgArt from "../assets/pngtree-grass-silhouette-png-image_2952514-removebg-preview.png";
+import svgArt from "../assets/Mail sent-bro.svg";
 
 const Contact = () => {
   const initialState = {

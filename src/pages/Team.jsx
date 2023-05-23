@@ -6,6 +6,9 @@ import whatsAppIcon from "../assets/icons8-whatsapp-100.png";
 import instagramIcon from "../assets/icons8-instagram-100.png";
 import linkedInIcon from "../assets/icons8-linkedin-100.png";
 import mailIcon from "../assets/icons8-mail-100.png";
+import confettiArt1 from "../assets/drinking coconut-pana.svg";
+import confettiArt2 from "../assets/alien spaceship-pana.svg";
+import confettiArt3 from "../assets/time flies-pana.svg";
 
 const Team = () => {
   const links = [
@@ -46,6 +49,7 @@ const Team = () => {
       title: "Designer",
       fadeUpTime: 500,
       profilePicture: profileImg1,
+      cofetti: confettiArt1,
       socials: [
         {
           src: whatsAppIcon,
@@ -70,6 +74,7 @@ const Team = () => {
       title: "Designer",
       fadeUpTime: 600,
       profilePicture: profileImg1,
+      cofetti: confettiArt2,
       socials: [
         {
           src: whatsAppIcon,
@@ -94,6 +99,7 @@ const Team = () => {
       title: "Designer",
       fadeUpTime: 700,
       profilePicture: profileImg1,
+      cofetti: confettiArt3,
       socials: [
         {
           src: whatsAppIcon,
@@ -118,6 +124,7 @@ const Team = () => {
       title: "Designer",
       fadeUpTime: 600,
       profilePicture: profileImg1,
+      cofetti: confettiArt1,
       socials: [
         {
           src: whatsAppIcon,
@@ -142,6 +149,7 @@ const Team = () => {
       title: "Designer",
       fadeUpTime: 700,
       profilePicture: profileImg1,
+      cofetti: confettiArt2,
       socials: [
         {
           src: whatsAppIcon,
@@ -166,6 +174,7 @@ const Team = () => {
       title: "Designer",
       fadeUpTime: 800,
       profilePicture: profileImg1,
+      cofetti: confettiArt3,
       socials: [
         {
           src: whatsAppIcon,
@@ -273,6 +282,15 @@ const Team = () => {
                             </div>
                           </div>
                         </div>
+
+                        <div className="confettiArtContainer">
+                          <img
+                            src={member.cofetti}
+                            alt=""
+                            className="conferttiArt"
+                          />
+                        </div>
+
                         <img
                           className="image"
                           src={member.profilePicture}

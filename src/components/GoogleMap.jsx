@@ -16,9 +16,6 @@ const GoogleMap = () => {
   return (
     <div className="GoogleMap">
       <div className="googleMapContainer">
-        <div className="overlayContainer">
-          <div className="overlay"></div>
-        </div>
         {isLoaded && (
           <ReactGoogleMap
             mapContainerClassName="googleMapBody"

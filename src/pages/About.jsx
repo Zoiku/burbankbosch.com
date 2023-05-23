@@ -1,7 +1,7 @@
 import "../styles/About.scss";
 import svgArt from "../assets/Apollonius_problem_typical_solution.svg.png";
 import MUIBreadCrumb from "../components/BreadCrumb";
-import imageSrc from "../assets/About us page-cuate.svg";
+import imageSrc from "../assets/Company-pana.svg";
 import profilePictureSrc from "../assets/msg358981222-121868-removebg-preview.png";
 import Marquee from "react-fast-marquee";
 import logoSrc1 from "../assets/client-logo-hme-1-1 (2).png";
@@ -14,7 +14,7 @@ import superiorproductImage from "../assets/Technology/Gardening-cuate.svg";
 import noContractImage from "../assets/Technology/Agreement-bro.svg";
 import competitivePricingImage from "../assets/Technology/Growth curve-cuate.svg";
 
-import waterDrops from "../assets/Technology/Water drop-bro.svg";
+import waterDrops from "../assets/Technology/Uploading-bro.svg";
 
 const About = () => {
   const links = [
@@ -90,58 +90,63 @@ const About = () => {
           <div className="aboutUsPageContentContainer">
             <div className="aboutUsPageContent">
               <section className="pageHeaderSectionContainer">
-                <div className="leftContainer">
-                  <div className="left">
-                    <div
-                      data-aos-duration="1000"
-                      data-aos="fade-right"
-                      className="imageContainer"
-                    >
-                      <img className="image" src={imageSrc} alt="" />
-                    </div>
-                  </div>
+                <div
+                  data-aos-duration={1000}
+                  data-aos="fade-down"
+                  className="imageContainer"
+                >
+                  <img src={imageSrc} alt="" className="image" />
                 </div>
-                <div className="rightContainer">
-                  <div className="right">
-                    <div
-                      data-aos-duration="1000"
-                      data-aos="fade-left"
-                      className="contentContainer"
-                    >
-                      <div className="content">
-                        <div className="titleContainer">
-                          <div className="titleHelper">Learn More</div>
-                          <div className="title">About Us</div>
-                        </div>
 
-                        <div className="contentTextContainer">
-                          <div className="contentText">
-                            Burbank Bosch is a tech-enabled agribusiness
-                            guaranteeing fresh food for communities. By
-                            leveraging greenhouse technology, scientific farming
-                            practices and blockchain technology, we grow fresh
-                            healthy food in controlled environments and ensure
-                            traceability. We are committed to responsible land
-                            use and conserving water resources.
-                          </div>
+                <div className="pageHeaderContentContainer">
+                  <div className="pageHeaderContent">
+                    <div
+                      data-aos-duration={1200}
+                      data-aos="fade-up"
+                      className="pageHeaderTitleContainer"
+                    >
+                      <div className="titleHelper">Learn More</div>
+                      <div className="title">About Us</div>
+                    </div>
+
+                    <div
+                      data-aos-duration={1400}
+                      data-aos="fade-up"
+                      className="pageHeaderBody"
+                    >
+                      Burbank Bosch is a tech-enabled agribusiness guaranteeing
+                      fresh food for communities. By leveraging greenhouse
+                      technology, scientific farming practices and blockchain
+                      technology, we grow fresh healthy food in controlled
+                      environments and ensure traceability. We are committed to
+                      responsible land use and conserving water resources.
+                    </div>
+
+                    <div className="recommendationContentContainer">
+                      <div className="recommendationContent">
+                        <div
+                          data-aos-duration={1600}
+                          data-aos="fade-up"
+                          className="profilePictureContainer"
+                        >
+                          <img
+                            src={profilePictureSrc}
+                            alt=""
+                            className="profilePicture"
+                          />
                         </div>
-                        <div className="contentAuthorContainer">
-                          <div className="contentAuthor">
-                            <div className="profilePictureContainer">
-                              <img
-                                className="profilePicture"
-                                src={profilePictureSrc}
-                                alt=""
-                              />
+                        <div
+                          data-aos-duration={1800}
+                          data-aos="fade-up"
+                          className="recommendationBodyContainer"
+                        >
+                          <div className="recommendationBody">
+                            <div className="quote">
+                              "Award winning landscape design & gardening
+                              business"
                             </div>
-                            <div className="recommendationContainer">
-                              <div className="recommendationExtra">
-                                “Award winning landscape design & gardening
-                                business operating for 24 years.”
-                              </div>
-                              <div className="recommendationTitle">
-                                Joseph Mireku Nti , Team Leader of Burbank Bosch
-                              </div>
+                            <div className="quoted">
+                              Joseph Mireku Nti, Team Leader of Burbank Bosch
                             </div>
                           </div>
                         </div>
@@ -158,8 +163,8 @@ const About = () => {
 
                 <div className="aboutPageFullWidthSectionsCentered">
                   <div className="fullWidthTitleContainer">
-                    <div className="fullWidthTitleHelper">Why You Should</div>
-                    <div className="fullWidthTitle">Choose BurbankBosch</div>
+                    <div className="fullWidthTitleHelper">Why Choose</div>
+                    <div className="fullWidthTitle">Burbank Bosch</div>
                   </div>
                   <div className="reasonsToChooseContainer">
                     {reasonsToChooseBurbank.map((reason, index) => (
@@ -170,7 +175,11 @@ const About = () => {
                         className="reasonToChooseCards"
                       >
                         <div className="waterDropsArtContainer">
-                          <img src={waterDrops} alt="" className="waterDropArt" />
+                          <img
+                            src={waterDrops}
+                            alt=""
+                            className="waterDropArt"
+                          />
                         </div>
                         <div className="reasonToChoose">
                           <div className="reasonToChooseIconContainer">

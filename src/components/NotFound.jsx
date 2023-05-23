@@ -1,5 +1,5 @@
 import "../styles/NotFound.scss";
-import svgArt from "../assets/404/Error with a broken robot-bro.svg";
+import svgArt from "../assets/404/Error with a broken robot-cuate.svg";
 import { Button2 } from "../components/MUIButton";
 import { RoofingRounded } from "@mui/icons-material/";
 import { useNavigate } from "react-router-dom";

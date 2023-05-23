@@ -51,7 +51,7 @@ const Technology = () => {
                   <div className="titleContainer">
                     <div className="titleHelper">An Overview</div>
                     <div className="title">
-                      Edge Cutting Green House Technology
+                      Our Green House Technology
                     </div>
                   </div>
 
