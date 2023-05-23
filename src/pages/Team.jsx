@@ -1,7 +1,7 @@
 import "../styles/Team.scss";
 import MUIBreadCrumb from "../components/BreadCrumb";
 import profileImg1 from "../assets/msg358981222-121868-removebg-preview.png";
-import svgArt from "../assets/png-clipart-swirling-arrow-illustration-arrow-drawing-sketch-arrow-sketch-angle-pencil-removebg-preview.png";
+import svgArt from "../assets/Technology/Team work-bro.svg";
 import whatsAppIcon from "../assets/icons8-whatsapp-100.png";
 import instagramIcon from "../assets/icons8-instagram-100.png";
 import linkedInIcon from "../assets/icons8-linkedin-100.png";
@@ -210,10 +210,6 @@ const Team = () => {
 
       <section className="MainPageSectionCenteredContentContainer">
         <div className="MainPageSectionCentered">
-          <div className="TeamPageSvgArtContainer">
-            <img className="TeamPageSvgArt" src={svgArt} alt="" />
-          </div>
-
           <div className="TeamContentContainer">
             <div className="TeamContent">
               <div className="titleContainer">
@@ -226,6 +222,15 @@ const Team = () => {
                   Lorem ipsum dolor sit amet consectetur adipisicing elit.
                   Inventore, maxime culpa. Ipsum totam soluta minus tenetur
                   expedita omnis illo deserunt eaque.
+                </div>
+                <div className="TeamPageSvgArtContainer">
+                  <img
+                    data-aos="fade-left"
+                    data-aos-duration="1000"
+                    className="TeamPageSvgArt"
+                    src={svgArt}
+                    alt=""
+                  />
                 </div>
               </div>
               <div className="membersGridContainer">

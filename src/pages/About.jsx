@@ -9,6 +9,13 @@ import logoSrc2 from "../assets/client-logo-hme-1-2 (1).png";
 import logoSrc3 from "../assets/client-logo-hme-1-3 (1).png";
 import logoSrc4 from "../assets/client-logo-hme-1-4 (1).png";
 
+import insuranceImage from "../assets/Technology/Insurance-bro.svg";
+import superiorproductImage from "../assets/Technology/Gardening-cuate.svg";
+import noContractImage from "../assets/Technology/Agreement-bro.svg";
+import competitivePricingImage from "../assets/Technology/Growth curve-cuate.svg";
+
+import waterDrops from "../assets/Technology/Water drop-bro.svg";
+
 const About = () => {
   const links = [
     { name: "home", url: "/" },
@@ -31,28 +38,28 @@ const About = () => {
       title: "Fully Insured",
       content:
         "Sequi enim libero, ad reiciendis rerum alias consequuntur dolore? Fuga nulla recusandae facere eaque.",
-      icon: "location_automation",
+      icon: insuranceImage,
       fadeUpTime: 500,
     },
     {
       title: "Superior Products",
       content:
         "Sequi enim libero, ad reiciendis rerum alias consequuntur dolore? Fuga nulla recusandae facere eaque.",
-      icon: "potted_plant",
+      icon: superiorproductImage,
       fadeUpTime: 600,
     },
     {
       title: "No Contracts",
       content:
         "Sequi enim libero, ad reiciendis rerum alias consequuntur dolore? Fuga nulla recusandae facere eaque.",
-      icon: "receipt_long",
+      icon: noContractImage,
       fadeUpTime: 700,
     },
     {
       title: "Competitive Pricing",
       content:
         "Sequi enim libero, ad reiciendis rerum alias consequuntur dolore? Fuga nulla recusandae facere eaque.",
-      icon: "insights",
+      icon: competitivePricingImage,
       fadeUpTime: 800,
     },
   ];
@@ -162,11 +169,16 @@ const About = () => {
                         key={index}
                         className="reasonToChooseCards"
                       >
+                        <div className="waterDropsArtContainer">
+                          <img src={waterDrops} alt="" className="waterDropArt" />
+                        </div>
                         <div className="reasonToChoose">
-                          <div className="reasonToChooseIcon">
-                            <span className="material-symbols-rounded">
-                              {reason.icon}
-                            </span>
+                          <div className="reasonToChooseIconContainer">
+                            <img
+                              src={reason.icon}
+                              alt=""
+                              className="reasonToChooseIcon"
+                            />
                           </div>
                           <div className="reasonToChooseTitle">
                             {reason.title}

@@ -1,6 +1,8 @@
 import "../styles/Technology.scss";
 import MUIBreadCrumb from "../components/BreadCrumb";
 import technologyImg from "../assets/Technology/Environment-bro.svg";
+import questionImg from "../assets/Technology/Shrug-bro.svg";
+import blockchainImg from "../assets/Technology/Fingerprint-bro.svg";
 
 const Technology = () => {
   const links = [
@@ -48,7 +50,9 @@ const Technology = () => {
                 <div className="overviewContent">
                   <div className="titleContainer">
                     <div className="titleHelper">An Overview</div>
-                    <div className="title">Our Edge Cutting Technology</div>
+                    <div className="title">
+                      Edge Cutting Green House Technology
+                    </div>
                   </div>
 
                   <div className="overviewBodyContainer">
@@ -63,6 +67,209 @@ const Technology = () => {
                       nostrum explicabo blanditiis ut ipsa dolorum nobis non
                       autem ducimus doloribus quos. Iusto, exercitationem
                       consectetur. Aspernatur, exercitationem quam.
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div className="advantagesContentContainer">
+                <div className="advantagesContent">
+                  <div className="advantagesBodyContainer">
+                    <div className="advantagesBody">
+                      <div className="titleContainer">
+                        <div className="titleHelper">Related Benefits</div>
+                        <div className="title">
+                          Reasons To Use Our Technology
+                        </div>
+                      </div>
+
+                      <div
+                        data-aos-duration="1000"
+                        data-aos="fade-right"
+                        className="whyUsTwoBoxesContainer"
+                      >
+                        <div className="whyUsTwoBoxes">
+                          <div className="whyUsTwoBoxItemContainer">
+                            <div className="whyUsTwoBoxItem">
+                              <div>5</div>
+                              <div>years of experiencee</div>
+                            </div>
+                          </div>
+                          <div
+                            data-aos-duration="1500"
+                            data-aos="fade-right"
+                            className="whyUsTwoBoxItemContainer"
+                          >
+                            <div className="whyUsTwoBoxItem">
+                              <div>100%</div>
+                              <div>recommended</div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+
+                      <div
+                        data-aos-duration="1000"
+                        data-aos="fade-up"
+                        className="firstBodyHelperContainer"
+                      >
+                        <div className="firstBodyHelper">
+                          <span className="key">Lorem ipsum dolor</span>, sit
+                          amet consectetur adipisicing elit. Vero enim similique
+                          est, nobis esse ipsam natus ducimus dolorum quasi
+                          numquam, assumenda ullam non iusto iure quibusdam
+                          dicta eveniet libero cumque ea maxime modi eius!
+                          Voluptate reiciendis odit deserunt quam provident.
+                        </div>
+                      </div>
+
+                      <div
+                        data-aos-duration="1200"
+                        data-aos="fade-up"
+                        className="firstBodyHelperContainer"
+                      >
+                        <div className="firstBodyHelper">
+                          Lorem ipsum dolor sit amet consectetur adipisicing
+                          elit. Vero enim similique est, nobis esse ipsam natus
+                          ducimus dolorum quasi numquam, assumenda ullam non
+                          iusto iure quibusdam dicta eveniet libero cumque ea
+                          maxime modi eius! Voluptate reiciendis odit deserunt
+                          quam provident.
+                        </div>
+                      </div>
+
+                      <div className="advantagesListContainer">
+                        <div className="advantagesList">
+                          <ul
+                            data-aos-duration="1400"
+                            data-aos="fade-up"
+                            className="advantagesListContentContainer"
+                          >
+                            <li>Quick response time</li>
+                            <li>Incredible customer service</li>
+                            <li>High level Work completed</li>
+                            <li>Work completed in time</li>
+                            <li>Competitive prices</li>
+                            <li>We understand customer needs</li>
+                          </ul>
+                          <ul
+                            data-aos-duration="1600"
+                            data-aos="fade-up"
+                            className="advantagesListContentContainer"
+                          >
+                            <li>Quick response time</li>
+                            <li>Incredible customer service</li>
+                            <li>High level Work completed</li>
+                            <li>Work completed in time</li>
+                            <li>Competitive prices</li>
+                            <li>We understand customer needs</li>
+                          </ul>
+                        </div>
+                      </div>
+
+                      <div className="callUsTodayContainer">
+                        <div className="callUsToday">
+                          Lorem ipsum dolor sit amet consectetur adipisicing
+                          elit. Aliquid dignissimos dolorem voluptatem facere
+                          ducimus architecto a sit eligendi non rem!
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div
+                    data-aos-duration="1000"
+                    data-aos="fade-left"
+                    className="advantagesBackgroundArtContainer"
+                  >
+                    <img
+                      src={questionImg}
+                      alt=""
+                      className="advantagesBackgroundArt"
+                    />
+                  </div>
+                </div>
+              </div>
+
+              <div className="blockChainIncorporationContentContainer">
+                <div className="blockChainIncorporationContent">
+                  <div
+                    data-aos-duration="1000"
+                    data-aos="fade-right"
+                    className="backgroundArtContainer"
+                  >
+                    <img src={blockchainImg} alt="" className="backgroundArt" />
+                  </div>
+
+                  <div className="blockChainIncorporationBodyContainer">
+                    <div className="blockChainIncorporationBody">
+                      <div className="titleContainer">
+                        <div className="titleHelper">How it works</div>
+                        <div className="title">
+                          Improved Traceability With Blockchain
+                        </div>
+                      </div>
+
+                      <div
+                        data-aos-duration="1000"
+                        data-aos="fade-up"
+                        className="howContentBodyContainer"
+                      >
+                        <div className="howContentBody">
+                          <span className="key">Lorem ipsum dolor</span> sit
+                          amet consectetur, adipisicing elit. Officia alias
+                          eaque facere dolor natus recusandae ex span.key
+                          blanditiis incidunt aperiam sit voluptatem beatae,
+                          nobis omnis obcaecati illo officiis consequuntur
+                          distinctio quos? Nobis aspernatur corporis
+                          perspiciatis cum, necessitatibus rem inventore
+                          obcaecati?
+                        </div>
+                      </div>
+
+                      <div
+                        data-aos-duration="1200"
+                        data-aos="fade-up"
+                        className="howContentBodyContainer"
+                      >
+                        <div className="howContentBody">
+                          Lorem ipsum dolor sit amet consectetur, adipisicing
+                          elit. Officia alias eaque facere dolor natus
+                          recusandae ex span.key blanditiis incidunt aperiam sit
+                          voluptatem beatae, nobis omnis obcaecati illo officiis
+                          consequuntur distinctio quos? Nobis aspernatur
+                          corporis perspiciatis cum, necessitatibus rem
+                          inventore obcaecati?
+                        </div>
+                      </div>
+
+                      <div className="advantagesListContainer">
+                        <div className="advantagesList">
+                          <ul
+                            data-aos-duration="1400"
+                            data-aos="fade-up"
+                            className="advantagesListContentContainer"
+                          >
+                            <li>Quick response time</li>
+                            <li>Incredible customer service</li>
+                            <li>High level Work completed</li>
+                            <li>Work completed in time</li>
+                            <li>Competitive prices</li>
+                            <li>We understand customer needs</li>
+                          </ul>
+                          <ul
+                            data-aos-duration="1600"
+                            data-aos="fade-up"
+                            className="advantagesListContentContainer"
+                          >
+                            <li>Quick response time</li>
+                            <li>Incredible customer service</li>
+                            <li>High level Work completed</li>
+                            <li>Work completed in time</li>
+                            <li>Competitive prices</li>
+                            <li>We understand customer needs</li>
+                          </ul>
+                        </div>
+                      </div>
                     </div>
                   </div>
                 </div>

@@ -1,11 +1,12 @@
 .TeamContentContainer {
   .TeamContent {
     .titleContainer {
-      width: 70%;
+      position: relative;
 
       .title {
         font-size: 40px;
         font-weight: 800;
+        width: 70%;
 
         .key {
           font-style: italic;
@@ -15,9 +16,23 @@
       }
 
       .titleHelper {
+        width: 70%;
         margin: 10px 0 0 0;
         color: gray;
         font-size: small;
+      }
+
+      .TeamPageSvgArtContainer {
+        position: absolute;
+        width: 250px;
+        height: 250px;
+        top: 0;
+        right: 0;
+
+        .TeamPageSvgArt {
+          height: 100%;
+          width: 100%;
+        }
       }
     }
 
@@ -144,7 +159,25 @@
         width: 100%;
 
         .title {
+          width: 100%;
           font-size: 25px;
+        }
+
+        .titleHelper {
+          width: 100%;
+        }
+
+        .TeamPageSvgArtContainer {
+          position: absolute;
+          width: 200px;
+          height: 200px;
+          top: -100px;
+          right: 0;
+
+          .TeamPageSvgArt {
+            height: 100%;
+            width: 100%;
+          }
         }
       }
 

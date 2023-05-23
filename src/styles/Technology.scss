@@ -1,5 +1,6 @@
 .TechnologyContentContainer {
   padding: 0 0 100px 0;
+  overflow: clip;
 
   .TechnologyContent {
     .firstImageGridContainer {
@@ -27,6 +28,7 @@
         .firstImage {
           height: 100%;
           width: 100%;
+          animation: float 2s ease infinite;
         }
       }
     }
@@ -34,7 +36,7 @@
     .overviewContentContainer {
       display: flex;
       justify-content: center;
-      margin: 50px 0 0 0;
+      padding: 100px 0;
 
       .overviewContent {
         width: 600px;
@@ -52,22 +54,199 @@
         }
       }
     }
+
+    .advantagesContentContainer {
+      padding: 100px 0;
+
+      .advantagesContent {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        & > div {
+          width: 50%;
+        }
+
+        .advantagesBodyContainer {
+          display: grid;
+          place-content: center;
+
+          .advantagesBody {
+            width: 550px;
+
+            .titleContainer {
+              margin: 0 0 20px 0;
+              .title {
+                font-size: x-large;
+                font-weight: 700;
+              }
+            }
+
+            .whyUsTwoBoxesContainer {
+              .whyUsTwoBoxes {
+                display: grid;
+                gap: 10px;
+                grid-template-columns: repeat(2, 1fr);
+
+                .whyUsTwoBoxItemContainer {
+                  height: 120px;
+                  outline: 2px solid var(--primary-nav-text);
+                  display: flex;
+                  align-items: center;
+
+                  .whyUsTwoBoxItem {
+                    padding: 20px;
+
+                    & > div:nth-child(1) {
+                      font-size: xx-large;
+                      font-weight: 600;
+                    }
+
+                    & > div:nth-child(2) {
+                      font-weight: 500;
+                    }
+                  }
+                }
+              }
+            }
+
+            .firstBodyHelperContainer {
+              margin: 20px 0;
+
+              .firstBodyHelper {
+                color: gray;
+
+                .key {
+                  font-weight: 500;
+                  color: black;
+                }
+              }
+            }
+
+            .advantagesListContainer {
+              .advantagesList {
+                display: flex;
+                justify-content: space-between;
+
+                .advantagesListContentContainer {
+                  list-style-type: square;
+
+                  & li {
+                    margin: 0 0 0 20px;
+                    font-weight: 500;
+                    line-height: 30px;
+                  }
+
+                  & li::marker {
+                    color: var(--primary-nav-text);
+                  }
+                }
+              }
+            }
+
+            .callUsTodayContainer {
+              margin: 30px 0 0 0;
+              color: gray;
+            }
+          }
+        }
+
+        .advantagesBackgroundArtContainer {
+          height: 600px;
+
+          .advantagesBackgroundArt {
+            width: 100%;
+            height: 100%;
+          }
+        }
+      }
+    }
+
+    .blockChainIncorporationContentContainer {
+      padding: 100px 0;
+
+      .blockChainIncorporationContent {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        & > div {
+          width: 50%;
+        }
+
+        .backgroundArtContainer {
+          height: 600px;
+
+          .backgroundArt {
+            width: 100%;
+            height: 100%;
+          }
+        }
+
+        .blockChainIncorporationBodyContainer {
+          display: grid;
+          place-content: center;
+
+          .blockChainIncorporationBody {
+            width: 550px;
+
+            .titleContainer {
+              margin: 0 0 20px 0;
+              .title {
+                font-size: x-large;
+                font-weight: 700;
+              }
+            }
+
+            .howContentBodyContainer {
+              margin: 0 0 20px 0;
+              .howContentBody {
+                color: gray;
+
+                .key {
+                  font-weight: 500;
+                  color: black;
+                }
+              }
+            }
+
+            .advantagesListContainer {
+              .advantagesList {
+                display: flex;
+                justify-content: space-between;
+
+                .advantagesListContentContainer {
+                  list-style-type: square;
+
+                  & li {
+                    margin: 0 0 0 20px;
+                    font-weight: 500;
+                    line-height: 30px;
+                  }
+
+                  & li::marker {
+                    color: var(--primary-nav-text);
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
   }
 }
 
 @media screen and (max-width: 1024px) {
   .TechnologyContentContainer {
-    padding: 100px 10px;
+    padding: 10px;
+
     .TechnologyContent {
       .firstImageGridContainer {
         .imageOverlayTitle {
-          font-size: x-large;
+          font-size: 30px;
+          font-weight: 800;
           letter-spacing: 5px;
-          top: -50px;
-          left: initial;
-          bottom: initial;
-          right: initial;
-          transform: translate(0%, 0%);
         }
 
         .firstImageContainer {
@@ -75,19 +254,140 @@
           height: 100%;
 
           .firstImage {
-            height: 100%;
-            width: 100%;
+            opacity: 0.5;
           }
         }
       }
 
       .overviewContentContainer {
-        margin: 30px 0 0 0;
-
         .overviewContent {
+          width: 100%;
+          text-align: center;
+
           .titleContainer {
             .title {
               font-size: large;
+              font-weight: 700;
+            }
+          }
+        }
+      }
+
+      .advantagesContentContainer {
+        padding: 20px 0;
+        .advantagesContent {
+          flex-direction: column;
+
+          & > div {
+            width: 100%;
+          }
+
+          .advantagesBodyContainer {
+            order: 2;
+
+            .advantagesBody {
+              width: 100%;
+
+              .titleContainer {
+                text-align: center;
+                .title {
+                  font-size: large;
+                }
+              }
+
+              .whyUsTwoBoxesContainer {
+                .whyUsTwoBoxes {
+                  justify-content: center;
+                  grid-template-columns: repeat(1, 1fr);
+
+                  .whyUsTwoBoxItemContainer {
+                    height: 100px;
+                    outline: 2px solid var(--primary-nav-text);
+                    display: flex;
+                    align-items: center;
+
+                    .whyUsTwoBoxItem {
+                      padding: 10px;
+
+                      & > div:nth-child(1) {
+                        font-size: x-large;
+                      }
+                    }
+                  }
+                }
+              }
+
+              .advantagesListContainer {
+                .advantagesList {
+                  display: flex;
+                  justify-content: space-between;
+
+                  .advantagesListContentContainer {
+                    & li {
+                      line-height: initial;
+                      font-weight: normal;
+                    }
+                  }
+                }
+              }
+
+              .callUsTodayContainer {
+                margin: 30px 0 0 0;
+                color: gray;
+              }
+            }
+          }
+
+          .advantagesBackgroundArtContainer {
+            order: 1;
+            height: 100%;
+            width: 100%;
+
+            .advantagesBackgroundArt {
+              width: 100%;
+              height: 100%;
+            }
+          }
+        }
+      }
+
+      .blockChainIncorporationContentContainer {
+        .blockChainIncorporationContent {
+          flex-direction: column;
+
+          & > div {
+            width: 100%;
+          }
+
+          .backgroundArtContainer {
+            height: 100%;
+            width: 100%;
+          }
+
+          .blockChainIncorporationBodyContainer {
+            .blockChainIncorporationBody {
+              width: 100%;
+
+              .titleContainer {
+                text-align: center;
+                .title {
+                  font-size: large;
+                }
+              }
+
+              .advantagesListContainer {
+                .advantagesList {
+                  display: flex;
+                  justify-content: space-between;
+
+                  .advantagesListContentContainer {
+                    & li {
+                      line-height: initial;
+                      font-weight: normal;
+                    }
+                  }
+                }
+              }
             }
           }
         }

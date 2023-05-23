@@ -114,7 +114,13 @@ const SDGs = () => {
           <div className="sdgContentContainer">
             <div className="sdgContent">
               <div className="sdgArtContainer">
-                <img src={sdgArt} alt="" className="sdgArt" />
+                <img
+                  data-aos="fade-down"
+                  data-aos-duration="1000"
+                  src={sdgArt}
+                  alt=""
+                  className="sdgArt"
+                />
               </div>
 
               <div className="sdgHeadingContainer">
@@ -124,130 +130,58 @@ const SDGs = () => {
               </div>
 
               <div className="sdgGridHeadingsContainer">
-                <div
-                  data-aos="fade-up"
-                  data-aos-duration="600"
-                  className="sdgGridItemContainer"
-                >
+                <div className="sdgGridItemContainer">
                   <img src={sdg1} alt="" className="sdgGridItem" />
                 </div>
-                <div
-                  data-aos="fade-up"
-                  data-aos-duration="800"
-                  className="sdgGridItemContainer"
-                >
+                <div className="sdgGridItemContainer">
                   <img src={sdg2} alt="" className="sdgGridItem" />
                 </div>
-                <div
-                  data-aos="fade-up"
-                  data-aos-duration="1000"
-                  className="sdgGridItemContainer"
-                >
+                <div className="sdgGridItemContainer">
                   <img src={sdg3} alt="" className="sdgGridItem" />
                 </div>
-                <div
-                  data-aos="fade-up"
-                  data-aos-duration="1200"
-                  className="sdgGridItemContainer"
-                >
+                <div className="sdgGridItemContainer">
                   <img src={sdg4} alt="" className="sdgGridItem" />
                 </div>
-                <div
-                  data-aos="fade-up"
-                  data-aos-duration="1400"
-                  className="sdgGridItemContainer"
-                >
+                <div className="sdgGridItemContainer">
                   <img src={sdg5} alt="" className="sdgGridItem" />
                 </div>
-                <div
-                  data-aos="fade-up"
-                  data-aos-duration="1600"
-                  className="sdgGridItemContainer"
-                >
+                <div className="sdgGridItemContainer">
                   <img src={sdg6} alt="" className="sdgGridItem" />
                 </div>
-                <div
-                  data-aos="fade-up"
-                  data-aos-duration="1800"
-                  className="sdgGridItemContainer"
-                >
+                <div className="sdgGridItemContainer">
                   <img src={sdg7} alt="" className="sdgGridItem" />
                 </div>
-                <div
-                  data-aos="fade-up"
-                  data-aos-duration="2000"
-                  className="sdgGridItemContainer"
-                >
+                <div className="sdgGridItemContainer">
                   <img src={sdg8} alt="" className="sdgGridItem" />
                 </div>
-                <div
-                  data-aos="fade-up"
-                  data-aos-duration="2200"
-                  className="sdgGridItemContainer"
-                >
+                <div className="sdgGridItemContainer">
                   <img src={sdg9} alt="" className="sdgGridItem" />
                 </div>
-                <div
-                  data-aos="fade-up"
-                  data-aos-duration="600"
-                  className="sdgGridItemContainer"
-                >
+                <div className="sdgGridItemContainer">
                   <img src={sdg10} alt="" className="sdgGridItem" />
                 </div>
-                <div
-                  data-aos="fade-up"
-                  data-aos-duration="800"
-                  className="sdgGridItemContainer"
-                >
+                <div className="sdgGridItemContainer">
                   <img src={sdg11} alt="" className="sdgGridItem" />
                 </div>
-                <div
-                  data-aos="fade-up"
-                  data-aos-duration="1000"
-                  className="sdgGridItemContainer"
-                >
+                <div className="sdgGridItemContainer">
                   <img src={sdg12} alt="" className="sdgGridItem" />
                 </div>
-                <div
-                  data-aos="fade-up"
-                  data-aos-duration="1200"
-                  className="sdgGridItemContainer"
-                >
+                <div className="sdgGridItemContainer">
                   <img src={sdg13} alt="" className="sdgGridItem" />
                 </div>
-                <div
-                  data-aos="fade-up"
-                  data-aos-duration="1400"
-                  className="sdgGridItemContainer"
-                >
+                <div className="sdgGridItemContainer">
                   <img src={sdg14} alt="" className="sdgGridItem" />
                 </div>
-                <div
-                  data-aos="fade-up"
-                  data-aos-duration="1600"
-                  className="sdgGridItemContainer"
-                >
+                <div className="sdgGridItemContainer">
                   <img src={sdg15} alt="" className="sdgGridItem" />
                 </div>
-                <div
-                  data-aos="fade-up"
-                  data-aos-duration="1800"
-                  className="sdgGridItemContainer"
-                >
+                <div className="sdgGridItemContainer">
                   <img src={sdg16} alt="" className="sdgGridItem" />
                 </div>
-                <div
-                  data-aos="fade-up"
-                  data-aos-duration="2000"
-                  className="sdgGridItemContainer"
-                >
+                <div className="sdgGridItemContainer">
                   <img src={sdg17} alt="" className="sdgGridItem" />
                 </div>
-                <div
-                  data-aos="fade-up"
-                  data-aos-duration="2200"
-                  className="sdgGridItemContainer"
-                >
+                <div className="sdgGridItemContainer">
                   <img src={sdg18} alt="" className="sdgGridItem" />
                 </div>
               </div>
