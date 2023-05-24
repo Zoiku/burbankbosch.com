@@ -24,7 +24,7 @@ const Footer = () => {
   const openSocial = (socialMediaType, attachment) => () => {
     switch (socialMediaType) {
       case socialMediaTypes.MAIL:
-        window.open(`mailto://${attachment}`, "_blank");
+        window.open(`mailto://${attachment}`);
         break;
       case socialMediaTypes.INSTAGRAM:
         window.open("https://www.instagram.com/explore/", "_blank");
@@ -36,7 +36,7 @@ const Footer = () => {
         window.open("https://www.linkedin.com/", "_blank");
         break;
       case socialMediaTypes.CALL:
-        window.open(`tel:${attachment}`, "_blank");
+        window.open(`tel:${attachment}`);
         break;
 
       default:
@@ -64,7 +64,7 @@ const Footer = () => {
           <div className="socialMediaIconsContainer">
             <div className="socialMediaIcons">
               <img
-                onClick={openSocial(socialMediaTypes.WHATSAPP, "233555777803")}
+                onClick={openSocial(socialMediaTypes.WHATSAPP, "233209384829")}
                 src={whatsAppIcon}
                 alt=""
                 className="socialMediaIconsImg"

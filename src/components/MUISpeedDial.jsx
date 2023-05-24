@@ -1,30 +1,32 @@
 import SpeedDial from "@mui/material/SpeedDial";
 import SpeedDialIcon from "@mui/material/SpeedDialIcon";
 import SpeedDialAction from "@mui/material/SpeedDialAction";
-import { WhatsApp, Instagram } from "@mui/icons-material";
+import { WhatsApp, Instagram, Mail, LinkedIn } from "@mui/icons-material";
 
 const MUISpeedDial = () => {
   const speedDialActionTypes = {
     WHATSAPP: "WHATSAPP",
+    MAIL: "MAIL",
     INSTAGRAM: "INSTAGRAM",
+    LINKEDIN: "LINKEDIN",
   };
 
-  const doWhatsAppAction = () => {
-    console.log("Check WhatsApp");
-  };
-
-  const doInstagramAction = () => {
-    console.log("Check Instagram");
-  };
-
-  const doAction = (type) => () => {
-    switch (type) {
+  const doAction = (socialMediaType, attachment) => () => {
+    switch (socialMediaType) {
       case speedDialActionTypes.WHATSAPP:
-        doWhatsAppAction();
+        window.open(`https://wa.me/${attachment}?text=Hello there!`, "_blank");
         break;
 
       case speedDialActionTypes.INSTAGRAM:
-        doInstagramAction();
+        window.open("https://www.instagram.com/explore/", "_blank");
+        break;
+
+      case speedDialActionTypes.MAIL:
+        window.open(`mailto://${attachment}`);
+        break;
+
+      case speedDialActionTypes.LINKEDIN:
+        window.open("https://www.linkedin.com/", "_blank");
         break;
 
       default:
@@ -34,14 +36,24 @@ const MUISpeedDial = () => {
 
   const actions = [
     {
+      icon: <LinkedIn />,
+      name: "Connect on LinkedIn",
+      function: doAction(speedDialActionTypes.LINKEDIN),
+    },
+    {
       icon: <Instagram />,
       name: "Connect via Instagram",
       function: doAction(speedDialActionTypes.INSTAGRAM),
     },
     {
+      icon: <Mail />,
+      name: "Send us an email",
+      function: doAction(speedDialActionTypes.MAIL, "hello@burbankbosch.com"),
+    },
+    {
       icon: <WhatsApp />,
       name: "Connect Via Whatsapp",
-      function: doAction(speedDialActionTypes.WHATSAPP),
+      function: doAction(speedDialActionTypes.WHATSAPP, "233209384829"),
     },
   ];
 
