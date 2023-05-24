@@ -71,7 +71,6 @@ const FormBox = () => {
           name="fullName"
           type="text"
           required
-          size="small"
         />
         <TextField
           onChange={onInput}
@@ -81,7 +80,6 @@ const FormBox = () => {
           name="email"
           type="email"
           required
-          size="small"
         />
       </div>
       <div className="form-input">
@@ -93,7 +91,6 @@ const FormBox = () => {
           name="subject"
           type="text"
           required
-          size="small"
         />
       </div>
       <div className="form-input">
@@ -107,7 +104,6 @@ const FormBox = () => {
           name="message"
           type="text"
           required
-          size="small"
         />
       </div>
       <div className="form-input">
