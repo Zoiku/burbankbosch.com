@@ -9,6 +9,7 @@ import AOS from "aos";
 import "aos/dist/aos.css";
 import MUISpeedDial from "./components/MUISpeedDial";
 import NotFound from "./components/NotFound";
+import BadRequest from "./components/BadRequest";
 
 AOS.init();
 
@@ -24,7 +25,8 @@ const App = () => {
           <Route path="/team" element={<Team />} />
         </Route>
 
-        <Route path="*" element={<NotFound />} />
+        <Route path="/readmore" element={<NotFound />} />
+        <Route path="*" element={<BadRequest />} />
       </Routes>
       <MUISpeedDial />
     </div>
