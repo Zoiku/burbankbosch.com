@@ -39,28 +39,28 @@ const About = () => {
       content:
         "Sequi enim libero, ad reiciendis rerum alias consequuntur dolore? Fuga nulla recusandae facere eaque.",
       icon: insuranceImage,
-      fadeUpTime: 500,
+      fadeUpTime: 600,
     },
     {
       title: "Superior Products",
       content:
         "Sequi enim libero, ad reiciendis rerum alias consequuntur dolore? Fuga nulla recusandae facere eaque.",
       icon: superiorproductImage,
-      fadeUpTime: 600,
+      fadeUpTime: 700,
     },
     {
       title: "No Contracts",
       content:
         "Sequi enim libero, ad reiciendis rerum alias consequuntur dolore? Fuga nulla recusandae facere eaque.",
       icon: noContractImage,
-      fadeUpTime: 700,
+      fadeUpTime: 800,
     },
     {
       title: "Competitive Pricing",
       content:
         "Sequi enim libero, ad reiciendis rerum alias consequuntur dolore? Fuga nulla recusandae facere eaque.",
       icon: competitivePricingImage,
-      fadeUpTime: 800,
+      fadeUpTime: 900,
     },
   ];
 
@@ -101,8 +101,6 @@ const About = () => {
                 <div className="pageHeaderContentContainer">
                   <div className="pageHeaderContent">
                     <div
-                      data-aos-duration={1200}
-                      data-aos="fade-up"
                       className="pageHeaderTitleContainer"
                     >
                       <div className="titleHelper">Learn More</div>

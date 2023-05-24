@@ -22,8 +22,8 @@ const App = () => {
           <Route path="/technology" element={<Technology />} />
           <Route path="/sdg" element={<SDGs />} />
           <Route path="/team" element={<Team />} />
-          <Route path="*" element={<NotFound />} />
         </Route>
+        <Route path="*" element={<NotFound />} />
       </Routes>
       <MUISpeedDial />
     </div>
