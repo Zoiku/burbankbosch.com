@@ -23,6 +23,7 @@ const App = () => {
           <Route path="/sdg" element={<SDGs />} />
           <Route path="/team" element={<Team />} />
         </Route>
+
         <Route path="*" element={<NotFound />} />
       </Routes>
       <MUISpeedDial />

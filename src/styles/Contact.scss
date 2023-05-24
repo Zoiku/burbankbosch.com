@@ -1,68 +1,50 @@
 .Contact {
-  background: #efefef;
-  padding: 100px 0;
+  position: relative;
 
-  .contactSectionContainer {
-    display: grid;
-    position: relative;
-    place-items: center;
-    overflow: clip;
+  .contactFormOverlayContainer {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: rgba(0, 0, 0, 0.3);
+    pointer-events: none;
+    padding: 0 0 0 90px;
+    display: flex;
+    align-items: center;
 
-    .contactSection {
-      width: 1200px;
-      display: flex;
-      justify-content: space-between;
+    .contactFormOverlay {
+      pointer-events: all;
+      width: 400px;
+      padding: 20px;
+      background: rgba(255, 255, 255, 0.8);
+      backdrop-filter: blur(4px);
+      -webkit-backdrop-filter: blur(4px);
 
-      .contactFormContainer {
-        position: relative;
-        padding: 20px;
-        background: white;
-        width: 40%;
-        overflow: clip;
-
-        .contactForm {
-          .contactFormTitleContainer {
-            margin: 0 0 30px 0;
-
-            .title {
-              font-size: x-large;
-              font-weight: 700;
-            }
-
-            .titleHelper {
-              color: #777;
-              font-size: small;
-            }
-          }
-
-          .contentFormBody {
-            .form-input-duo {
-              display: flex;
-              justify-content: space-between;
-
-              & > div {
-                width: 49%;
-              }
-            }
-          }
+      .titleContainer {
+        .title {
+          font-size: x-large;
+          font-weight: 700;
+          color: var(--primary-nav-text);
         }
 
-        .contactFormBackgroundArtContainer {
-          position: absolute;
-          bottom: 0;
-          left: 0;
-          right: 0;
-          height: 250px;
-
-          .contactFormBackgroundArt {
-            height: 100%;
-            width: 100%;
-          }
+        .titleHelper {
+          font-size: small;
+          font-weight: 500;
         }
       }
 
-      .mapContainer {
-        width: 60%;
+      .formContainer {
+        margin: 30px 0 0 0;
+
+        .form-input-duo {
+          display: flex;
+          justify-content: space-between;
+
+          & > div {
+            width: 49%;
+          }
+        }
       }
     }
   }
@@ -70,23 +52,18 @@
 
 @media screen and (max-width: 1024px) {
   .Contact {
-    padding: 0;
+    .contactFormOverlayContainer {
+      position: relative;
+      background: white;
+      pointer-events: none;
+      padding: 0;
+      display: block;
 
-    .contactSectionContainer {
-      .contactSection {
+      .contactFormOverlay {
         width: 100%;
-        flex-direction: column;
-
-        .contactFormContainer {
-          order: 2;
-          width: 100%;
-          padding-bottom: 300px;
-        }
-
-        .mapContainer {
-          order: 1;
-          width: 100%;
-        }
+        background: white;
+        backdrop-filter: blur(0);
+        -webkit-backdrop-filter: blur(0);
       }
     }
   }

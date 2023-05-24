@@ -50,9 +50,7 @@ const Technology = () => {
                 <div className="overviewContent">
                   <div className="titleContainer">
                     <div className="titleHelper">An Overview</div>
-                    <div className="title">
-                      Our Green House Technology
-                    </div>
+                    <div className="title">Our Green House Technology</div>
                   </div>
 
                   <div className="overviewBodyContainer">
@@ -84,7 +82,7 @@ const Technology = () => {
                       </div>
 
                       <div
-                        data-aos-duration="1000"
+                        data-aos-duration="600"
                         data-aos="fade-right"
                         className="whyUsTwoBoxesContainer"
                       >
@@ -96,7 +94,7 @@ const Technology = () => {
                             </div>
                           </div>
                           <div
-                            data-aos-duration="1500"
+                            data-aos-duration="700"
                             data-aos="fade-right"
                             className="whyUsTwoBoxItemContainer"
                           >
@@ -109,7 +107,7 @@ const Technology = () => {
                       </div>
 
                       <div
-                        data-aos-duration="1000"
+                        data-aos-duration="600"
                         data-aos="fade-up"
                         className="firstBodyHelperContainer"
                       >
@@ -124,7 +122,7 @@ const Technology = () => {
                       </div>
 
                       <div
-                        data-aos-duration="1200"
+                        data-aos-duration="700"
                         data-aos="fade-up"
                         className="firstBodyHelperContainer"
                       >
@@ -141,7 +139,7 @@ const Technology = () => {
                       <div className="advantagesListContainer">
                         <div className="advantagesList">
                           <ul
-                            data-aos-duration="1400"
+                            data-aos-duration="800"
                             data-aos="fade-up"
                             className="advantagesListContentContainer"
                           >
@@ -153,7 +151,7 @@ const Technology = () => {
                             <li>We understand customer needs</li>
                           </ul>
                           <ul
-                            data-aos-duration="1600"
+                            data-aos-duration="900"
                             data-aos="fade-up"
                             className="advantagesListContentContainer"
                           >
@@ -177,7 +175,7 @@ const Technology = () => {
                     </div>
                   </div>
                   <div
-                    data-aos-duration="1000"
+                    data-aos-duration="600"
                     data-aos="fade-left"
                     className="advantagesBackgroundArtContainer"
                   >
@@ -193,7 +191,7 @@ const Technology = () => {
               <div className="blockChainIncorporationContentContainer">
                 <div className="blockChainIncorporationContent">
                   <div
-                    data-aos-duration="1000"
+                    data-aos-duration="600"
                     data-aos="fade-right"
                     className="backgroundArtContainer"
                   >
@@ -210,7 +208,7 @@ const Technology = () => {
                       </div>
 
                       <div
-                        data-aos-duration="1000"
+                        data-aos-duration="700"
                         data-aos="fade-up"
                         className="howContentBodyContainer"
                       >
@@ -227,7 +225,7 @@ const Technology = () => {
                       </div>
 
                       <div
-                        data-aos-duration="1200"
+                        data-aos-duration="800"
                         data-aos="fade-up"
                         className="howContentBodyContainer"
                       >
@@ -245,7 +243,7 @@ const Technology = () => {
                       <div className="advantagesListContainer">
                         <div className="advantagesList">
                           <ul
-                            data-aos-duration="1400"
+                            data-aos-duration="800"
                             data-aos="fade-up"
                             className="advantagesListContentContainer"
                           >
@@ -257,7 +255,7 @@ const Technology = () => {
                             <li>We understand customer needs</li>
                           </ul>
                           <ul
-                            data-aos-duration="1600"
+                            data-aos-duration="900"
                             data-aos="fade-up"
                             className="advantagesListContentContainer"
                           >

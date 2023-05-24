@@ -1,6 +1,6 @@
 .GoogleMap {
   .googleMapContainer {
-    height: 800px;
+    height: 100vh;
     position: relative;
 
     .googleMapBody {
@@ -13,7 +13,7 @@
 @media screen and (max-width: 1024px) {
   .GoogleMap {
     .googleMapContainer {
-      height: 500px;
+      height: 600px;
     }
   }
 }

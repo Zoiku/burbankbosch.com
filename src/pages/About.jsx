@@ -108,7 +108,7 @@ const About = () => {
                     </div>
 
                     <div
-                      data-aos-duration={1400}
+                      data-aos-duration={800}
                       data-aos="fade-up"
                       className="pageHeaderBody"
                     >
@@ -123,7 +123,7 @@ const About = () => {
                     <div className="recommendationContentContainer">
                       <div className="recommendationContent">
                         <div
-                          data-aos-duration={1600}
+                          data-aos-duration={800}
                           data-aos="fade-up"
                           className="profilePictureContainer"
                         >
@@ -134,7 +134,7 @@ const About = () => {
                           />
                         </div>
                         <div
-                          data-aos-duration={1800}
+                          data-aos-duration={1000}
                           data-aos="fade-up"
                           className="recommendationBodyContainer"
                         >
