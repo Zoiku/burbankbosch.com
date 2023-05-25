@@ -1,35 +1,9 @@
 import "../styles/Contact.scss";
 import GoogleMap from "../components/GoogleMap";
-import { useState } from "react";
+import { useRef, useState } from "react";
 import { Box, TextField } from "@mui/material";
 import { Button1 } from "../components/MUIButton";
-import Alert from "@mui/material/Alert";
-import IconButton from "@mui/material/IconButton";
-import Collapse from "@mui/material/Collapse";
-import { Close } from "@mui/icons-material/";
-import AlertTitle from "@mui/material/AlertTitle";
-
-const MUIAlert = ({ severity, alertTitle, alertMessage, open }) => (
-  <Collapse in={true}>
-    <Alert
-      severity={severity}
-      sx={{ mb: 2 }}
-      action={
-        <IconButton
-          aria-label="close"
-          color="inherit"
-          size="small"
-          onClick={() => {}}
-        >
-          <Close fontSize="inherit" />
-        </IconButton>
-      }
-    >
-      <AlertTitle>{alertTitle}</AlertTitle>
-      {alertMessage}
-    </Alert>
-  </Collapse>
-);
+import emailjs from "@emailjs/browser";
 
 const FormBox = () => {
   const initialState = {
@@ -45,6 +19,7 @@ const FormBox = () => {
     },
   };
 
+  const formRef = useRef();
   const [formState, setFormState] = useState(initialState);
 
   const onInput = (e) => {
@@ -60,36 +35,75 @@ const FormBox = () => {
     });
   };
 
-  const onContactFormSubmit = (e) => {
+  const onContactFormSubmit = async (e) => {
     e.preventDefault();
     setFormState({
       ...formState,
       response: { ...formState.response, loading: true },
     });
 
-    setTimeout(() => {
+    try {
+      const { status, text } = await emailjs.sendForm(
+        process.env.REACT_APP_EMAIL_SERVICE_ID,
+        process.env.REACT_APP_EMAIL_TEMPLATE_ID,
+        formRef.current,
+        process.env.REACT_APP_EMAIL_PUBLIC_KEY
+      );
+
+      if (status === 200) {
+        e.target.reset();
+
+        setFormState({
+          request: { ...formState.request, payload: null },
+          response: {
+            loading: false,
+            data: [],
+            error: null,
+            status,
+            alert: {
+              open: true,
+              message: "Thank you for your message!",
+              severity: "success",
+            },
+          },
+        });
+      } else {
+        setFormState({
+          request: { ...formState.request, payload: null },
+          response: {
+            loading: false,
+            data: null,
+            error: text,
+            status,
+            alert: {
+              open: true,
+              message: text,
+              severity: "error",
+            },
+          },
+        });
+      }
+    } catch (error) {
       setFormState({
         request: { ...formState.request, payload: null },
         response: {
           loading: false,
-          data: [],
-          error: null,
-          status: 200,
+          data: null,
+          error: "Something went wrong, please try again",
+          status: 500,
           alert: {
             open: true,
-            severity: "success",
-            alertTitle: "Success",
-            alertMessage: "This is a test message",
+            message: "Something went wrong, please try again",
+            severity: "warning",
           },
         },
       });
-
-      e.target.reset();
-    }, 10000);
+    }
   };
 
   return (
     <Box
+      ref={formRef}
       className="formContainer"
       component="form"
       autoComplete="off"
@@ -101,22 +115,13 @@ const FormBox = () => {
         },
       }}
     >
-      {formState.response.alert && (
-        <MUIAlert
-          alertMessage={formState.response.alert.alertMessage}
-          alertTitle={formState.response.alert.alertTitle}
-          severity={formState.response.alert.alertSeverity}
-          open={formState.response.alert.open}
-        />
-      )}
-
       <div className="form-input-duo">
         <TextField
           onChange={onInput}
           variant="outlined"
           fullWidth
           label="Full Name"
-          name="fullName"
+          name="name"
           type="text"
           required
         />
