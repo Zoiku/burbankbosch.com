@@ -3,34 +3,16 @@ import svgArt from "../assets/Apollonius_problem_typical_solution.svg.png";
 import MUIBreadCrumb from "../components/BreadCrumb";
 import imageSrc from "../assets/Company-pana.svg";
 import profilePictureSrc from "../assets/msg358981222-121868-removebg-preview.png";
-import Marquee from "react-fast-marquee";
-import logoSrc1 from "../assets/client-logo-hme-1-1 (2).png";
-import logoSrc2 from "../assets/client-logo-hme-1-2 (1).png";
-import logoSrc3 from "../assets/client-logo-hme-1-3 (1).png";
-import logoSrc4 from "../assets/client-logo-hme-1-4 (1).png";
-
 import insuranceImage from "../assets/Technology/Insurance-bro.svg";
 import superiorproductImage from "../assets/Technology/Gardening-cuate.svg";
 import noContractImage from "../assets/Technology/Agreement-bro.svg";
 import competitivePricingImage from "../assets/Technology/Growth curve-cuate.svg";
-
 import waterDrops from "../assets/Technology/Uploading-bro.svg";
 
 const About = () => {
   const links = [
     { name: "home", url: "/" },
     { name: "about us", url: "/about" },
-  ];
-
-  const partners = [
-    { logoSrc: logoSrc1 },
-    { logoSrc: logoSrc2 },
-    { logoSrc: logoSrc3 },
-    { logoSrc: logoSrc4 },
-    { logoSrc: logoSrc1 },
-    { logoSrc: logoSrc2 },
-    { logoSrc: logoSrc3 },
-    { logoSrc: logoSrc4 },
   ];
 
   const reasonsToChooseBurbank = [
@@ -100,9 +82,7 @@ const About = () => {
 
                 <div className="pageHeaderContentContainer">
                   <div className="pageHeaderContent">
-                    <div
-                      className="pageHeaderTitleContainer"
-                    >
+                    <div className="pageHeaderTitleContainer">
                       <div className="titleHelper">Learn More</div>
                       <div className="title">About Us</div>
                     </div>
@@ -196,36 +176,6 @@ const About = () => {
                         </div>
                       </div>
                     ))}
-                  </div>
-                </div>
-              </section>
-
-              <section className="aboutPageFullWidthSectionsCenteredContainer marqueeContainerContainer">
-                <div className="aboutPageFullWidthSectionsCentered">
-                  <div className="aboutPageFullWidthOverlayContainer">
-                    <div className="aboutPageFullWidthOverlay">
-                      <div className="aboutPageOverlayTitleContainer">
-                        <div className="aboutPageOverlayTitle">
-                          Our Partners
-                        </div>
-                      </div>
-                      <div className="MarqueeContainer">
-                        <Marquee
-                          gradient={false}
-                          pauseOnClick={true}
-                          speed={100}
-                        >
-                          {partners.map((partner, index) => (
-                            <img
-                              key={index}
-                              className="marqueeImage"
-                              src={partner.logoSrc}
-                              alt=""
-                            />
-                          ))}
-                        </Marquee>
-                      </div>
-                    </div>
                   </div>
                 </div>
               </section>

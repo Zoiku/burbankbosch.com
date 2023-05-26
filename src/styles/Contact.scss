@@ -1,14 +1,6 @@
 .Contact {
   position: relative;
 
-  &:hover .contactMapContainer:not(:hover) {
-    background: rgba(0, 0, 0, 0.6);
-  }
-
-  .contactMapContainer {
-    transition: all 0.3s ease;
-  }
-
   .contactFormOverlayContainer {
     background: rgba(0, 0, 0, 0.2);
     position: absolute;
