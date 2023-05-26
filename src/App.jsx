@@ -6,11 +6,14 @@ import Team from "./pages/Team";
 import Layout from "./layout/Layout";
 import { Routes, Route } from "react-router-dom";
 import AOS from "aos";
-import "aos/dist/aos.css";
+import ReactGA from "react-ga";
 import MUISpeedDial from "./components/MUISpeedDial";
 import NotFound from "./components/NotFound";
 import BadRequest from "./components/BadRequest";
+import "aos/dist/aos.css";
 
+ReactGA.initialize(process.env.REACT_APP_GOOGLE_ANALYTICS_TRACKING_ID);
+ReactGA.pageview(window.location.pathname + window.location.search);
 AOS.init();
 
 const App = () => {

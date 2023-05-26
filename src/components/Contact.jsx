@@ -4,23 +4,11 @@ import { useRef, useState } from "react";
 import { Box, TextField } from "@mui/material";
 import { Button1 } from "../components/MUIButton";
 import emailjs from "@emailjs/browser";
+import { contactFormInitialState } from "../components/States";
 
 const FormBox = () => {
-  const initialState = {
-    request: {
-      payload: null,
-    },
-    response: {
-      loading: false,
-      data: null,
-      error: null,
-      status: null,
-      alert: null,
-    },
-  };
-
   const formRef = useRef();
-  const [formState, setFormState] = useState(initialState);
+  const [formState, setFormState] = useState(contactFormInitialState);
 
   const onInput = (e) => {
     setFormState({
@@ -39,7 +27,7 @@ const FormBox = () => {
     e.preventDefault();
     setFormState({
       ...formState,
-      response: { ...formState.response, loading: true },
+      loading: true,
     });
 
     try {
@@ -52,50 +40,34 @@ const FormBox = () => {
 
       if (status === 200) {
         e.target.reset();
-
         setFormState({
+          loading: false,
           request: { ...formState.request, payload: null },
           response: {
-            loading: false,
             data: [],
             error: null,
             status,
-            alert: {
-              open: true,
-              message: "Thank you for your message!",
-              severity: "success",
-            },
           },
         });
       } else {
         setFormState({
+          loading: false,
           request: { ...formState.request, payload: null },
           response: {
-            loading: false,
             data: null,
             error: text,
             status,
-            alert: {
-              open: true,
-              message: text,
-              severity: "error",
-            },
           },
         });
       }
     } catch (error) {
       setFormState({
+        loading: false,
         request: { ...formState.request, payload: null },
         response: {
-          loading: false,
           data: null,
-          error: "Something went wrong, please try again",
+          error: null,
           status: 500,
-          alert: {
-            open: true,
-            message: "Something went wrong, please try again",
-            severity: "warning",
-          },
         },
       });
     }
@@ -162,7 +134,7 @@ const FormBox = () => {
       <div className="form-input">
         <Button1
           loadingIndicator="Sending..."
-          loading={formState.response.loading}
+          loading={formState.loading}
           variant="contained"
           type="submit"
           fullWidth
