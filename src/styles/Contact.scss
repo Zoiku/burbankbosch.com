@@ -2,7 +2,7 @@
   position: relative;
 
   &:hover .contactMapContainer:not(:hover) {
-    background: rgba(0, 0, 0, 0.5);
+    background: rgba(0, 0, 0, 0.6);
   }
 
   .contactMapContainer {
@@ -59,6 +59,10 @@
 
 @media screen and (max-width: 1024px) {
   .Contact {
+    &:hover .contactMapContainer:not(:hover) {
+      background: rgba(0, 0, 0, 0);
+    }
+
     .contactFormOverlayContainer {
       position: relative;
       background: white;

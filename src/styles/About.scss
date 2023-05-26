@@ -97,14 +97,6 @@
         }
       }
 
-      &:nth-child(3) {
-        background: url("../assets/zoe-schaeffer-hmoDcZnB7uw-unsplash.jpg");
-        background-size: cover;
-        position: relative;
-        height: 800px;
-        display: none;
-      }
-
       .aboutPageFullWidthSectionsCentered {
         .wwsfContainer {
           margin: 30px 0 0 0;
@@ -115,38 +107,6 @@
             text-align: center;
             font-size: large;
             font-weight: 400;
-          }
-        }
-
-        .aboutPageFullWidthOverlayContainer {
-          position: absolute;
-          top: 0;
-          bottom: 0;
-          left: 0;
-          right: 0;
-          background: #045a0ee5;
-          z-index: 10;
-          display: grid;
-          place-content: center;
-          color: #efefef;
-
-          .aboutPageFullWidthOverlay {
-            .aboutPageOverlayTitleContainer {
-              display: flex;
-              justify-content: center;
-              text-align: center;
-
-              .aboutPageOverlayTitle {
-                font-size: 40px;
-                font-weight: 600;
-                display: none;
-              }
-            }
-
-            .MarqueeContainer {
-              margin: 30px 0 0 0;
-              width: 100vw;
-            }
           }
         }
 
@@ -248,10 +208,10 @@
             width: 100%;
 
             .pageHeaderTitleContainer {
-              margin: 20px 0;
+              margin: 10px 0;
 
               .title {
-                font-size: x-large;
+                font-size: large;
                 font-weight: 700;
               }
             }
@@ -279,12 +239,12 @@
             text-align: center;
 
             .fullWidthTitle {
-              font-size: x-large;
+              font-size: large;
             }
           }
 
           .reasonsToChooseContainer {
-            margin: 50px 0 0 0;
+            margin: 10px 0 0 0;
             grid-template-columns: minmax(300px, 350px);
           }
         }
