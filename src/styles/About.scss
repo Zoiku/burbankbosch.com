@@ -210,10 +210,10 @@
             width: 100%;
 
             .pageHeaderTitleContainer {
-              margin: 20px 0;
+              margin: 10px 0;
 
               .title {
-                font-size: x-large;
+                font-size: large;
                 font-weight: 700;
               }
             }
@@ -228,25 +228,18 @@
           .wwsfContainer {
             width: 100%;
             padding: 0 30px;
-
-            .toggledContentContainer {
-              margin: 50px 0;
-              text-align: center;
-              font-size: large;
-              font-weight: 400;
-            }
           }
 
           .fullWidthTitleContainer {
             text-align: center;
 
             .fullWidthTitle {
-              font-size: x-large;
+              font-size: large;
             }
           }
 
           .reasonsToChooseContainer {
-            margin: 50px 0 0 0;
+            margin: 10px 0 0 0;
             grid-template-columns: minmax(300px, 350px);
           }
         }

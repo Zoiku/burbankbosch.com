@@ -3,13 +3,10 @@ import svgArt from "../assets/Apollonius_problem_typical_solution.svg.png";
 import MUIBreadCrumb from "../components/BreadCrumb";
 import imageSrc from "../assets/Company-pana.svg";
 import profilePictureSrc from "../assets/msg358981222-121868-removebg-preview.png";
-
-
 import insuranceImage from "../assets/Technology/Insurance-bro.svg";
 import superiorproductImage from "../assets/Technology/Gardening-cuate.svg";
 import noContractImage from "../assets/Technology/Agreement-bro.svg";
 import competitivePricingImage from "../assets/Technology/Growth curve-cuate.svg";
-
 import waterDrops from "../assets/Technology/Uploading-bro.svg";
 
 const About = () => {
