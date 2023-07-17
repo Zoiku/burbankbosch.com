@@ -8,7 +8,6 @@ import linkedInIcon from "../assets/icons8-linkedin-100.png";
 import mailIcon from "../assets/icons8-mail-100.png";
 import confettiArt1 from "../assets/drinking coconut-pana.svg";
 import confettiArt2 from "../assets/alien spaceship-pana.svg";
-import confettiArt3 from "../assets/time flies-pana.svg";
 
 const Team = () => {
   const links = [
@@ -45,8 +44,8 @@ const Team = () => {
 
   const members = [
     {
-      name: "Mark Zoiku",
-      title: "Designer",
+      name: "Joseph Mireku",
+      title: "Strategy",
       fadeUpTime: 500,
       profilePicture: profileImg1,
       cofetti: confettiArt1,
@@ -57,7 +56,7 @@ const Team = () => {
         },
         {
           src: mailIcon,
-          handleClick: openSocial(socialMediaTypes.MAIL, "jzoiku@gmail.com"),
+          handleClick: openSocial(socialMediaTypes.MAIL, ""),
         },
         {
           src: instagramIcon,
@@ -70,8 +69,8 @@ const Team = () => {
       ],
     },
     {
-      name: "Mark Zoiku",
-      title: "Designer",
+      name: "Patrick Dapaa Kwao",
+      title: "Partnerships",
       fadeUpTime: 600,
       profilePicture: profileImg1,
       cofetti: confettiArt2,
@@ -82,7 +81,7 @@ const Team = () => {
         },
         {
           src: mailIcon,
-          handleClick: openSocial(socialMediaTypes.MAIL, "jzoiku@gmail.com"),
+          handleClick: openSocial(socialMediaTypes.MAIL, ""),
         },
         {
           src: instagramIcon,
@@ -95,33 +94,8 @@ const Team = () => {
       ],
     },
     {
-      name: "Mark Zoiku",
-      title: "Designer",
-      fadeUpTime: 700,
-      profilePicture: profileImg1,
-      cofetti: confettiArt3,
-      socials: [
-        {
-          src: whatsAppIcon,
-          handleClick: openSocial(socialMediaTypes.WHATSAPP, ""),
-        },
-        {
-          src: mailIcon,
-          handleClick: openSocial(socialMediaTypes.MAIL, "jzoiku@gmail.com"),
-        },
-        {
-          src: instagramIcon,
-          handleClick: openSocial(socialMediaTypes.INSTAGRAM, ""),
-        },
-        {
-          src: linkedInIcon,
-          handleClick: openSocial(socialMediaTypes.LINKEDIN, ""),
-        },
-      ],
-    },
-    {
-      name: "Mark Zoiku",
-      title: "Designer",
+      name: "Bright Kyei Baffour ",
+      title: "Operations",
       fadeUpTime: 600,
       profilePicture: profileImg1,
       cofetti: confettiArt1,
@@ -132,57 +106,7 @@ const Team = () => {
         },
         {
           src: mailIcon,
-          handleClick: openSocial(socialMediaTypes.MAIL, "jzoiku@gmail.com"),
-        },
-        {
-          src: instagramIcon,
-          handleClick: openSocial(socialMediaTypes.INSTAGRAM, ""),
-        },
-        {
-          src: linkedInIcon,
-          handleClick: openSocial(socialMediaTypes.LINKEDIN, ""),
-        },
-      ],
-    },
-    {
-      name: "Mark Zoiku",
-      title: "Designer",
-      fadeUpTime: 700,
-      profilePicture: profileImg1,
-      cofetti: confettiArt2,
-      socials: [
-        {
-          src: whatsAppIcon,
-          handleClick: openSocial(socialMediaTypes.WHATSAPP, ""),
-        },
-        {
-          src: mailIcon,
-          handleClick: openSocial(socialMediaTypes.MAIL, "jzoiku@gmail.com"),
-        },
-        {
-          src: instagramIcon,
-          handleClick: openSocial(socialMediaTypes.INSTAGRAM, ""),
-        },
-        {
-          src: linkedInIcon,
-          handleClick: openSocial(socialMediaTypes.LINKEDIN, ""),
-        },
-      ],
-    },
-    {
-      name: "Mark Zoiku",
-      title: "Designer",
-      fadeUpTime: 800,
-      profilePicture: profileImg1,
-      cofetti: confettiArt3,
-      socials: [
-        {
-          src: whatsAppIcon,
-          handleClick: openSocial(socialMediaTypes.WHATSAPP, ""),
-        },
-        {
-          src: mailIcon,
-          handleClick: openSocial(socialMediaTypes.MAIL, "jzoiku@gmail.com"),
+          handleClick: openSocial(socialMediaTypes.MAIL, ""),
         },
         {
           src: instagramIcon,

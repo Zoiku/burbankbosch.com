@@ -3,11 +3,7 @@ import svgArt from "../assets/Apollonius_problem_typical_solution.svg.png";
 import MUIBreadCrumb from "../components/BreadCrumb";
 import imageSrc from "../assets/Company-pana.svg";
 import profilePictureSrc from "../assets/msg358981222-121868-removebg-preview.png";
-import Marquee from "react-fast-marquee";
-import logoSrc1 from "../assets/client-logo-hme-1-1 (2).png";
-import logoSrc2 from "../assets/client-logo-hme-1-2 (1).png";
-import logoSrc3 from "../assets/client-logo-hme-1-3 (1).png";
-import logoSrc4 from "../assets/client-logo-hme-1-4 (1).png";
+
 
 import insuranceImage from "../assets/Technology/Insurance-bro.svg";
 import superiorproductImage from "../assets/Technology/Gardening-cuate.svg";
@@ -20,17 +16,6 @@ const About = () => {
   const links = [
     { name: "home", url: "/" },
     { name: "about us", url: "/about" },
-  ];
-
-  const partners = [
-    { logoSrc: logoSrc1 },
-    { logoSrc: logoSrc2 },
-    { logoSrc: logoSrc3 },
-    { logoSrc: logoSrc4 },
-    { logoSrc: logoSrc1 },
-    { logoSrc: logoSrc2 },
-    { logoSrc: logoSrc3 },
-    { logoSrc: logoSrc4 },
   ];
 
   const reasonsToChooseBurbank = [
@@ -100,13 +85,10 @@ const About = () => {
 
                 <div className="pageHeaderContentContainer">
                   <div className="pageHeaderContent">
-                    <div
-                      className="pageHeaderTitleContainer"
-                    >
+                    <div className="pageHeaderTitleContainer">
                       <div className="titleHelper">Learn More</div>
                       <div className="title">About Us</div>
                     </div>
-
                     <div
                       data-aos-duration={800}
                       data-aos="fade-up"
@@ -154,6 +136,59 @@ const About = () => {
                 </div>
               </section>
 
+              <section className="pageHeaderSectionContainer">
+                <div className="pageHeaderContentContainer">
+                  <div className="pageHeaderContent">
+                    <div className="pageHeaderTitleContainer">
+                      <div className="titleHelper">Introduction</div>
+                      <div className="title">Our Name</div>
+                    </div>
+                    <div
+                      data-aos-duration={800}
+                      data-aos="fade-up"
+                      className="pageHeaderBody"
+                    >
+                      Burbank Bosch takes its name from the revolutionary
+                      scientists Luther Burbank and Carl Bosch, whose
+                      contributions transformed the landscape of food
+                      production. We pay homage to these pioneers as we continue
+                      their legacy of leveraging science and innovation to
+                      ensure accessible food for communities.
+                    </div>
+                  </div>
+                </div>
+              </section>
+
+              <section className="pageHeaderSectionContainer">
+                <div className="pageHeaderContentContainer">
+                  <div className="pageHeaderContent">
+                    <div className="pageHeaderTitleContainer">
+                      <div className="titleHelper">Our Origin</div>
+                      <div className="title">How We Started</div>
+                    </div>
+                    <div
+                      data-aos-duration={800}
+                      data-aos="fade-up"
+                      className="pageHeaderBody"
+                    >
+                      Burbank Bosch is a tech-enabled agribusiness guaranteeing
+                      fresh food for communities. By leveraging greenhouse
+                      technology, scientific farming practices and blockchain
+                      technology, we grow fresh healthy food in controlled
+                      environments and ensure traceability. We are committed to
+                      responsible land use and conserving water resources.
+                      <br />
+                      One day, their conversation turned to the topic of food
+                      waste, particularly in vegetables like tomatoes.
+                      Recognizing the urgency of the issue, the trio decided to
+                      take action. Combining their diverse backgrounds and
+                      expertise in technology, agriculture, and business, they
+                      set out on a mission to find a solution.
+                    </div>
+                  </div>
+                </div>
+              </section>
+
               <section className="aboutPageFullWidthSectionsCenteredContainer">
                 <div className="backgroundSvgArtContainer">
                   <img src={svgArt} alt="" className="backgroundSvgArt" />
@@ -196,36 +231,6 @@ const About = () => {
                         </div>
                       </div>
                     ))}
-                  </div>
-                </div>
-              </section>
-
-              <section className="aboutPageFullWidthSectionsCenteredContainer marqueeContainerContainer">
-                <div className="aboutPageFullWidthSectionsCentered">
-                  <div className="aboutPageFullWidthOverlayContainer">
-                    <div className="aboutPageFullWidthOverlay">
-                      <div className="aboutPageOverlayTitleContainer">
-                        <div className="aboutPageOverlayTitle">
-                          Our Partners
-                        </div>
-                      </div>
-                      <div className="MarqueeContainer">
-                        <Marquee
-                          gradient={false}
-                          pauseOnClick={true}
-                          speed={100}
-                        >
-                          {partners.map((partner, index) => (
-                            <img
-                              key={index}
-                              className="marqueeImage"
-                              src={partner.logoSrc}
-                              alt=""
-                            />
-                          ))}
-                        </Marquee>
-                      </div>
-                    </div>
                   </div>
                 </div>
               </section>

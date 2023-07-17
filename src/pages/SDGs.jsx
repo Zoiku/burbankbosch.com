@@ -20,11 +20,10 @@ import sdg16 from "../assets/sdgs/E_SDG-goals_icons-individual-rgb-16.png";
 import sdg17 from "../assets/sdgs/E_SDG-goals_icons-individual-rgb-17.png";
 import sdg18 from "../assets/sdgs/SDG-Logo_widget.png";
 import sdgArt from "../assets/sdgs/istockphoto-1328414688-612x612-removebg-preview.png";
-import ourSDG1 from "../assets/sdgs/FINCA No poverty by 2030.jpg";
+import ourSDG12 from "../assets/sdgs/CoopsDay-846x476.jpg";
 import ourSDG2 from "../assets/sdgs/1594841230.3497.jpg";
-import ourSDG3 from "../assets/sdgs/world-immunization-week-sees-big-catch-up-to-get-vaccines-back-on-track.jpg";
+import ourSDG9 from "../assets/sdgs/sdg09-hero-62a1926a97030.jpg";
 import ourSDG4 from "../assets/sdgs/sdg-7.png";
-import ourSDG5 from "../assets/sdgs/2022-08-17-Africa-on-the-verge-of-gender-parity.jpg";
 import ourSDG6 from "../assets/sdgs/sdg-12.png";
 
 const SDGs = () => {
@@ -36,51 +35,43 @@ const SDGs = () => {
   const ourSDGs = [
     {
       fadeUpDuration: 500,
-      imageHeader: ourSDG1,
-      content:
-        "Lorem ipsum dolor sit amet consectetur adipisicing elit. Officiis quod, recusandae qui facere corporis placeat fugiat dolor cum nesciunt deserunt fuga amet tenetur veniam accusamus. Minima iure delectus aut architecto?",
-      icon: sdg1,
-      title: "SDG 1",
-    },
-    {
-      fadeUpDuration: 600,
       imageHeader: ourSDG2,
       content:
-        "Lorem ipsum dolor sit amet consectetur adipisicing elit. Officiis quod, recusandae qui facere corporis placeat fugiat dolor cum nesciunt deserunt fuga amet tenetur veniam accusamus. Minima iure delectus aut architecto?",
+        "We focus on increasing agricultural productivity, implementing sustainable food production systems, and investing in rural infrastructure and technology development",
       icon: sdg2,
       title: "SDG 2",
     },
     {
-      fadeUpDuration: 700,
-      imageHeader: ourSDG3,
-      content:
-        "Lorem ipsum dolor sit amet consectetur adipisicing elit. Officiis quod, recusandae qui facere corporis placeat fugiat dolor cum nesciunt deserunt fuga amet tenetur veniam accusamus. Minima iure delectus aut architecto?",
-      icon: sdg3,
-      title: "SDG 3",
-    },
-    {
-      fadeUpDuration: 500,
-      imageHeader: ourSDG4,
-      content:
-        "Lorem ipsum dolor sit amet consectetur adipisicing elit. Officiis quod, recusandae qui facere corporis placeat fugiat dolor cum nesciunt deserunt fuga amet tenetur veniam accusamus. Minima iure delectus aut architecto?",
-      icon: sdg4,
-      title: "SDG 4",
-    },
-    {
       fadeUpDuration: 600,
-      imageHeader: ourSDG5,
+      imageHeader: ourSDG12,
       content:
-        "Lorem ipsum dolor sit amet consectetur adipisicing elit. Officiis quod, recusandae qui facere corporis placeat fugiat dolor cum nesciunt deserunt fuga amet tenetur veniam accusamus. Minima iure delectus aut architecto?",
-      icon: sdg5,
-      title: "SDG 5",
+        "We align with key targets within this goal, including reducing food waste, minimizing waste generation, and strengthening scientific and technological capacity. Through our advanced farming practices, including greenhouse technology and blockchain traceability, we promote sustainable agriculture and responsible land use. Additionally, we prioritize waste reduction, recycling, and reuse throughout our operations.",
+      icon: sdg12,
+      title: "SDG 12",
     },
     {
       fadeUpDuration: 700,
       imageHeader: ourSDG6,
       content:
-        "Lorem ipsum dolor sit amet consectetur adipisicing elit. Officiis quod, recusandae qui facere corporis placeat fugiat dolor cum nesciunt deserunt fuga amet tenetur veniam accusamus. Minima iure delectus aut architecto?",
+        "We are dedicated to promoting responsible water management and increasing water-use efficiency. Specifically, we align with target 6.4: substantially increasing water-use efficiency.",
       icon: sdg6,
       title: "SDG 6",
+    },
+    {
+      fadeUpDuration: 500,
+      imageHeader: ourSDG4,
+      content:
+        "Our activities align with the targets of achieving higher levels of economic productivity, promoting job creation and entrepreneurship, and improving resource efficiency.",
+      icon: sdg8,
+      title: "SDG 8",
+    },
+    {
+      fadeUpDuration: 600,
+      imageHeader: ourSDG9,
+      content:
+        "Our activities directly align with this goal as we leverage advanced technologies and innovative farming practices to create resilient infrastructure within the agricultural industry.",
+      icon: sdg9,
+      title: "SDG 9",
     },
   ];
 

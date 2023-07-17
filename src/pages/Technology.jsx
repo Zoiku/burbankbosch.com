@@ -1,7 +1,6 @@
 import "../styles/Technology.scss";
 import MUIBreadCrumb from "../components/BreadCrumb";
 import technologyImg from "../assets/Technology/Environment-bro.svg";
-import questionImg from "../assets/Technology/Shrug-bro.svg";
 import blockchainImg from "../assets/Technology/Fingerprint-bro.svg";
 
 const Technology = () => {
@@ -55,22 +54,22 @@ const Technology = () => {
 
                   <div className="overviewBodyContainer">
                     <div className="overviewBody">
-                      Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                      Cum, beatae quae excepturi error nesciunt magnam totam
-                      nostrum nam officiis nemo dolore tenetur dignissimos
-                      labore quam vitae ipsam, eius officia quo nobis
-                      consequatur possimus laboriosam quaerat. Nihil eaque,
-                      totam doloremque soluta dolore consectetur velit et,
-                      repellat facere adipisci modi quidem fugiat sed deserunt
-                      nostrum explicabo blanditiis ut ipsa dolorum nobis non
-                      autem ducimus doloribus quos. Iusto, exercitationem
-                      consectetur. Aspernatur, exercitationem quam.
+                      At Burbank Bosch, we understand the importance of
+                      providing communities with food that is not only fresh but
+                      also healthy. That's why we harness the power of
+                      greenhouse technology, creating controlled environments
+                      that optimize growing conditions for our crops. By
+                      carefully regulating factors such as temperature,
+                      humidity, and light, we cultivate plants that thrive
+                      without the limitations imposed by unpredictable weather
+                      or seasonal changes. This results in a consistent supply
+                      of fresh, nutrient-rich produce throughout the year.
                     </div>
                   </div>
                 </div>
               </div>
 
-              <div className="advantagesContentContainer">
+              {/* <div className="advantagesContentContainer">
                 <div className="advantagesContent">
                   <div className="advantagesBodyContainer">
                     <div className="advantagesBody">
@@ -186,7 +185,7 @@ const Technology = () => {
                     />
                   </div>
                 </div>
-              </div>
+              </div> */}
 
               <div className="blockChainIncorporationContentContainer">
                 <div className="blockChainIncorporationContent">
@@ -213,30 +212,17 @@ const Technology = () => {
                         className="howContentBodyContainer"
                       >
                         <div className="howContentBody">
-                          <span className="key">Lorem ipsum dolor</span> sit
-                          amet consectetur, adipisicing elit. Officia alias
-                          eaque facere dolor natus recusandae ex span.key
-                          blanditiis incidunt aperiam sit voluptatem beatae,
-                          nobis omnis obcaecati illo officiis consequuntur
-                          distinctio quos? Nobis aspernatur corporis
-                          perspiciatis cum, necessitatibus rem inventore
-                          obcaecati?
-                        </div>
-                      </div>
-
-                      <div
-                        data-aos-duration="800"
-                        data-aos="fade-up"
-                        className="howContentBodyContainer"
-                      >
-                        <div className="howContentBody">
-                          Lorem ipsum dolor sit amet consectetur, adipisicing
-                          elit. Officia alias eaque facere dolor natus
-                          recusandae ex span.key blanditiis incidunt aperiam sit
-                          voluptatem beatae, nobis omnis obcaecati illo officiis
-                          consequuntur distinctio quos? Nobis aspernatur
-                          corporis perspiciatis cum, necessitatibus rem
-                          inventore obcaecati?
+                          With the help of blockchain technology, we provide{" "}
+                          <span className="key">
+                            full transparency and accountability
+                          </span>{" "}
+                          throughout the supply chain. Every step of our farming
+                          process, from seed sourcing to harvesting and
+                          distribution, is meticulously recorded on the
+                          blockchain. This enables us to track and verify the
+                          origin, quality, and safety of our products, giving
+                          you peace of mind and confidence in the food you
+                          consume.
                         </div>
                       </div>
 
