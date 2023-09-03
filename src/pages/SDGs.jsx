@@ -45,7 +45,7 @@ const SDGs = () => {
       fadeUpDuration: 600,
       imageHeader: ourSDG12,
       content:
-        "We align with key targets within this goal, including reducing food waste, minimizing waste generation, and strengthening scientific and technological capacity. Through our advanced farming practices, including greenhouse technology and blockchain traceability, we promote sustainable agriculture and responsible land use. Additionally, we prioritize waste reduction, recycling, and reuse throughout our operations.",
+        "We target food waste reduction, minimize waste, and boost technology in farming with greenhouse tech, blockchain traceability, and waste reduction practices.",
       icon: sdg12,
       title: "SDG 12",
     },
