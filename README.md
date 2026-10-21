@@ -1,70 +1,50 @@
-# Getting Started with Create React App
+# Burbank & Bosch Website
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+A React company website with Home, About, Technology, Sustainable Development Goals, and Team pages. It includes a contact form, Google Maps integration, animations, and analytics.
 
-## Available Scripts
+Built with React 18, Create React App, React Router, Material UI, Sass, AOS, and EmailJS.
 
-In the project directory, you can run:
+## Local development
 
-### `npm start`
+```sh
+git clone https://github.com/Zoiku/burbankbosch.com.git
+cd burbankbosch.com
+npm install
+npm start
+```
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+Node.js and npm are required. The development server normally runs at `http://localhost:3000`.
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+## Configuration
 
-### `npm test`
+Set the following browser-public values in a local `.env.local` file:
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+```dotenv
+REACT_APP_EMAIL_SERVICE_ID=
+REACT_APP_EMAIL_TEMPLATE_ID=
+REACT_APP_EMAIL_PUBLIC_KEY=
+REACT_APP_GOOGLE_ANALYTICS_TRACKING_ID=
+REACT_APP_GOOGLE_MAP_API_KEY=
+```
 
-### `npm run build`
+The contact form reads the EmailJS values in `src/components/Contact.jsx`. Configure a matching EmailJS form template and verify delivery with your own account. Review `src/components/GoogleMap.jsx` for its map configuration and API-key requirements.
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+Restart development or rebuild after changing environment values. Never place private service credentials in frontend environment variables.
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+## Commands
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+- `npm start`: local development.
+- `npm test`: Create React App test runner.
+- `npm run build`: production output in `build/`.
 
-### `npm run eject`
+Deploy `build/` to a static host with fallback to `index.html` for routes such as `/about` and `/team`.
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+## Code guide
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+- `src/App.jsx`: routes and analytics initialization.
+- `src/pages/`: site pages.
+- `src/components/`: navigation, contact form, maps, and shared UI.
+- `src/styles/`, `src/index.scss`: styles.
+- `src/assets/`: imagery.
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+Some homepage service descriptions are placeholder text and `/readmore` routes to a placeholder page. Review these alongside contact delivery, map loading, and mobile navigation before publishing.
